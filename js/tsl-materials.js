@@ -2604,9 +2604,9 @@ function createSidewalkMaterial() {
     const scaled = step(0.8, sectionHashNode(k, seed, 18)).mul(float(1.0).sub(fresh));
     const scaleField = noise2D(wxz.mul(1.4).add(seed.mul(0.013))).mul(0.7).add(noise2D(wxz.mul(4.3)).mul(0.3));
     scaling = smoothstep(0.5, 0.58, scaleField).mul(scaled).mul(smoothstep(0.02, 0.08, min(toJoint, toEdge))).mul(topFace);
-    // Flattened chewing gum: thickest on busy stretches downtown (Spadina to Parliament, the lake to Bloor), a little
+    // Flattened chewing gum: thickest on busy stretches in Uptown, a little
     // elsewhere, hardly any on the new repairs
-    const outside = max(max(float(-1150.0).sub(positionWorld.x), positionWorld.x.sub(1500.0)), max(float(-2750.0).sub(positionWorld.z), positionWorld.z.sub(650.0)));
+    const outside = max(max(float(-50.0).sub(positionWorld.x), positionWorld.x.sub(600.0)), max(float(700.0).sub(positionWorld.z), positionWorld.z.sub(1400.0)));
     const density = smoothstep(0.3, 0.8, noise2D(wxz.mul(0.07).add(5.3))).mul(0.2).add(0.05)
       .mul(mix(float(0.2), float(1.0), smoothstep(400.0, 0.0, outside)))
       .mul(float(1.0).sub(fresh.mul(0.8))).mul(topFace);

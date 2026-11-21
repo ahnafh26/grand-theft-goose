@@ -681,7 +681,7 @@ function buildCityGrid(scene) {
   const wildMat = createTerrainMaterial();
   const blockSidewalks = []; // { cx, cz, w, d, block, cover } axis-aligned cover of each island (street-details.js)
   const roadSidewalks = []; // rectangles inside the curbs that bound the roads (road-network.js)
-  const geos = { curb: [], walk: [], lawn: [], plot: [], wild: [], paved: [], rail: [] };
+  const geos = { curb: [], walk: [], lawn: [], plot: [], wild: [], paved: [], rail: [], lot: [] };
   // Downtown is concrete to the building line: the core from Spadina to Parliament between the lake & Bloor, and
   // anywhere else a block holds towers or big buildings. Houses keep their front lawns.
   const blockBuilt = new Map(); // block -> { n, area, top }
@@ -697,10 +697,10 @@ function buildCityGrid(scene) {
     blockBuilt.set(b, s);
   }
   const isPaved = (b) => {
-    if (b.cx > -1150 && b.cx < 1500 && b.cz > -2750 && b.cz < 650) return true;
-    const s = blockBuilt.get(b);
-    // (the massing merges a row of houses into one long footprint: only height tells them from a block of offices)
-    return !!s && (s.top >= 20 || (s.top >= 14 && s.area / s.n >= 1500));
+    // (Uptown Waterloo's core, King St from Bridgeport to Erb & round the Public Square: paved forecourts to the kerb)
+    // (elsewhere Waterloo's blocks, the campuses' included, are lawns & yards round their buildings, their parking lots
+    // laid in asphalt over them: Toronto's rule, paving every block with a mid-rise on it, made the campuses concrete)
+    return b.cx > -50 && b.cx < 600 && b.cz > 700 && b.cz < 1400;
   };
   const extrude = (shape, y0, h) => {
     const g = new THREE.ExtrudeGeometry(shape, { depth: h, bevelEnabled: false, curveSegments: 1 });
@@ -763,6 +763,28 @@ function buildCityGrid(scene) {
       parksOn.get(b).push(a);
     }
   }
+  // Surface parking lots (GEO.areas 'parking'): asphalt over the yards of the islands they lie on, cut to each yard
+  const lotsOn = new Map(); // block -> the parking lot outlines over it
+  for (const a of window.CITY.AREAS) {
+    if (a.kind !== 'parking') continue;
+    for (const b of window.CITY.blocksInRect(a.minX, a.maxX, a.minZ, a.maxZ)) {
+      if (b.median || b.maxX < a.minX || b.minX > a.maxX || b.maxZ < a.minZ || b.minZ > a.maxZ) continue;
+      if (!lotsOn.has(b)) lotsOn.set(b, []);
+      lotsOn.get(b).push(a);
+    }
+  }
+  let lotCount = 0;
+  const lotsOf = (b, prop) => {
+    const lots = lotsOn.get(b);
+    if (!lots) return null;
+    const propTris = trianglesXZ(prop);
+    const pieces = [];
+    for (const a of lots) {
+      const ps = intersectXZ(trianglesXZ(a.pts), propTris);
+      if (ps.length) { pieces.push(...ps); lotCount++; }
+    }
+    return pieces.length ? flatPiecesGeometry(pieces, SW_TOP + 0.005) : null;
+  };
   const cellKey = (x, z, c) => Math.floor(x / c) * 100003 + Math.floor(z / c);
   const gridAdd = (g, k, v) => { const l = g.get(k); if (l) l.push(v); else g.set(k, [v]); };
   const pathGrid = new Map(); // 20 m cells -> [x0, z0, x1, z1, half width]
@@ -971,6 +993,8 @@ function buildCityGrid(scene) {
       geos[yard].push(flatShape(inner, SW_TOP));
       // (over the small parks' lawns, +0.004, under their paths & beds)
       geos.walk.push(framed(walkPieces(walks, SW_TOP + 0.006), runs, walks.flatMap((w) => [w.outer, ...w.holes]), seeds, downtown));
+      const lot = prop && yard !== 'rail' ? lotsOf(b, prop) : null;
+      if (lot) geos.lot.push(lot);
       const pk = prop && (yard === 'paved' || yard === 'plot') ? parkettesOf(b, prop) : null;
       if (pk) {
         geos.lawn.push(pk.lawn);
@@ -983,6 +1007,8 @@ function buildCityGrid(scene) {
       ring.holes.push(new THREE.Path(prop.map((p) => new THREE.Vector2(p.x, -p.z))));
       geos.walk.push(framed(extrude(ring, 0.03, SW_TOP - 0.03), runs, [inner, prop], seeds, downtown));
       geos[yard].push(flatShape(prop, SW_TOP - 0.002));
+      const lot = yard !== 'rail' ? lotsOf(b, prop) : null;
+      if (lot) geos.lot.push(lot);
       const pk = yard === 'paved' || yard === 'plot' ? parkettesOf(b, prop) : null; // (Toronto layer: the small parks)
       if (pk) {
         geos.lawn.push(pk.lawn);
@@ -1033,6 +1059,8 @@ function buildCityGrid(scene) {
   mergeInto(geos.plot, plotMat, false, 'Yards');
   mergeInto(geos.paved, createForecourtMaterial(), false, 'Forecourts');
   mergeInto(geos.wild, wildMat, false, 'OpenLand');
+  mergeInto(geos.lot, roadMat, false, 'ParkingLots');
+  console.info(`[cityGrid] ${lotCount} parking lots laid in asphalt`);
   // (the rail lands' gravel bed is also the small parks' mulch, so the beds add no material: Toronto layer)
   mergeInto(geos.rail, new THREE.MeshStandardNodeMaterial({ color: 0x5f5850, roughness: 0.97 }), false, 'RailLands'); // Toronto layer
   window.CITY.parketteTrees = parketteTrees; // (street-details.js plants them)

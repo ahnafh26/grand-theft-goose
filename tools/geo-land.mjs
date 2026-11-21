@@ -40,6 +40,8 @@ function classify(t) {
   if (/^(pitch|track|stadium|sports_centre)$/.test(t.leisure || '')) return 'pitch';
   if (/^(park|garden|recreation_ground|nature_reserve|playground)$/.test(t.leisure || '') || /^(recreation_ground|grass|village_green)$/.test(t.landuse || '')) return 'park';
   if (t.landuse === 'cemetery') return 'cemetery';
+  // surface parking lots (Waterloo's campuses & plazas are ringed by them): asphalt over the block's yard (city-grid.js)
+  if (t.amenity === 'parking' && !/^(underground|multi-storey|rooftop)$/.test(t.parking || '')) return 'parking';
   if (/^(residential|commercial|retail|industrial|military|religious|construction|brownfield|institutional|education)$/.test(t.landuse || '')) return `zone:${t.landuse}`;
   if (/^(university|school|hospital)$/.test(t.amenity || '')) return `zone:${t.amenity}`;
   return null;
