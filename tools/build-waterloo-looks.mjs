@@ -10,7 +10,7 @@ import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import { toWorld } from './geo-base.mjs';
 import { elemRings } from './geo-land.mjs';
-import { LOOKS, STYLE } from './data/campus-looks.mjs';
+import { LOOKS, STYLE, PLAZAS } from './data/campus-looks.mjs';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const DATA = process.env.GEO_DATA || path.join(ROOT, 'tools/data-waterloo');
@@ -76,9 +76,14 @@ IDS.forEach((id, row) => {
   }
   const mat = (t['building:material'] || '').toLowerCase();
   const hex = colourOf(t['building:colour']);
-  if (GLASS.test(t.name || '') || mat === 'glass') { looks[row] = [0x2a3744, 0, 1]; tally.glass++; return; }
   const named = LOOKS[t.name];
   if (named && where) { looks[row] = lookFor(named, part); tally.named++; return; }
+  // a plaza's shop strips (unnamed retail & commercial buildings round its lot)
+  if (!t.name && /^(retail|commercial|yes)$/.test(t.building || '')) {
+    const pz = PLAZAS.find(([la, lo, r]) => { const [px, pz2] = toWorld(lo, la); return Math.hypot(at[0] - px, at[1] - pz2) < r; });
+    if (pz) { looks[row] = lookFor(pz[3], part); tally.plaza = (tally.plaza || 0) + 1; return; }
+  }
+  if (GLASS.test(t.name || '') || mat === 'glass') { looks[row] = [0x2a3744, 0, 1]; tally.glass++; return; }
   const res = RESIDENCE.test(t.building || '') || /Village|Residence|Hall$|House$|^(North|South|East|West) \d$/.test(t.name || '') && !/Lecture|Needles|Hagey|Pollock|Federation|Hall of/.test(t.name || '');
   const big = BIG.test(t.name || '');
   // the wall: [6] ribbon (UW's academic concrete), [8] residence, [9] gym & hall, [10] Laurier's collegiate brick
