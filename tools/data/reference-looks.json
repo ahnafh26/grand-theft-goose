@@ -85,6 +85,13 @@
   "colour": 11047546,
   "confidence": "high"
  },
+ "osm:way/130348900": {
+  "name": "Tatham Centre for Co-operative Education and Career Action",
+  "wall": "collegiate",
+  "colour": 8272428,
+  "brick": true,
+  "confidence": "high"
+ },
  "osm:way/1342934521": {
   "name": "Mathematics 3",
   "wall": "collegiate",
@@ -92,10 +99,44 @@
   "brick": true,
   "confidence": "high"
  },
+ "osm:way/141711583": {
+  "name": "Brubacher House",
+  "wall": "residence",
+  "colour": 9207666,
+  "confidence": "high"
+ },
+ "osm:way/141711588": {
+  "name": "South 8 (Village 1)",
+  "wall": "residence",
+  "colour": 6176563,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/141712434": {
+  "name": "West 2 (Village 1)",
+  "wall": "residence",
+  "colour": 6176563,
+  "brick": true,
+  "confidence": "medium"
+ },
  "osm:way/141712436": {
   "name": "(unnamed yes @ 43.471034,-80.550588)",
   "wall": "ribbon",
   "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/141712440": {
+  "name": "North 5 (Village 1)",
+  "wall": "residence",
+  "colour": 6176563,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/141712445": {
+  "name": "Student Village 1 Central Complex",
+  "wall": "residence",
+  "colour": 6176563,
   "brick": true,
   "confidence": "medium"
  },
@@ -113,6 +154,33 @@
   "brick": true,
   "confidence": "medium"
  },
+ "osm:way/141718251": {
+  "name": "East 2 (Village 1)",
+  "wall": "residence",
+  "colour": 6176563,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/141718267": {
+  "name": "East 5 (Village 1)",
+  "wall": "residence",
+  "colour": 6176563,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/145890265": {
+  "name": "Graduate House",
+  "wall": "residence",
+  "colour": 15921644,
+  "confidence": "high"
+ },
+ "osm:way/147379102": {
+  "name": "Douglas Wright Engineering Building",
+  "wall": "collegiate",
+  "colour": 12098680,
+  "brick": true,
+  "confidence": "high"
+ },
  "osm:way/147781148": {
   "name": "Stadium Building",
   "wall": "blank",
@@ -124,6 +192,13 @@
   "name": "University Stadium grandstand",
   "wall": "blank",
   "colour": 4926591,
+  "confidence": "medium"
+ },
+ "osm:way/148285604": {
+  "name": "Mackenzie King Village",
+  "wall": "residence",
+  "colour": 10243642,
+  "brick": true,
   "confidence": "medium"
  },
  "osm:way/154388484": {
@@ -564,6 +639,12 @@
   "brick": true,
   "confidence": "high"
  },
+ "osm:way/28196791": {
+  "name": "Accelerator Building",
+  "wall": "ribbon",
+  "colour": 13817560,
+  "confidence": "high"
+ },
  "osm:way/293219222": {
   "name": "West 1",
   "wall": "ribbon",
@@ -735,10 +816,104 @@
   "colour": 13158080,
   "confidence": "high"
  },
+ "osm:way/43250588": {
+  "name": "Ron Eydt Village",
+  "wall": "residence",
+  "colour": 10114112,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/43250589": {
+  "name": "Ron Eydt Village",
+  "wall": "residence",
+  "colour": 10114112,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/43250590": {
+  "name": "Ron Eydt Village",
+  "wall": "residence",
+  "colour": 10114112,
+  "brick": true,
+  "confidence": "medium"
+ },
  "osm:way/43250600": {
   "name": "Laurier Library",
   "wall": "collegiate",
   "colour": 11895642,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/43250606": {
+  "name": "Psychology, Anthropology & Sociology",
+  "wall": "ribbon",
+  "colour": 12169380,
+  "confidence": "medium"
+ },
+ "osm:way/43250608": {
+  "name": "United College",
+  "wall": "collegiate",
+  "colour": 8015422,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/43250609": {
+  "name": "Minota Hagey Residence",
+  "wall": "residence",
+  "colour": 9327684,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/43250610": {
+  "name": "Conrad Grebel University College",
+  "wall": "collegiate",
+  "colour": 9062970,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/43250624": {
+  "name": "J. G. Hagey Hall of the Humanities",
+  "wall": "collegiate",
+  "colour": 9329214,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/43250626": {
+  "name": "Dana Porter Library",
+  "wall": "slits",
+  "colour": 14078664,
+  "confidence": "high"
+ },
+ "osm:way/43250627": {
+  "name": "Student Life Centre",
+  "wall": "glass",
+  "colour": 5210024,
+  "confidence": "medium"
+ },
+ "osm:way/43250630": {
+  "name": "Mathematics & Computer",
+  "wall": "office",
+  "colour": 12103586,
+  "confidence": "high"
+ },
+ "osm:way/43250631": {
+  "name": "Physics",
+  "wall": "collegiate",
+  "colour": 11900008,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/43250637": {
+  "name": "South Campus Hall",
+  "wall": "ribbon",
+  "colour": 6178358,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/43250638": {
+  "name": "School of Optometry & Vision Science",
+  "wall": "ribbon",
+  "colour": 10119758,
   "brick": true,
   "confidence": "high"
  },
@@ -761,6 +936,12 @@
   "colour": 9061428,
   "brick": true,
   "confidence": "medium"
+ },
+ "osm:way/51125806": {
+  "name": "Engineering 5",
+  "wall": "silverGlass",
+  "colour": 10466504,
+  "confidence": "high"
  },
  "osm:way/638265190": {
   "name": "Lucinda House",

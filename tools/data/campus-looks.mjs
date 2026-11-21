@@ -4,6 +4,7 @@
 //   wall: the facade style (STYLE below); colour: the wall's colour; brick: masonry joints in the shader
 //   tall / low: a different { wall, colour, brick } for the building's parts at least `tall.from` m high / under it
 //   (OSM building:parts: a tower on its podium)
+//   keep: this entry wins over the imported photo looks (tools/data/reference-looks.json)
 export const STYLE = {
   render: 0, // punched windows in rendered or painted walls
   office: 1, // wider punched windows
@@ -20,16 +21,16 @@ export const STYLE = {
 export const LOOKS = {
   // ---- University of Waterloo (reference pass 1)
   'Dana Porter Library': { tall: { from: 25, wall: 'ribs', colour: 0xd9d9d4 }, low: { wall: 'darkGlass' } }, // big ribbed cube over a recessed base (photo)
-  'Mathematics & Computer': { wall: 'ribbon', colour: 0xb8b2a6 }, // grey-beige concrete, rows of small windows (photo)
+  'Mathematics & Computer': { keep: true, wall: 'ribbon', colour: 0xb8b2a6 }, // grey-beige concrete, rows of small windows (photo)
   'Mathematics 3': { wall: 'office', colour: 0xc4532f, brick: true }, // orange-red brick & blue-green glass (photo)
   'William G. Davis Computer Research Centre': { wall: 'ribbon', colour: 0xa8a49a }, // corrugated silver metal, glass barrel vault (photo)
-  'Student Life Centre': { wall: 'office', colour: 0x8e6b4e, brick: true }, // curved glass front between buff-brick ends (photo)
+  'Student Life Centre': { keep: true, wall: 'office', colour: 0x8e6b4e, brick: true }, // curved glass front between buff-brick ends (photo)
   'Engineering 5': { wall: 'silverGlass' }, // grey-blue fritted glass in folded triangles (photo)
   'Pearl Sullivan Engineering Building': { wall: 'silverGlass' }, // E7
   'Engineering 6': { wall: 'office', colour: 0x4b5058 }, // dark charcoal panels, mixed punched windows (photo)
   'Mike & Ophelia Lazaridis Quantum Nano Centre': { wall: 'glass' },
   'Ira G. Needles Hall': { wall: 'ribbon', colour: 0xbdb7ac },
-  'J. G. Hagey Hall of the Humanities': { wall: 'slits', colour: 0x8c5a3c, brick: true }, // red-brown brick, blank fly tower (photo)
+  'J. G. Hagey Hall of the Humanities': { keep: true, wall: 'slits', colour: 0x8c5a3c, brick: true }, // red-brown brick, blank fly tower (photo)
   'Physical Activities Complex': { wall: 'blank', colour: 0x7c4a38, brick: true },
   'Columbia Icefield': { wall: 'blank', colour: 0xc8cbcd },
   'Feridun Hamdullahpur Field House': { wall: 'blank', colour: 0xa8a6a0 },

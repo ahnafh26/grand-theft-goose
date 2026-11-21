@@ -85,7 +85,8 @@ IDS.forEach((id, row) => {
   }
   const mat = (t['building:material'] || '').toLowerCase();
   const hex = colourOf(t['building:colour']);
-  const named = REF_LOOKS[part.src] || LOOKS[t.name];
+  // (a hand-built look with a tower & podium, like Dana Porter's, keeps its parts; otherwise the photos win)
+  const named = LOOKS[t.name]?.tall || LOOKS[t.name]?.keep ? LOOKS[t.name] : REF_LOOKS[part.src] || LOOKS[t.name];
   if (named && (where || REF_LOOKS[part.src])) { looks[row] = lookFor(named, part); tally.named++; return; }
   // a plaza's shop strips (unnamed retail & commercial buildings round its lot)
   if (!t.name && /^(retail|commercial|yes)$/.test(t.building || '')) {
