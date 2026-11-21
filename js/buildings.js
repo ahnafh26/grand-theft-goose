@@ -56,6 +56,28 @@ function footprintEdges(outer, covered, hidden, street, frontKind, shopFront, ba
   return { kinds: edges.map((e) => e.kind), edges };
 }
 
+// A storefront sign (js/toronto-storefronts.js: compiled on the building's box faces) moved onto the real outline's wall
+// it belongs to: the nearest edge facing the same way (within 15 m), its middle kept on the edge. Returns the edge
+// index and the sign's new { x, z, nx, nz, width }, or null.
+function snapSignToFootprint(ring, s) {
+  let best = null;
+  for (let i = 0; i < ring.length; i++) {
+    const [ax, az] = ring[i], [bx, bz] = ring[(i + 1) % ring.length];
+    const dx = bx - ax, dz = bz - az, len = Math.hypot(dx, dz);
+    if (len < 2) continue;
+    const nx = dz / len, nz = -dx / len;
+    if (nx * s.nx + nz * s.nz < 0.7) continue;
+    const t = Math.max(0, Math.min(1, ((s.x - ax) * dx + (s.z - az) * dz) / (len * len)));
+    const d = Math.hypot(ax + dx * t - s.x, az + dz * t - s.z);
+    if (d < 15 && (!best || d < best.d)) best = { i, d, ax, az, dx, dz, len, nx, nz, t };
+  }
+  if (!best) return null;
+  const width = Math.min(s.width, best.len - 0.4);
+  const half = width / 2 / best.len;
+  const t = Math.max(half, Math.min(1 - half, best.t));
+  return { edge: best.i, x: best.ax + best.dx * t, z: best.az + best.dz * t, nx: best.nx, nz: best.nz, width };
+}
+
 function mulberry32(seed) {
   let a = seed >>> 0;
   return function () {
@@ -396,6 +418,11 @@ function buildCityBlocks(scene) {
   const retail = storefrontSelection();
   const signWalls = signedWalls();
   const facades = new Map(); // building row -> { mat, floorHeight, front } for the signed buildings
+  const signsByRow = new Map(); // building row -> its storefront signs (js/toronto-storefronts.js)
+  for (const sg of (window.CITY.STOREFRONTS && window.CITY.STOREFRONTS.signs) || []) {
+    if (!signsByRow.has(sg.b)) signsByRow.set(sg.b, []);
+    signsByRow.get(sg.b).push(sg);
+  }
   for (let bi = 0; bi < GEO.buildings.length; bi++) {
     const b = GEO.buildings[bi];
     const [cx, cz, ang, parts, h, kind, roof, cseed, , name] = b;
@@ -458,6 +485,11 @@ function buildCityBlocks(scene) {
       const tf = performance.now();
       const fr = footprintEdges(foot.rings[0], foot.covered, foot.hidden, foot.street, faces[front], shopFront, Math.min(foot.base, h - 0.5), h);
       edges = fr.edges;
+      // the walls that carry a storefront sign are shop fronts, street or no street (a plaza's strip faces its lot)
+      for (const sg of signsByRow.get(bi) || []) {
+        const snap = snapSignToFootprint(foot.rings[0], sg);
+        if (snap && fr.kinds[snap.edge] !== -1) fr.kinds[snap.edge] = edges[snap.edge].kind = WALL_KINDS.shop;
+      }
       const pitched = victorian ? h <= DISTILLERY.pitchedUpTo : (roof === 1 && kind !== 3) || roof === 2;
       footBuckets[mat].push({
         cx, cz, rings: foot.rings, base: Math.min(foot.base, h - 0.5), h, kinds: fr.kinds,
@@ -771,5 +803,5 @@ function buildCityBlocks(scene) {
   return { group, colliders, quadtree, allBlocks, update, getActiveBlockCount: () => activeCount, facadeOf: (row) => facades.get(row) || null };
 }
 
-Object.assign(window.CITY, { CityQuadtree, buildCityBlocks, storefrontSelection, signedWalls });
+Object.assign(window.CITY, { CityQuadtree, buildCityBlocks, storefrontSelection, signedWalls, snapSignToFootprint });
 })();

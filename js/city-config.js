@@ -1122,7 +1122,22 @@ for (const [key, id] of Object.entries(TELEPORT_TARGETS)) {
   arriveAt('uw', 43.4708, -80.5440, 'Ring Road');
   arriveAt('danaPorter', 43.4699, -80.5422, 'Ring Road');
   arriveAt('laurier', 43.4747, -80.5268, 'University Avenue West');
-  arriveAt('plaza', 43.4724, -80.5375, 'University Avenue West');
+  // University Plaza: 20 m out in the lot from its main strip of shops (the wall with the most storefront signs), facing it
+  {
+    const c = place(43.47205, -80.5375);
+    const byFace = new Map();
+    for (const sg of (window.CITY.STOREFRONTS && window.CITY.STOREFRONTS.signs) || []) {
+      if (Math.hypot(sg.x - c.x, sg.z - c.z) > 80) continue;
+      if (!byFace.has(sg.face)) byFace.set(sg.face, []);
+      byFace.get(sg.face).push(sg);
+    }
+    const strip = [...byFace.values()].sort((a, b) => b.length - a.length)[0];
+    if (strip) {
+      const sx = strip.reduce((t, sg) => t + sg.x, 0) / strip.length, sz = strip.reduce((t, sg) => t + sg.z, 0) / strip.length;
+      const { nx, nz } = strip[0];
+      TELEPORT_LOCATIONS.plaza = { x: Math.round((sx + nx * 20) * 10) / 10, z: Math.round((sz + nz * 20) * 10) / 10, heading: Math.atan2(-nx, -nz), road: 'University Plaza' };
+    } else arriveAt('plaza', 43.4724, -80.5375, 'University Avenue West');
+  }
   arriveAt('waterlooPark', 43.4660, -80.5300, 'Seagram Drive');
   arriveAt('columbiaLake', 43.4790, -80.5520, 'Columbia Street West');
   arriveAt('uptown', 43.4646, -80.5210, 'King Street North');

@@ -84,9 +84,13 @@ function buildStorefrontSigns(scene, { facadeOf = () => null } = {}) {
   const skip = (why) => { stats.skipped[why] = (stats.skipped[why] || 0) + 1; };
   // re-check every record against the city as built: the building row must still be the building it was compiled for
   const signs = [];
-  for (const s of data.signs) {
+  for (let s of data.signs) {
     const b = CITY.GEO.buildings[s.b];
     if (!b || Math.abs(b[0] - s.bc[0]) > 0.05 || Math.abs(b[1] - s.bc[1]) > 0.05) { skip('building moved'); continue; }
+    // (the buildings stand on their real outlines: the sign moves onto the outline's wall, buildings.js)
+    const foot = CITY.MASSING && CITY.MASSING.rows instanceof Map ? CITY.MASSING.rows.get(s.b) : null;
+    const snap = foot && CITY.snapSignToFootprint ? CITY.snapSignToFootprint(foot.rings[0], s) : null;
+    if (snap) s = { ...s, x: snap.x, z: snap.z, nx: snap.nx, nz: snap.nz, width: snap.width };
     const fh = facadeOf(s.b)?.floorHeight || 3.6;
     const top = fh - 0.12; // the fascia's top, under the first-floor sills
     if (s.h < top + 0.3) { skip('too low'); continue; }
