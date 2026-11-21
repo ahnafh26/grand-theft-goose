@@ -1,4 +1,16 @@
 {
+ "osm:relation/3776384": {
+  "name": "William G. Davis Computer Research Centre",
+  "wall": "ribbon",
+  "colour": 12104358,
+  "confidence": "high"
+ },
+ "osm:relation/8765264": {
+  "name": "William G. Davis Computer Research Centre",
+  "wall": "ribbon",
+  "colour": 12104358,
+  "confidence": "high"
+ },
  "osm:way/104690857": {
   "name": "Schlegel Building",
   "wall": "collegiate",
@@ -67,6 +79,40 @@
   "brick": true,
   "confidence": "medium"
  },
+ "osm:way/1246717243": {
+  "name": "Renison University College",
+  "wall": "ribbon",
+  "colour": 11047546,
+  "confidence": "high"
+ },
+ "osm:way/1342934521": {
+  "name": "Mathematics 3",
+  "wall": "collegiate",
+  "colour": 11557440,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/141712436": {
+  "name": "(unnamed yes @ 43.471034,-80.550588)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/141712447": {
+  "name": "(unnamed dormitory @ 43.470808,-80.550216)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/141712451": {
+  "name": "(unnamed dormitory @ 43.471911,-80.551066)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
  "osm:way/147781148": {
   "name": "Stadium Building",
   "wall": "blank",
@@ -79,6 +125,397 @@
   "wall": "blank",
   "colour": 4926591,
   "confidence": "medium"
+ },
+ "osm:way/154388484": {
+  "name": "Block E",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388485": {
+  "name": "Block G",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388486": {
+  "name": "Block D",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388488": {
+  "name": "Block L",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388489": {
+  "name": "Block H",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388490": {
+  "name": "Block N",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388491": {
+  "name": "Columbia Lake Village Community Centre",
+  "wall": "residence",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/154388492": {
+  "name": "Block 10",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388493": {
+  "name": "Block 02",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388494": {
+  "name": "Block 20",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388496": {
+  "name": "Block 14",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388497": {
+  "name": "Block 06",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388499": {
+  "name": "Block 05",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388500": {
+  "name": "Block 17",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388501": {
+  "name": "Block 18",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388503": {
+  "name": "Block 09",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388504": {
+  "name": "Block 30",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388506": {
+  "name": "Block 12",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388509": {
+  "name": "Block 32",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388510": {
+  "name": "Block 29",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388513": {
+  "name": "Block 08",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388514": {
+  "name": "Block 13",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388515": {
+  "name": "Block 07",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388516": {
+  "name": "Block 03",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388517": {
+  "name": "Block 31",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388520": {
+  "name": "Block 19",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388521": {
+  "name": "Block 04",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388523": {
+  "name": "Block 01",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388525": {
+  "name": "Block 15",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/154388527": {
+  "name": "Block 11",
+  "wall": "collegiate",
+  "colour": 10115902,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/1544852727": {
+  "name": "Skén:nen Tsi Nón:we Tewaya’taróroks",
+  "wall": "blank",
+  "colour": 14272936,
+  "confidence": "high"
+ },
+ "osm:way/158807251": {
+  "name": "Engineering 6",
+  "wall": "darkGlass",
+  "colour": 4080199,
+  "confidence": "medium"
+ },
+ "osm:way/167411346": {
+  "name": "Environment 3",
+  "wall": "ribbon",
+  "colour": 10131604,
+  "confidence": "high"
+ },
+ "osm:way/170097693": {
+  "name": "innoTECH Building",
+  "wall": "ribbon",
+  "colour": 14146012,
+  "confidence": "medium"
+ },
+ "osm:way/170097694": {
+  "name": "Toby Jenkins Applied Health Research Building",
+  "wall": "silverGlass",
+  "colour": 15132648,
+  "confidence": "medium"
+ },
+ "osm:way/175808262": {
+  "name": "Research Advancement Centre",
+  "wall": "silverGlass",
+  "colour": 12170928,
+  "confidence": "medium"
+ },
+ "osm:way/175808266": {
+  "name": "Research Advancement Centre 2",
+  "wall": "ribbon",
+  "colour": 10722968,
+  "confidence": "medium"
+ },
+ "osm:way/182091547": {
+  "name": "Mike & Ophelia Lazaridis Quantum Nano Centre",
+  "wall": "office",
+  "colour": 6184026,
+  "confidence": "high"
+ },
+ "osm:way/182922400": {
+  "name": "East 3",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/182922401": {
+  "name": "North 6",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/182922402": {
+  "name": "(unnamed yes @ 43.472212,-80.550151)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/182922403": {
+  "name": "(unnamed yes @ 43.47219,-80.549439)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/182922404": {
+  "name": "East 6",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/182922405": {
+  "name": "(unnamed yes @ 43.472399,-80.550137)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/182922406": {
+  "name": "(unnamed yes @ 43.471974,-80.550145)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/182922407": {
+  "name": "East 4",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/182922408": {
+  "name": "(unnamed yes @ 43.471546,-80.548725)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/182922409": {
+  "name": "(unnamed yes @ 43.472475,-80.549767)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/182922411": {
+  "name": "North 4",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/182922415": {
+  "name": "East 1",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/182922416": {
+  "name": "(unnamed yes @ 43.4717,-80.54859)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/182922417": {
+  "name": "North 3",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/182922418": {
+  "name": "North 2",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/182922419": {
+  "name": "(unnamed yes @ 43.471501,-80.549123)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/182922420": {
+  "name": "(unnamed yes @ 43.47178,-80.549184)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/182922421": {
+  "name": "North 1",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/188703119": {
+  "name": "Centre for Environmental and Information Technology",
+  "wall": "ribbon",
+  "colour": 13217159,
+  "brick": true,
+  "confidence": "high"
  },
  "osm:way/193317591": {
   "name": "Science Research Building",
@@ -120,6 +557,184 @@
   "colour": 3026995,
   "confidence": "high"
  },
+ "osm:way/270412928": {
+  "name": "Mackenzie King Village",
+  "wall": "residence",
+  "colour": 9063992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/293219222": {
+  "name": "West 1",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/293219225": {
+  "name": "West 3",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/293219226": {
+  "name": "West 4",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/293219227": {
+  "name": "West 5",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/293219228": {
+  "name": "West 6",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/293225023": {
+  "name": "South 1",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/293225024": {
+  "name": "South 2",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/293225025": {
+  "name": "South 3",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/293225026": {
+  "name": "South 4",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/293225027": {
+  "name": "South 5",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/293225028": {
+  "name": "South 6",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/294030019": {
+  "name": "(unnamed yes @ 43.471538,-80.550527)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/294030020": {
+  "name": "(unnamed yes @ 43.471218,-80.550351)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/294030021": {
+  "name": "(unnamed yes @ 43.471292,-80.549974)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/294269724": {
+  "name": "(unnamed yes @ 43.471994,-80.549689)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/294269725": {
+  "name": "(unnamed yes @ 43.47175,-80.549528)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/299688727": {
+  "name": "Cora Building",
+  "wall": "ribbon",
+  "colour": 11120307,
+  "confidence": "high"
+ },
+ "osm:way/350394202": {
+  "name": "South 7",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/350394203": {
+  "name": "(unnamed yes @ 43.470872,-80.551411)",
+  "wall": "ribbon",
+  "colour": 9329992,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/370204260": {
+  "name": "Science Teaching Complex",
+  "wall": "ribbon",
+  "colour": 11844802,
+  "confidence": "medium"
+ },
+ "osm:way/382726586": {
+  "name": "Applied Health Sciences Expansion Building",
+  "wall": "collegiate",
+  "colour": 11559231,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/382735686": {
+  "name": "Pearl Sullivan Engineering Building",
+  "wall": "silverGlass",
+  "colour": 12174540,
+  "confidence": "high"
+ },
+ "osm:way/382758901": {
+  "name": "St. Jerome's Academic Centre SJ2",
+  "wall": "collegiate",
+  "colour": 9059118,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/382872689": {
+  "name": "Claudette Millar Hall",
+  "wall": "residence",
+  "colour": 8014392,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/423464593": {
+  "name": "United College Green Wing",
+  "wall": "office",
+  "colour": 13158080,
+  "confidence": "high"
+ },
  "osm:way/43250600": {
   "name": "Laurier Library",
   "wall": "collegiate",
@@ -140,10 +755,35 @@
   "brick": true,
   "confidence": "high"
  },
+ "osm:way/440380006": {
+  "name": "St. Jerome's University Residence Buildings",
+  "wall": "residence",
+  "colour": 9061428,
+  "brick": true,
+  "confidence": "medium"
+ },
  "osm:way/638265190": {
   "name": "Lucinda House",
   "wall": "residence",
   "colour": 15855594,
   "confidence": "medium"
+ },
+ "osm:way/692358718": {
+  "name": "Feridun Hamdullahpur Field House",
+  "wall": "ribbon",
+  "colour": 13158082,
+  "confidence": "high"
+ },
+ "osm:way/731803684": {
+  "name": "evolv1",
+  "wall": "office",
+  "colour": 7238006,
+  "confidence": "high"
+ },
+ "osm:way/731803685": {
+  "name": "Autonomous Vehicle Research and Intelligence Lab",
+  "wall": "silverGlass",
+  "colour": 12172480,
+  "confidence": "high"
  }
 }
