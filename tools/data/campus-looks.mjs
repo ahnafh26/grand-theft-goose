@@ -89,11 +89,17 @@ export const LOOKS = {
   'Alumni Hall': { wall: 'collegiate', colour: 0x8a4b3a, brick: true },
   'John Aird Centre': { wall: 'blank', colour: 0x8a4b3a, brick: true },
   'Dining Hall': { wall: 'office', colour: 0x7d5440, brick: true },
-  'Bouckaert Residence': { wall: 'residence', colour: 0x8f4c3b, brick: true },
-  'Willison Residence': { wall: 'residence', colour: 0x8a4b3a, brick: true },
+  'Bouckaert Residence': { wall: 'residence', colour: 0xc98466, brick: true }, // light orange-red brick (photo)
+  'Willison Residence': { wall: 'residence', colour: 0xa3583d, brick: true },
   'Clara Conrad Residence': { wall: 'residence', colour: 0x8a4b3a, brick: true },
   'Dr. Alvin Woods Building': { wall: 'office', colour: 0x7d5440, brick: true },
-  'Theatre Auditorium': { wall: 'blank', colour: 0x8a4b3a, brick: true }
+  'Theatre Auditorium': { wall: 'blank', colour: 0xc9b99a }, // blank beige block volumes (photo)
+  // the 1960s residences round the Quad share one look (Conrad & Little House photos): red-brown brick bars, white
+  // sliding windows, grey aggregate stair bays, low roofs with white fascia
+  'MacDonald House': { wall: 'residence', colour: 0xa3583d, brick: true },
+  'Euler Residence': { wall: 'residence', colour: 0xa3583d, brick: true },
+  'Leopold Residence': { wall: 'residence', colour: 0xa3583d, brick: true },
+  'Regina Residence': { wall: 'residence', colour: 0xa3583d, brick: true }
 };
 // The plazas' unnamed buildings, by place: [lat, lon, radius m, look] (single-storey shop strips round their lots)
 export const PLAZAS = [

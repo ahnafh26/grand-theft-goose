@@ -1,4 +1,11 @@
 {
+ "osm:relation/1584007": {
+  "name": "Clara Conrad Residence",
+  "wall": "residence",
+  "colour": 10902076,
+  "brick": true,
+  "confidence": "medium"
+ },
  "osm:relation/3776384": {
   "name": "William G. Davis Computer Research Centre",
   "wall": "ribbon",
@@ -23,6 +30,13 @@
   "wall": "ribbon",
   "colour": 10260350,
   "confidence": "high"
+ },
+ "osm:way/113016892": {
+  "name": "Dining Hall",
+  "wall": "collegiate",
+  "colour": 10242614,
+  "brick": true,
+  "confidence": "medium"
  },
  "osm:way/113021038": {
   "name": "John Aird Centre",
@@ -55,6 +69,13 @@
   "name": "Bricker Residence",
   "wall": "residence",
   "colour": 13208158,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/113045579": {
+  "name": "Little House Residence",
+  "wall": "residence",
+  "colour": 10704957,
   "brick": true,
   "confidence": "medium"
  },
@@ -923,6 +944,13 @@
   "colour": 12032634,
   "confidence": "high"
  },
+ "osm:way/43250659": {
+  "name": "Dr. Alvin Woods Building",
+  "wall": "collegiate",
+  "colour": 10508090,
+  "brick": true,
+  "confidence": "medium"
+ },
  "osm:way/43250661": {
   "name": "Fred Nichols Campus Centre",
   "wall": "collegiate",
@@ -942,6 +970,13 @@
   "wall": "silverGlass",
   "colour": 10466504,
   "confidence": "high"
+ },
+ "osm:way/628586186": {
+  "name": "Arts Building - A Wing",
+  "wall": "collegiate",
+  "colour": 10242614,
+  "brick": true,
+  "confidence": "medium"
  },
  "osm:way/638265190": {
   "name": "Lucinda House",
