@@ -147,6 +147,8 @@ async function initApp() {
   const storefrontSigns = window.CITY.buildStorefrontSigns ? window.CITY.buildStorefrontSigns(scene, { facadeOf: cityBlocks.facadeOf })
     : { texture: null, gpuBytes: 0, cpuBytes: 0 };
   if (storefrontSigns.texture) uploadedTextures.push(storefrontSigns.texture);
+  // the UW & Laurier building names on their walls (campus-signs.js; js/waterloo-looks.js)
+  if (window.CITY.buildCampusSigns) window.CITY.buildCampusSigns(scene);
   markInit('signage');
   const allColliders = [...landmarkColliders, ...cityBlocks.colliders, ...boroughs.colliders, ...(cityGrid.colliders || [])];
 
