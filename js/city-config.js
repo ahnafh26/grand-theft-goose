@@ -310,19 +310,21 @@ const DISTRICT_BOUNDS = (GEO.districtBounds || []).map(([name, flat]) => {
 }).sort((a, b) => a.riding - b.riding || a.area - b.area);
 // The waterfront's places by the names people use (the mapped neighbourhoods here are long compounds such as
 // "St Lawrence-East Bayfront-The Islands"): world rectangles [x0, x1, z0, z1] south of Lake Shore, or a mapped area's outline
+// Waterloo: named places from OpenStreetMap's mapped areas (campuses, parks), checked before the neighbourhoods.
+// An entry whose area is not in the data is skipped.
 const WATERFRONT_NAMES = [
-  { name: 'Distillery District', area: 'Distillery District' },
-  { name: 'Ontario Place', box: [-3800, -2450, 720, 1400] },
-  { name: 'Harbourfront', poly: [[-1700, 500], [-1000, 460], [-500, 480], [0, 350], [350, 320], [350, 900], [-1700, 900]] },
-  { name: 'East Bayfront', box: [840, 1600, 215, 800] },
-  { name: 'West Don Lands', box: [1990, 2620, -470, 10] },
-  { name: 'Port Lands', box: [1600, 3700, 330, 2200] }
+  { name: 'University Plaza', area: 'University Plaza' },
+  { name: 'Waterloo Public Square', area: 'Waterloo Public Square' },
+  { name: 'Columbia Lake', area: 'Columbia Lake' },
+  { name: 'Waterloo Park', area: 'Waterloo Park' },
+  { name: 'Wilfrid Laurier University', area: 'Wilfrid Laurier University' },
+  { name: 'University of Waterloo', area: 'University of Waterloo' }
 ].map((w) => {
   const a = w.area && AREAS.find((r) => r.name === w.area);
   const poly = a ? a.pts : w.poly ? w.poly.map(([x, z]) => ({ x, z }))
-    : [{ x: w.box[0], z: w.box[2] }, { x: w.box[1], z: w.box[2] }, { x: w.box[1], z: w.box[3] }, { x: w.box[0], z: w.box[3] }];
-  return { name: w.name, poly, ...polyBounds(poly) };
-});
+    : w.box ? [{ x: w.box[0], z: w.box[2] }, { x: w.box[1], z: w.box[2] }, { x: w.box[1], z: w.box[3] }, { x: w.box[0], z: w.box[3] }] : null;
+  return poly ? { name: w.name, poly, ...polyBounds(poly) } : null;
+}).filter(Boolean);
 const inBounds = (d, x, z) => x >= d.minX && x <= d.maxX && z >= d.minZ && z <= d.maxZ && pointInPoly(d.poly, x, z);
 function districtAt(x, z) {
   const taz = DISTRICTS.find((d) => d.r);
