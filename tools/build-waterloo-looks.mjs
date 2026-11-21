@@ -11,6 +11,8 @@ import { fileURLToPath } from 'node:url';
 import { toWorld } from './geo-base.mjs';
 import { elemRings } from './geo-land.mjs';
 import { LOOKS, STYLE, PLAZAS } from './data/campus-looks.mjs';
+// looks read off reference photos, by OSM element (tools/import-reference-looks.mjs): they win over the hand entries
+const REF_LOOKS = JSON.parse(fs.readFileSync(new URL('./data/reference-looks.json', import.meta.url), 'utf8'));
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const DATA = process.env.GEO_DATA || path.join(ROOT, 'tools/data-waterloo');
@@ -76,8 +78,8 @@ IDS.forEach((id, row) => {
   }
   const mat = (t['building:material'] || '').toLowerCase();
   const hex = colourOf(t['building:colour']);
-  const named = LOOKS[t.name];
-  if (named && where) { looks[row] = lookFor(named, part); tally.named++; return; }
+  const named = REF_LOOKS[part.src] || LOOKS[t.name];
+  if (named && (where || REF_LOOKS[part.src])) { looks[row] = lookFor(named, part); tally.named++; return; }
   // a plaza's shop strips (unnamed retail & commercial buildings round its lot)
   if (!t.name && /^(retail|commercial|yes)$/.test(t.building || '')) {
     const pz = PLAZAS.find(([la, lo, r]) => { const [px, pz2] = toWorld(lo, la); return Math.hypot(at[0] - px, at[1] - pz2) < r; });

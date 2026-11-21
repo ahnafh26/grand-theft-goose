@@ -1,0 +1,149 @@
+{
+ "osm:way/104690857": {
+  "name": "Schlegel Building",
+  "wall": "collegiate",
+  "colour": 10703419,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/113010274": {
+  "name": "Frank C. Peters Building",
+  "wall": "ribbon",
+  "colour": 10260350,
+  "confidence": "high"
+ },
+ "osm:way/113021038": {
+  "name": "John Aird Centre",
+  "wall": "ribbon",
+  "colour": 13220006,
+  "confidence": "high"
+ },
+ "osm:way/113040012": {
+  "name": "Athletics Complex",
+  "wall": "collegiate",
+  "colour": 10242614,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/113042392": {
+  "name": "Science Building",
+  "wall": "collegiate",
+  "colour": 10571320,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/113042945": {
+  "name": "Bricker Academic Building",
+  "wall": "collegiate",
+  "colour": 10505014,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/113045568": {
+  "name": "Bricker Residence",
+  "wall": "residence",
+  "colour": 13208158,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/118662073": {
+  "name": "King Street Residence",
+  "wall": "residence",
+  "colour": 10768954,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/118662087": {
+  "name": "Community & Workplace Partnerships",
+  "wall": "residence",
+  "colour": 9847599,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/118662109": {
+  "name": "Wilfrid Laurier University Special Constable Service",
+  "wall": "collegiate",
+  "colour": 7031354,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/147781148": {
+  "name": "Stadium Building",
+  "wall": "blank",
+  "colour": 10243642,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/147781149": {
+  "name": "University Stadium grandstand",
+  "wall": "blank",
+  "colour": 4926591,
+  "confidence": "medium"
+ },
+ "osm:way/193317591": {
+  "name": "Science Research Building",
+  "wall": "collegiate",
+  "colour": 10571320,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/193320729": {
+  "name": "202 Regina Street North",
+  "wall": "ribbon",
+  "colour": 10177078,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/193320731": {
+  "name": "Co-operative Education and Career Development Centre",
+  "wall": "collegiate",
+  "colour": 10374453,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/193324874": {
+  "name": "Waterloo College Hall",
+  "wall": "residence",
+  "colour": 10373942,
+  "brick": true,
+  "confidence": "medium"
+ },
+ "osm:way/221152637": {
+  "name": "Centre for Cold Regions and Water Science",
+  "wall": "darkGlass",
+  "colour": 7219750,
+  "confidence": "high"
+ },
+ "osm:way/267589632": {
+  "name": "Lazaridis Hall",
+  "wall": "slits",
+  "colour": 3026995,
+  "confidence": "high"
+ },
+ "osm:way/43250600": {
+  "name": "Laurier Library",
+  "wall": "collegiate",
+  "colour": 11895642,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/43250655": {
+  "name": "Martin Luther University College",
+  "wall": "office",
+  "colour": 12032634,
+  "confidence": "high"
+ },
+ "osm:way/43250661": {
+  "name": "Fred Nichols Campus Centre",
+  "wall": "collegiate",
+  "colour": 10242614,
+  "brick": true,
+  "confidence": "high"
+ },
+ "osm:way/638265190": {
+  "name": "Lucinda House",
+  "wall": "residence",
+  "colour": 15855594,
+  "confidence": "medium"
+ }
+}
