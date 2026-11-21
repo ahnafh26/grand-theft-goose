@@ -16,7 +16,7 @@
 import { toWorld, rdp, load, log } from './geo-base.mjs';
 
 // the detailed city (as tools/geo-roads.mjs DETAIL; not imported: that module builds the whole road network)
-const DETAIL = { x0: -7900, x1: 3700, z0: -3000, z1: 3600 };
+const DETAIL = { x0: -1800, x1: 1400, z0: -1900, z1: 1700 };
 const near = (x, z, m) => x > DETAIL.x0 - m && x < DETAIL.x1 + m && z > DETAIL.z0 - m && z < DETAIL.z1 + m;
 const MARGIN = 400;
 const q = (v) => Math.round(v * 10) / 10;

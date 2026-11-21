@@ -10,7 +10,9 @@ if (!DATA) throw new Error('usage: GEO_DATA=<dir> node tools/fetch-waterloo.mjs'
 fs.mkdirSync(DATA, { recursive: true });
 
 // [south, west, north, east] for Overpass
-export const CITY = [43.458, -80.562, 43.484, -80.512];
+// (covers tools/geo-roads.mjs DETAIL, the axis-aligned box of the game's rotated frame, with a margin: the curb islands
+// need streets all round them, or the land outside the network becomes one island paved over the whole city)
+export const CITY = [43.4505, -80.5635, 43.4945, -80.5045];
 const WIDE = [43.44, -80.6, 43.5, -80.48];
 const bb = (b) => b.join(',');
 const UA = 'grand-theft-goose/0.1 (three.js city sim, Waterloo port)';
@@ -117,4 +119,11 @@ write('osm_lake.json', []);
 const boundary = await overpass(`${H};relation["boundary"="administrative"]["admin_level"="8"]["name"="Waterloo"](${bb(WIDE)});out body geom;`, 'city boundary');
 write('osm_fct.json', boundary.slice(0, 1));
 write('osm_districts.json', []);
+// ---------- street props: hydrants, bike racks, benches, shelters, bins, street lights, trees ----------
+const props = await overpass(
+  `${H};(node["emergency"="fire_hydrant"](${bb(CITY)});node["amenity"~"^(bicycle_parking|bench|waste_basket|recycling|shelter)$"](${bb(CITY)});` +
+    `node["highway"~"^(bus_stop|street_lamp)$"](${bb(CITY)});node["natural"="tree"](${bb(CITY)}););out body;`,
+  'street props',
+);
+write('osm_props.json', props);
 console.log('[osm] done');

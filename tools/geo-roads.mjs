@@ -10,7 +10,8 @@
 import { toWorld, rdp, log, load, osmRoads } from './geo-base.mjs';
 
 // Detailed city (world frame, metres): the Humber to Cherry Beach, the lake to Bloor
-export const DETAIL = { x0: -7900, x1: 3700, z0: -3000, z1: 3600 };
+// Waterloo: Columbia Lake & UW's north campus to Uptown, Westmount to past King St (inside tools/fetch-waterloo.mjs's box)
+export const DETAIL = { x0: -1800, x1: 1400, z0: -1900, z1: 1700 };
 export const inDetail = (x, z, m = 0) => x > DETAIL.x0 - m && x < DETAIL.x1 + m && z > DETAIL.z0 - m && z < DETAIL.z1 + m;
 
 // Unambiguous misspellings in the map data (the street signs read these names)
