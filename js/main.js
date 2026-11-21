@@ -126,9 +126,9 @@ async function initApp() {
   markInit('terrain');
   const { colliders: landmarkColliders } = buildLandmarks(scene);
   markInit('landmarks');
-  // ?massing=1: every building from the City's 3D Massing polygons instead of its boxes (docs/massing-buildings.md;
-  // js/massing-data.js and data/toronto-massing.bin are fetched only then, so normal play never loads them)
-  if (new URLSearchParams(location.search).get('massing') === '1') {
+  // Every building on its real OpenStreetMap outline (data/toronto-massing.bin, tools/build-massing.mjs) instead of its
+  // L/T/U boxes; ?massing=0 keeps the boxes
+  if (new URLSearchParams(location.search).get('massing') !== '0') {
     try {
       const { loadMassing } = await import('./massing-data.js');
       const M = await loadMassing(window.CITY.GEO);

@@ -169,7 +169,7 @@ const rows = [];
 const want = new Map(); // fid -> [{ row, k }]
 GEO.buildings.forEach((b, row) => {
   const id = GEO_IDS.buildings[row];
-  const m = /^to-3dmassing-2025:(\d+)(?:\.(\d+))?$/.exec(id);
+  const m = /^(?:to-3dmassing-2025|wl-osm-buildings-2026):(\d+)(?:\.(\d+))?$/.exec(id);
   const r = { row, id, cx: b[0], cz: b[1], h: b[4] };
   rows.push(r);
   if (!m) { r.skip = 'no massing record'; return; }
@@ -179,9 +179,20 @@ GEO.buildings.forEach((b, row) => {
 });
 
 const t0 = Date.now();
-const src = await openShp(SHP);
+// Waterloo: the OpenStreetMap footprints tools/build-massing-waterloo.mjs wrote (GEO_DATA/massing.json, [lon, lat] rings)
+const WATERLOO = GEO_IDS.buildings.some((id) => id.startsWith('wl-osm-buildings-2026:'));
+if (WATERLOO) {
+  const file = path.join(process.env.GEO_DATA || path.join(ROOT, 'tools/data-waterloo'), 'massing.json');
+  for (const part of JSON.parse(fs.readFileSync(file, 'utf8')).parts) {
+    for (const r of want.get(part.fid) || []) {
+      if ((r.k === undefined) !== (part.k === undefined) || (r.k !== undefined && r.k !== part.k)) continue;
+      r.rings = [part.ring.map(([lon, lat]) => toWorld(lon, lat))];
+    }
+  }
+}
+const src = WATERLOO ? null : await openShp(SHP);
 let fid = -1;
-for (;;) {
+for (;src;) {
   const { done, value } = await src.read();
   if (done) break;
   fid++;
@@ -315,9 +326,9 @@ const skippedRows = rows.filter((r) => r.skip);
 const reasons = [...new Set(skippedRows.map((r) => r.skip))].sort();
 const M = {
   schema: MASSING_SCHEMA,
-  source: 'City of Toronto 3D Massing 2025 (Open Government Licence – Toronto)',
-  edition: EDITION,
-  dataset: DATASET,
+  source: WATERLOO ? 'OpenStreetMap building footprints (ODbL 1.0, © OpenStreetMap contributors)' : 'City of Toronto 3D Massing 2025 (Open Government Licence – Toronto)',
+  edition: WATERLOO ? 'osm-waterloo-2026' : EDITION,
+  dataset: WATERLOO ? 'wl-osm-buildings-2026' : DATASET,
   geodata: geodataHash,
   rows: GEO.buildings.length,
   rowCheck: rowCheck(GEO.buildings),
