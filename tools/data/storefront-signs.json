@@ -32,6 +32,87 @@
  },
  "records": [
   {
+   "id": "osm:node/11301408243",
+   "face": "wl-osm-buildings-2026:14814.6:s",
+   "name": "Hakka Nation",
+   "sourceName": "Hakka Nation",
+   "category": "amenity=fast_food",
+   "address": "undefined undefined",
+   "span": [
+    8.8,
+    14.31
+   ],
+   "evidence": [],
+   "confidence": "medium",
+   "source": {
+    "dataset": "OpenStreetMap",
+    "extract": "Overpass extract for Waterloo (the geodata’s extract)",
+    "licence": "ODbL-1.0"
+   },
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
+   "enabled": true,
+   "review": {
+    "status": "rules",
+    "by": "tools/build-storefront-signs.mjs",
+    "date": "2026-11-21",
+    "note": "Automated evidence rules only; awaiting a person’s review of the contact sheet before release."
+   }
+  },
+  {
+   "id": "osm:node/11301408245",
+   "face": "wl-osm-buildings-2026:14814.7:s",
+   "name": "Mengami",
+   "sourceName": "Mengami",
+   "category": "amenity=fast_food",
+   "address": "undefined undefined",
+   "span": [
+    12.78,
+    16.3
+   ],
+   "evidence": [],
+   "confidence": "medium",
+   "source": {
+    "dataset": "OpenStreetMap",
+    "extract": "Overpass extract for Waterloo (the geodata’s extract)",
+    "licence": "ODbL-1.0"
+   },
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
+   "enabled": true,
+   "review": {
+    "status": "rules",
+    "by": "tools/build-storefront-signs.mjs",
+    "date": "2026-11-21",
+    "note": "Automated evidence rules only; awaiting a person’s review of the contact sheet before release."
+   }
+  },
+  {
+   "id": "osm:node/11301408246",
+   "face": "wl-osm-buildings-2026:14814.8:s",
+   "name": "Izna Poke Plus",
+   "sourceName": "Izna Poke Plus",
+   "category": "amenity=fast_food",
+   "address": "undefined undefined",
+   "span": [
+    12.33,
+    16.3
+   ],
+   "evidence": [],
+   "confidence": "medium",
+   "source": {
+    "dataset": "OpenStreetMap",
+    "extract": "Overpass extract for Waterloo (the geodata’s extract)",
+    "licence": "ODbL-1.0"
+   },
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
+   "enabled": true,
+   "review": {
+    "status": "rules",
+    "by": "tools/build-storefront-signs.mjs",
+    "date": "2026-11-21",
+    "note": "Automated evidence rules only; awaiting a person’s review of the contact sheet before release."
+   }
+  },
+  {
    "id": "osm:node/11928740225",
    "face": "wl-osm-buildings-2026:11324:s",
    "name": "Tahini’s",
@@ -460,33 +541,6 @@
     }
    ],
    "confidence": "high",
-   "source": {
-    "dataset": "OpenStreetMap",
-    "extract": "Overpass extract for Waterloo (the geodata’s extract)",
-    "licence": "ODbL-1.0"
-   },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
-   "enabled": true,
-   "review": {
-    "status": "rules",
-    "by": "tools/build-storefront-signs.mjs",
-    "date": "2026-11-21",
-    "note": "Automated evidence rules only; awaiting a person’s review of the contact sheet before release."
-   }
-  },
-  {
-   "id": "osm:node/1928272560",
-   "face": "wl-osm-buildings-2026:73:s",
-   "name": "Engineering Coffee & Doughnut Shop",
-   "sourceName": "Engineering Coffee & Doughnut Shop",
-   "category": "amenity=cafe",
-   "address": "undefined undefined",
-   "span": [
-    25.1,
-    36.1
-   ],
-   "evidence": [],
-   "confidence": "medium",
    "source": {
     "dataset": "OpenStreetMap",
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
@@ -1050,14 +1104,14 @@
   },
   {
    "id": "osm:way/39606011",
-   "face": "wl-osm-buildings-2026:14839:s",
+   "face": "wl-osm-buildings-2026:14839.0:s",
    "name": "Yu Xiao Shan",
    "sourceName": "Yu Xiao Shan",
    "category": "amenity=restaurant",
    "address": "undefined undefined",
    "span": [
-    90.08,
-    95.4
+    3.43,
+    14.43
    ],
    "evidence": [],
    "confidence": "medium",
@@ -1077,14 +1131,14 @@
   },
   {
    "id": "osm:way/39606014",
-   "face": "wl-osm-buildings-2026:14839:s",
+   "face": "wl-osm-buildings-2026:14839.2:s",
    "name": "Kismet",
    "sourceName": "Kismet",
    "category": "amenity=restaurant",
    "address": "160 University Avenue West",
    "span": [
-    84.36,
-    89.68
+    3.42,
+    14.42
    ],
    "evidence": [],
    "confidence": "medium",
@@ -1131,14 +1185,14 @@
   },
   {
    "id": "osm:way/39606017",
-   "face": "wl-osm-buildings-2026:14839:s",
+   "face": "wl-osm-buildings-2026:14839.3:s",
    "name": "Morals Village",
    "sourceName": "Morals Village",
    "category": "amenity=restaurant",
    "address": "160 University Avenue West",
    "span": [
-    70.17,
-    81.17
+    3.36,
+    13.9
    ],
    "evidence": [],
    "confidence": "medium",
@@ -1158,14 +1212,14 @@
   },
   {
    "id": "osm:way/39606018",
-   "face": "wl-osm-buildings-2026:14839:s",
+   "face": "wl-osm-buildings-2026:14839.4:s",
    "name": "D Spot Dessert Cafe",
    "sourceName": "D Spot Dessert Cafe",
    "category": "amenity=fast_food",
    "address": "160 University Avenue West",
    "span": [
-    61.3,
-    68.21
+    0.3,
+    6.5
    ],
    "evidence": [],
    "confidence": "medium",
@@ -1185,14 +1239,14 @@
   },
   {
    "id": "osm:way/39606020",
-   "face": "wl-osm-buildings-2026:14839:s",
+   "face": "wl-osm-buildings-2026:14839.5:s",
    "name": "Akkila Dental Clinic",
    "sourceName": "Akkila Dental Clinic",
    "category": "amenity=dentist",
    "address": "undefined undefined",
    "span": [
-    53.16,
-    61.81
+    0.3,
+    5.9
    ],
    "evidence": [],
    "confidence": "medium",
@@ -1212,14 +1266,14 @@
   },
   {
    "id": "osm:way/39606021",
-   "face": "wl-osm-buildings-2026:14839:s",
+   "face": "wl-osm-buildings-2026:14839.6:s",
    "name": "Home Garden",
    "sourceName": "Home Garden",
    "category": "amenity=restaurant",
    "address": "160 University Avenue West",
    "span": [
-    46.84,
-    52.76
+    0.3,
+    6.7
    ],
    "evidence": [],
    "confidence": "medium",
@@ -1239,14 +1293,14 @@
   },
   {
    "id": "osm:way/39606023",
-   "face": "wl-osm-buildings-2026:14839:s",
+   "face": "wl-osm-buildings-2026:14839.7:s",
    "name": "Yummy Chongqin",
    "sourceName": "Yummy Chongqin",
    "category": "amenity=restaurant",
    "address": "160 University Avenue West",
    "span": [
-    40.33,
-    46.44
+    0.3,
+    5.9
    ],
    "evidence": [],
    "confidence": "medium",
@@ -1266,14 +1320,14 @@
   },
   {
    "id": "osm:way/39606026",
-   "face": "wl-osm-buildings-2026:14839:s",
+   "face": "wl-osm-buildings-2026:14839.8:s",
    "name": "Nuri Village",
    "sourceName": "Nuri Village",
    "category": "amenity=restaurant",
    "address": "undefined undefined",
    "span": [
-    33.1,
-    39.93
+    0.3,
+    6.5
    ],
    "evidence": [],
    "confidence": "medium",
@@ -1293,15 +1347,15 @@
   },
   {
    "id": "osm:way/39606027",
-   "face": "wl-osm-buildings-2026:14839:s",
+   "face": "wl-osm-buildings-2026:14839.9:s",
    "name": "Subway",
    "sourceName": "Subway",
    "category": "amenity=fast_food",
    "brand": "Q244457",
    "address": "undefined undefined",
    "span": [
-    23.7,
-    32.7
+    0.3,
+    7.5
    ],
    "evidence": [],
    "confidence": "medium",
@@ -1321,14 +1375,14 @@
   },
   {
    "id": "osm:way/39606029",
-   "face": "wl-osm-buildings-2026:14839:s",
+   "face": "wl-osm-buildings-2026:14839.10:s",
    "name": "Shinwa Asian Cuisine",
    "sourceName": "Shinwa Asian Cuisine",
    "category": "amenity=restaurant",
    "address": "undefined undefined",
    "span": [
-    13.05,
-    23.3
+    0.77,
+    11.77
    ],
    "evidence": [],
    "confidence": "medium",
@@ -1348,14 +1402,14 @@
   },
   {
    "id": "osm:way/39606032",
-   "face": "wl-osm-buildings-2026:14839:s",
+   "face": "wl-osm-buildings-2026:14839.11:s",
    "name": "Campus Pizza",
    "sourceName": "Campus Pizza",
    "category": "amenity=fast_food",
    "address": "160 University Avenue West",
    "span": [
-    4.94,
-    12.65
+    0.3,
+    5.7
    ],
    "evidence": [],
    "confidence": "medium",
@@ -1375,7 +1429,7 @@
   },
   {
    "id": "osm:way/39606033",
-   "face": "wl-osm-buildings-2026:14839:s",
+   "face": "wl-osm-buildings-2026:14839.12:s",
    "name": "Chungchun",
    "sourceName": "Chungchun",
    "category": "amenity=fast_food",
@@ -1383,7 +1437,7 @@
    "address": "undefined undefined",
    "span": [
     0.3,
-    4.54
+    6.1
    ],
    "evidence": [],
    "confidence": "medium",
@@ -1620,14 +1674,151 @@
   },
   {
    "id": "osm:way/39606060",
-   "face": "wl-osm-buildings-2026:14814:s",
+   "face": "wl-osm-buildings-2026:14814.0:s",
    "name": "Sweet Dreams Teashop",
    "sourceName": "Sweet Dreams Teashop",
    "category": "amenity=cafe",
    "address": "170 University Avenue West",
    "span": [
-    1.01,
-    6.34
+    0.98,
+    11.98
+   ],
+   "evidence": [],
+   "confidence": "medium",
+   "source": {
+    "dataset": "OpenStreetMap",
+    "extract": "Overpass extract for Waterloo (the geodata’s extract)",
+    "licence": "ODbL-1.0"
+   },
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
+   "enabled": true,
+   "review": {
+    "status": "rules",
+    "by": "tools/build-storefront-signs.mjs",
+    "date": "2026-11-21",
+    "note": "Automated evidence rules only; awaiting a person’s review of the contact sheet before release."
+   }
+  },
+  {
+   "id": "osm:way/39606061",
+   "face": "wl-osm-buildings-2026:14814.1:s",
+   "name": "Waterloo Walk-in Clinic",
+   "sourceName": "Waterloo Walk-in Clinic",
+   "category": "amenity=doctors",
+   "address": "170 University Avenue West",
+   "span": [
+    1.12,
+    12.12
+   ],
+   "evidence": [],
+   "confidence": "medium",
+   "source": {
+    "dataset": "OpenStreetMap",
+    "extract": "Overpass extract for Waterloo (the geodata’s extract)",
+    "licence": "ODbL-1.0"
+   },
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
+   "enabled": true,
+   "review": {
+    "status": "rules",
+    "by": "tools/build-storefront-signs.mjs",
+    "date": "2026-11-21",
+    "note": "Automated evidence rules only; awaiting a person’s review of the contact sheet before release."
+   }
+  },
+  {
+   "id": "osm:way/39606062",
+   "face": "wl-osm-buildings-2026:14814.2:s",
+   "name": "Pharmasave",
+   "sourceName": "Pharmasave",
+   "category": "amenity=pharmacy",
+   "brand": "Q17093822",
+   "address": "170 University Avenue West",
+   "span": [
+    1.12,
+    12.12
+   ],
+   "evidence": [],
+   "confidence": "medium",
+   "source": {
+    "dataset": "OpenStreetMap",
+    "extract": "Overpass extract for Waterloo (the geodata’s extract)",
+    "licence": "ODbL-1.0"
+   },
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
+   "enabled": true,
+   "review": {
+    "status": "rules",
+    "by": "tools/build-storefront-signs.mjs",
+    "date": "2026-11-21",
+    "note": "Automated evidence rules only; awaiting a person’s review of the contact sheet before release."
+   }
+  },
+  {
+   "id": "osm:way/39606063",
+   "face": "wl-osm-buildings-2026:14814.3:s",
+   "name": "Sowon",
+   "sourceName": "Sowon",
+   "category": "amenity=restaurant",
+   "address": "170 University Avenue West",
+   "span": [
+    1.12,
+    12.12
+   ],
+   "evidence": [],
+   "confidence": "medium",
+   "source": {
+    "dataset": "OpenStreetMap",
+    "extract": "Overpass extract for Waterloo (the geodata’s extract)",
+    "licence": "ODbL-1.0"
+   },
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
+   "enabled": true,
+   "review": {
+    "status": "rules",
+    "by": "tools/build-storefront-signs.mjs",
+    "date": "2026-11-21",
+    "note": "Automated evidence rules only; awaiting a person’s review of the contact sheet before release."
+   }
+  },
+  {
+   "id": "osm:way/39606064",
+   "face": "wl-osm-buildings-2026:14814.4:s",
+   "name": "Harvey's",
+   "sourceName": "Harvey's",
+   "category": "amenity=fast_food",
+   "brand": "Q1466184",
+   "address": "undefined undefined",
+   "span": [
+    1.12,
+    12.12
+   ],
+   "evidence": [],
+   "confidence": "medium",
+   "source": {
+    "dataset": "OpenStreetMap",
+    "extract": "Overpass extract for Waterloo (the geodata’s extract)",
+    "licence": "ODbL-1.0"
+   },
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
+   "enabled": true,
+   "review": {
+    "status": "rules",
+    "by": "tools/build-storefront-signs.mjs",
+    "date": "2026-11-21",
+    "note": "Automated evidence rules only; awaiting a person’s review of the contact sheet before release."
+   }
+  },
+  {
+   "id": "osm:way/39606068",
+   "face": "wl-osm-buildings-2026:14814.5:s",
+   "name": "Farah's Food Mart",
+   "sourceName": "Farah's Food Mart",
+   "category": "shop=convenience",
+   "address": "170 University Avenue West",
+   "span": [
+    1.12,
+    12.12
    ],
    "evidence": [],
    "confidence": "medium",
@@ -2053,6 +2244,60 @@
    }
   },
   {
+   "id": "osm:way/626283190",
+   "face": "wl-osm-buildings-2026:14814.7:s",
+   "name": "Kabob Hut",
+   "sourceName": "Kabob Hut",
+   "category": "amenity=restaurant",
+   "address": "170 University Avenue West",
+   "span": [
+    4.48,
+    12.38
+   ],
+   "evidence": [],
+   "confidence": "medium",
+   "source": {
+    "dataset": "OpenStreetMap",
+    "extract": "Overpass extract for Waterloo (the geodata’s extract)",
+    "licence": "ODbL-1.0"
+   },
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
+   "enabled": true,
+   "review": {
+    "status": "rules",
+    "by": "tools/build-storefront-signs.mjs",
+    "date": "2026-11-21",
+    "note": "Automated evidence rules only; awaiting a person’s review of the contact sheet before release."
+   }
+  },
+  {
+   "id": "osm:way/626283191",
+   "face": "wl-osm-buildings-2026:14814.8:s",
+   "name": "The Alley",
+   "sourceName": "The Alley",
+   "category": "amenity=cafe",
+   "address": "170 University Avenue West",
+   "span": [
+    4.48,
+    11.93
+   ],
+   "evidence": [],
+   "confidence": "medium",
+   "source": {
+    "dataset": "OpenStreetMap",
+    "extract": "Overpass extract for Waterloo (the geodata’s extract)",
+    "licence": "ODbL-1.0"
+   },
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
+   "enabled": true,
+   "review": {
+    "status": "rules",
+    "by": "tools/build-storefront-signs.mjs",
+    "date": "2026-11-21",
+    "note": "Automated evidence rules only; awaiting a person’s review of the contact sheet before release."
+   }
+  },
+  {
    "id": "osm:node/12899516335",
    "face": "wl-osm-buildings-2026:473:n",
    "name": "Royal Paan",
@@ -2277,15 +2522,69 @@
    }
   },
   {
+   "id": "osm:node/10120212684",
+   "face": "wl-osm-buildings-2026:11748.0:w",
+   "name": "Cheez-Us Pizza",
+   "sourceName": "Cheez-Us Pizza",
+   "category": "amenity=fast_food",
+   "address": "380 King Street North",
+   "span": [
+    14.94,
+    17.7
+   ],
+   "evidence": [],
+   "confidence": "medium",
+   "source": {
+    "dataset": "OpenStreetMap",
+    "extract": "Overpass extract for Waterloo (the geodata’s extract)",
+    "licence": "ODbL-1.0"
+   },
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
+   "enabled": true,
+   "review": {
+    "status": "rules",
+    "by": "tools/build-storefront-signs.mjs",
+    "date": "2026-11-21",
+    "note": "Automated evidence rules only; awaiting a person’s review of the contact sheet before release."
+   }
+  },
+  {
+   "id": "osm:node/10120212685",
+   "face": "wl-osm-buildings-2026:11748.0:w",
+   "name": "Desserto",
+   "sourceName": "Desserto",
+   "category": "amenity=ice_cream",
+   "address": "380 King Street North",
+   "span": [
+    7.75,
+    14.54
+   ],
+   "evidence": [],
+   "confidence": "medium",
+   "source": {
+    "dataset": "OpenStreetMap",
+    "extract": "Overpass extract for Waterloo (the geodata’s extract)",
+    "licence": "ODbL-1.0"
+   },
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
+   "enabled": true,
+   "review": {
+    "status": "rules",
+    "by": "tools/build-storefront-signs.mjs",
+    "date": "2026-11-21",
+    "note": "Automated evidence rules only; awaiting a person’s review of the contact sheet before release."
+   }
+  },
+  {
    "id": "osm:node/10120212692",
-   "face": "wl-osm-buildings-2026:11748:w",
+   "face": "wl-osm-buildings-2026:11748.1:w",
    "name": "Sure Care Diagnostics",
    "sourceName": "Sure Care Diagnostics",
    "category": "amenity=clinic",
    "address": "380 King Street North",
    "span": [
-    20.57,
-    29.28
+    20.56,
+    29.24
    ],
    "evidence": [],
    "confidence": "medium",
@@ -2305,14 +2604,14 @@
   },
   {
    "id": "osm:node/10120212693",
-   "face": "wl-osm-buildings-2026:11748:w",
+   "face": "wl-osm-buildings-2026:11748.1:w",
    "name": "Curex Medical Centre",
    "sourceName": "Curex Medical Centre",
    "category": "amenity=doctors",
    "address": "380 King Street North",
    "span": [
-    11.94,
-    16.56
+    17.14,
+    20.16
    ],
    "evidence": [],
    "confidence": "medium",
@@ -2332,15 +2631,15 @@
   },
   {
    "id": "osm:node/10120212694",
-   "face": "wl-osm-buildings-2026:11748:w",
+   "face": "wl-osm-buildings-2026:11748.1:w",
    "name": "Guardian",
    "sourceName": "Guardian",
    "category": "amenity=pharmacy",
    "brand": "Q65553864",
    "address": "380 King Street North",
    "span": [
-    16.96,
-    20.17
+    12.11,
+    16.74
    ],
    "evidence": [],
    "confidence": "medium",
@@ -2360,14 +2659,14 @@
   },
   {
    "id": "osm:node/10795183406",
-   "face": "wl-osm-buildings-2026:11748:w",
+   "face": "wl-osm-buildings-2026:11748.1:w",
    "name": "Art Dental Clinic",
    "sourceName": "Art Dental Clinic",
    "category": "amenity=dentist",
    "address": "undefined undefined",
    "span": [
-    1.42,
-    11.54
+    1.41,
+    11.71
    ],
    "evidence": [],
    "confidence": "medium",
@@ -4870,7 +5169,7 @@
   },
   {
    "id": "osm:node/14393892934",
-   "face": "wl-osm-buildings-2026:14851:w",
+   "face": "wl-osm-buildings-2026:14851.0:w",
    "name": "YNCU",
    "sourceName": "YNCU",
    "category": "amenity=bank",
@@ -5979,14 +6278,14 @@
   },
   {
    "id": "osm:node/12203248801",
-   "face": "wl-osm-buildings-2026:3343:w",
+   "face": "wl-osm-buildings-2026:3343.2:w",
    "name": "City Style Salon & Barber Shop",
    "sourceName": "City Style Salon & Barber Shop",
    "category": "shop=hairdresser",
    "address": "330 Phillip Street",
    "span": [
-    38.51,
-    49.51
+    9.61,
+    20.61
    ],
    "evidence": [],
    "confidence": "medium",
@@ -6006,14 +6305,14 @@
   },
   {
    "id": "osm:node/12203266501",
-   "face": "wl-osm-buildings-2026:3343:w",
+   "face": "wl-osm-buildings-2026:3343.2:w",
    "name": "TSUJIRI Waterloo",
    "sourceName": "TSUJIRI Waterloo",
    "category": "amenity=cafe",
    "address": "330 Phillip Street",
    "span": [
-    62.69,
-    73.69
+    33.76,
+    44.76
    ],
    "evidence": [],
    "confidence": "medium",
@@ -6033,15 +6332,15 @@
   },
   {
    "id": "osm:node/12331578576",
-   "face": "wl-osm-buildings-2026:3343:w",
+   "face": "wl-osm-buildings-2026:3343.2:w",
    "name": "Gong Cha",
    "sourceName": "Gong Cha",
    "category": "amenity=cafe",
    "brand": "Q5581670",
    "address": "undefined undefined",
    "span": [
-    86.38,
-    96.98
+    57.46,
+    68.06
    ],
    "evidence": [],
    "confidence": "medium",
@@ -6284,14 +6583,14 @@
   },
   {
    "id": "osm:node/7617151823",
-   "face": "wl-osm-buildings-2026:3343:w",
+   "face": "wl-osm-buildings-2026:3343.2:w",
    "name": "Popular Pizza",
    "sourceName": "Popular Pizza",
    "category": "amenity=fast_food",
    "address": "undefined undefined",
    "span": [
-    75.38,
-    85.98
+    46.45,
+    57.06
    ],
    "evidence": [],
    "confidence": "medium",
@@ -6393,14 +6692,14 @@
   },
   {
    "id": "osm:way/39606013",
-   "face": "wl-osm-buildings-2026:14839:e",
+   "face": "wl-osm-buildings-2026:14839.1:e",
    "name": "Northern Chinese Restaurant",
    "sourceName": "Northern Chinese Restaurant",
    "category": "amenity=restaurant",
    "address": "160 Phillip Street",
    "span": [
-    8.77,
-    16.09
+    0.3,
+    8.5
    ],
    "evidence": [],
    "confidence": "medium",
@@ -6447,14 +6746,14 @@
   },
   {
    "id": "osm:node/6515563854",
-   "face": "wl-osm-buildings-2026:3581:s",
+   "face": "wl-osm-buildings-2026:3581.1:s",
    "name": "ZenQ",
    "sourceName": "ZenQ",
    "category": "amenity=restaurant",
    "address": "130-111 Columbia Street West",
    "span": [
-    26.13,
-    37.13
+    2.83,
+    13.83
    ],
    "evidence": [],
    "confidence": "medium",
@@ -6830,28 +7129,7 @@
    "name": "Indian Sweet Master",
    "address": "undefined undefined",
    "category": "amenity=fast_food",
-   "reason": "only 0.0 m of wall"
-  },
-  {
-   "id": "osm:node/11301408243",
-   "name": "Hakka Nation",
-   "address": "undefined undefined",
-   "category": "amenity=fast_food",
-   "reason": "only 0.0 m of wall"
-  },
-  {
-   "id": "osm:node/11301408245",
-   "name": "Mengami",
-   "address": "undefined undefined",
-   "category": "amenity=fast_food",
-   "reason": "only 1.0 m of wall"
-  },
-  {
-   "id": "osm:node/11301408246",
-   "name": "Izna Poke Plus",
-   "address": "undefined undefined",
-   "category": "amenity=fast_food",
-   "reason": "only 1.8 m of wall"
+   "reason": "only 1.5 m of wall"
   },
   {
    "id": "osm:node/11928875302",
@@ -6880,6 +7158,13 @@
    "address": "",
    "category": "shop=tattoo",
    "reason": "level -1"
+  },
+  {
+   "id": "osm:node/1928272560",
+   "name": "Engineering Coffee & Doughnut Shop",
+   "address": "",
+   "category": "amenity=cafe",
+   "reason": "gap in the plan at the place"
   },
   {
    "id": "osm:node/1983533621",
@@ -7036,55 +7321,6 @@
    "reason": "address on another street"
   },
   {
-   "id": "osm:way/39606061",
-   "name": "Waterloo Walk-in Clinic",
-   "address": "170 University Avenue West",
-   "category": "amenity=doctors",
-   "reason": "only 1.3 m of wall"
-  },
-  {
-   "id": "osm:way/39606062",
-   "name": "Pharmasave",
-   "address": "170 University Avenue West",
-   "category": "amenity=pharmacy",
-   "reason": "only 0.0 m of wall"
-  },
-  {
-   "id": "osm:way/39606063",
-   "name": "Sowon",
-   "address": "170 University Avenue West",
-   "category": "amenity=restaurant",
-   "reason": "only 0.0 m of wall"
-  },
-  {
-   "id": "osm:way/39606064",
-   "name": "Harvey's",
-   "address": "undefined undefined",
-   "category": "amenity=fast_food",
-   "reason": "only 0.0 m of wall"
-  },
-  {
-   "id": "osm:way/39606068",
-   "name": "Farah's Food Mart",
-   "address": "170 University Avenue West",
-   "category": "shop=convenience",
-   "reason": "only 0.0 m of wall"
-  },
-  {
-   "id": "osm:way/626283190",
-   "name": "Kabob Hut",
-   "address": "170 University Avenue West",
-   "category": "amenity=restaurant",
-   "reason": "only 1.8 m of wall"
-  },
-  {
-   "id": "osm:way/626283191",
-   "name": "The Alley",
-   "address": "170 University Avenue West",
-   "category": "amenity=cafe",
-   "reason": "only 1.3 m of wall"
-  },
-  {
    "id": "osm:way/800167150",
    "name": "Meet Fresh",
    "address": "150 University Street West",
@@ -7139,20 +7375,6 @@
    "address": "250 Weber Street North",
    "category": "shop=car_repair",
    "reason": "address on another street"
-  },
-  {
-   "id": "osm:node/10120212684",
-   "name": "Cheez-Us Pizza",
-   "address": "380 King Street North",
-   "category": "amenity=fast_food",
-   "reason": "only 2.3 m of wall"
-  },
-  {
-   "id": "osm:node/10120212685",
-   "name": "Desserto",
-   "address": "380 King Street North",
-   "category": "amenity=ice_cream",
-   "reason": "only 1.2 m of wall"
   },
   {
    "id": "osm:node/12889846990",
@@ -7478,11 +7700,11 @@
   }
  ],
  "droppedSinceLastProposal": [
+  "osm:node/1928272560",
   "osm:node/12899516335",
   "osm:node/1863120483",
   "osm:node/9061278667",
   "osm:node/9061278668",
-  "osm:node/9061302978",
   "osm:way/143670598",
   "osm:way/143670599",
   "osm:way/177731847",
@@ -7562,17 +7784,15 @@
   "osm:way/150154110",
   "osm:way/159682087",
   "osm:way/159682093",
+  "osm:way/192027096",
+  "osm:way/196620022",
   "osm:way/235654808",
   "osm:way/309809148",
   "osm:node/10822220357",
   "osm:node/12011210585",
   "osm:node/12054047122",
   "osm:node/1214996698",
-  "osm:node/12170061723",
   "osm:node/12247101275",
-  "osm:node/12247134565",
-  "osm:node/12247134566",
-  "osm:node/12247137936",
   "osm:node/12885316278",
   "osm:node/12885316280",
   "osm:node/12885316282",
@@ -7586,7 +7806,6 @@
   "osm:node/1626379702",
   "osm:node/1626379710",
   "osm:node/1629123471",
-  "osm:node/2356449483",
   "osm:node/2436285754",
   "osm:node/3220465670",
   "osm:node/4612317037",
@@ -7620,17 +7839,20 @@
   "osm:way/149825129",
   "osm:way/149976271",
   "osm:way/149976273",
-  "osm:way/217920614",
-  "osm:way/220495424",
-  "osm:way/235773832",
   "osm:node/11928740234",
   "osm:node/12203248801",
   "osm:node/12203266501",
   "osm:node/12331578576",
   "osm:node/2624132499",
+  "osm:node/3151819604",
   "osm:node/5351696286",
   "osm:node/5359865529",
+  "osm:node/5700955877",
+  "osm:node/6775889940",
+  "osm:node/6775906413",
+  "osm:node/6775928085",
   "osm:node/7617151823",
+  "osm:way/133940148",
   "osm:way/156415791",
   "osm:way/157481950",
   "osm:way/39606013",

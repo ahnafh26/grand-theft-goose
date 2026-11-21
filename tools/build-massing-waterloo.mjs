@@ -59,14 +59,41 @@ function heights(t) {
 const ringOf = (geom) => geom.map((p) => [Math.round(p.lon * 1e7) / 1e7, Math.round(p.lat * 1e7) / 1e7]);
 const closed = (r) => (r.length && (r[0][0] !== r.at(-1)[0] || r[0][1] !== r.at(-1)[1]) ? [...r, r[0]] : r);
 
+// OpenStreetMap's building:part outlines (Simple 3D Buildings: a tower on its podium, the wings of different heights),
+// fetched beside the buildings (osm_building_parts.json); a building they mostly cover stands as its parts instead
+const area = (r) => { let a = 0; for (let i = 0, j = r.length - 1; i < r.length; j = i++) a += r[j][0] * r[i][1] - r[i][0] * r[j][1]; return Math.abs(a / 2); };
+const inRing = ([x, y], r) => { let s = false; for (let i = 0, j = r.length - 1; i < r.length; j = i++) { const [xi, yi] = r[i], [xj, yj] = r[j]; if ((yi > y) !== (yj > y) && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) s = !s; } return s; };
+const centroid = (r) => r.slice(0, -1).reduce((a, p, _, l) => [a[0] + p[0] / l.length, a[1] + p[1] / l.length], [0, 0]);
+const PARTS_FILE = path.join(DATA, 'osm_building_parts.json');
+const osmParts = (fs.existsSync(PARTS_FILE) ? JSON.parse(fs.readFileSync(PARTS_FILE, 'utf8')).elements : [])
+  .filter((e) => e.type === 'way' && e.geometry?.length >= 4)
+  .map((e) => { const ring = closed(ringOf(e.geometry)); return { e, ring, c: centroid(ring), a: area(ring) }; });
+let usedParts = 0, splitBuildings = 0;
+const partsOf = (ring) => {
+  if (!osmParts.length) return null;
+  const inside = osmParts.filter((p) => inRing(p.c, ring));
+  if (!inside.length || inside.reduce((t, p) => t + p.a, 0) < area(ring) * 0.5) return null;
+  return inside;
+};
+
 const parts = [];
 let fid = 0;
 for (const e of osm.elements) {
   const t = e.tags || {};
   if (!t.building || t.building === 'no') continue;
   const h = heights(t);
-  if (e.type === 'way' && e.geometry?.length >= 4) {
-    parts.push({ fid: fid++, ring: closed(ringOf(e.geometry)), ...h, src: `osm:way/${e.id}` });
+  const own = e.type === 'way' && e.geometry?.length >= 4 ? closed(ringOf(e.geometry)) : null;
+  const split = own ? partsOf(own) : null;
+  if (split) {
+    const id = fid++;
+    split.forEach((p, k) => {
+      const pt = { ...p.e.tags, building: p.e.tags['building:part'] === 'yes' ? t.building : p.e.tags['building:part'] };
+      parts.push({ fid: id, k, ring: p.ring, ...heights(pt), src: `osm:way/${e.id}` });
+    });
+    usedParts += split.length;
+    splitBuildings++;
+  } else if (own) {
+    parts.push({ fid: fid++, ring: own, ...h, src: `osm:way/${e.id}` });
   } else if (e.type === 'relation') {
     let k = 0;
     const id = fid++;
@@ -78,4 +105,4 @@ for (const e of osm.elements) {
 }
 fs.writeFileSync(path.join(DATA, 'massing.json'), JSON.stringify({ source: 'OpenStreetMap buildings (ODbL), heights from height / building:levels / type', edition: EDITION, parts }));
 const tall = parts.filter((p) => p.max >= 30).length;
-console.log(`[massing] ${parts.length} parts (${tall} at 30 m or more) -> ${path.join(DATA, 'massing.json')}`);
+console.log(`[massing] ${parts.length} parts (${tall} at 30 m or more; ${splitBuildings} buildings stand as their ${usedParts} OSM building:parts) -> ${path.join(DATA, 'massing.json')}`);
