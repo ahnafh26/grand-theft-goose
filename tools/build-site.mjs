@@ -11,7 +11,7 @@ import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
-const PAGES = ['index.html', 'explore.html'];
+const PAGES = ['index.html', 'explore.html'].filter((p) => fs.existsSync(path.join(ROOT, p)));
 const TEXT = ['LICENSE', 'CREDITS.md'];
 // git-ignored local leftovers that must never ship even when they sit in a local checkout
 // and the provenance sidecars (<image>.webp.json: an image's recorded origin, written by impeccable embed-prompt) and the
@@ -105,6 +105,8 @@ export function buildSite({ root = ROOT, out = path.join(root, 'dist') } = {}) {
   // Stamp the identifier into the same document that loaded the scripts. A later manifest fetch could name a
   // newer deployment than the running app. The build digest deliberately excludes its own inserted stamp.
   for (const [rel, source] of pages) write(rel, source.replaceAll('__CITY_BUILD__', manifest.build));
+  // no landing page: the game itself is the site's front page
+  if (!pages.has('index.html')) write('index.html', pages.get('explore.html').replaceAll('__CITY_BUILD__', manifest.build));
   write('asset-manifest.json', JSON.stringify(manifest, null, 2) + '\n');
   // Only fingerprinted code is immutable. HTML/manifest and unhashed media revalidate; never join conflicting
   // Cache-Control values via overlapping Cloudflare _headers rules.

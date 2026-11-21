@@ -48,9 +48,10 @@ let heritage = null;
 const listeners = [];
 function loadHeritage() {
   if (window.CITY.HERITAGE) return Promise.resolve(window.CITY.HERITAGE);
+  if (!window.CITY.HERITAGE_SCRIPT) return Promise.resolve(null); // (Waterloo has no heritage register layer yet)
   if (!heritage) heritage = new Promise((resolve, reject) => {
     const s = document.createElement('script');
-    s.src = './js/toronto-heritage.js';
+    s.src = window.CITY.HERITAGE_SCRIPT;
     s.async = true;
     s.onload = () => {
       window.CITY.Navigation?.resetIndex?.();
