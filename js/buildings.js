@@ -438,6 +438,12 @@ function buildCityBlocks(scene) {
     let brick = mat < 2 && rnd() < (BRICK_SHARE[kind] || 0);
     let paintHex = kind === 4 ? weighted(RAW_BLOCK, rnd()) : kind === 5 ? 0x9b9890 : brick ? weighted(TORONTO_MASONRY, rnd())
       : kind === 6 ? weighted(TORONTO_STONE, rnd()) : weighted(TORONTO_RENDER, rnd());
+    // (Waterloo: the look the building is known by, js/waterloo-looks.js: OSM's colour & material, else its campus's)
+    const look = window.CITY.BUILDING_LOOKS && window.CITY.BUILDING_LOOKS[bi];
+    if (look) {
+      if (look[2]) mat = 2;
+      else { if (mat >= 2) mat = 1; paintHex = look[0]; brick = !!look[1]; }
+    }
     // (the Distillery District's heritage blocks: its Victorian brick, whatever the draws above said)
     const victorian = h <= DISTILLERY.maxH && inDistillery(cx, cz);
     if (victorian) { mat = VICTORIAN; brick = true; paintHex = weighted(DISTILLERY.brick, rnd()); }

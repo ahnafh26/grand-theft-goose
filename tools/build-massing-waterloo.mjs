@@ -24,7 +24,11 @@ const DEFAULTS = {
 };
 const PITCHED = /^(gabled|hipped|pyramidal|gambrel|mansard|half-hipped|saltbox|round|dome|skillion)$/;
 
+// Heights OpenStreetMap gets wrong for the landmarks people know (its outline is only the podium, or no levels mapped)
+const NAME_HEIGHT = { 'Dana Porter Library': 40, 'Student Village 1 Central Complex': 9, 'University Club': 6 };
+
 function heights(t) {
+  if (NAME_HEIGHT[t.name]) return { max: NAME_HEIGHT[t.name], avg: NAME_HEIGHT[t.name] - 0.2, min: 0 };
   const type = t.building || 'yes';
   const roofH = num(t['roof:height']) || (t['roof:levels'] ? num(t['roof:levels']) * LEVEL * 0.8 : NaN);
   const pitched = PITCHED.test(t['roof:shape'] || '') || HOUSE.test(type);
