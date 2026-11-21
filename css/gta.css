@@ -1,0 +1,600 @@
+/* Larp Theft Auto visual system. Tokens the rest of the HUD can reuse.
+   The poster lives at assets/brand/larp-theft-auto-poster.jpg. */
+
+:root {
+  --gta-ivory: #f4e9d5;
+  --gta-ink: #171514;
+  --gta-gold: #e5a443;
+  --gta-orange: #d97847;
+  --gta-pink: #d78a98;
+  --gta-teal: #477c79;
+  --accent: var(--gta-gold);
+  --accent-ink: var(--gta-ink);
+  --text: var(--gta-ivory);
+  --glass: rgba(23, 21, 20, 0.88);
+  --glass-strong: rgba(23, 21, 20, 0.94);
+  --glass-border: rgba(244, 233, 213, 0.22);
+  --glass-highlight: rgba(229, 164, 67, 0.18);
+  --r-panel: 3px;
+  --r-ctl: 2px;
+  --font-display: 'Bebas Neue', Impact, Haettenschweiler, sans-serif;
+  --font-hud: 'Barlow Condensed', 'Arial Narrow', Impact, sans-serif;
+}
+
+.search-box {
+  border-radius: 3px;
+}
+
+.panel {
+  background: var(--glass);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  border-radius: var(--r-panel);
+  box-shadow: 0 0 0 1px #000, 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+#gta-grain {
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  opacity: 0.16;
+  mix-blend-mode: overlay;
+  background-image: var(--grain);
+  background-size: 180px 180px;
+}
+
+/* Splash. The cover is assets/brand/larp-theft-auto-poster.jpg. */
+#loading-overlay {
+  background: #0b0907;
+}
+
+.gta-splash {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: end center;
+  overflow: hidden;
+}
+
+.gta-poster,
+.gta-logo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.gta-logo {
+  object-fit: contain;
+  padding: 8vh 8vw 22vh;
+  background:
+    radial-gradient(90% 70% at 50% 30%, #3a2a18 0%, #120e0b 70%);
+}
+
+.gta-splash-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(12, 9, 7, 0.92) 0%, rgba(12, 9, 7, 0.2) 32%, rgba(12, 9, 7, 0.15) 100%),
+    radial-gradient(120% 80% at 50% 40%, transparent 40%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+.gta-splash-grain {
+  position: absolute;
+  inset: 0;
+  opacity: 0.28;
+  mix-blend-mode: overlay;
+  background-image: var(--grain);
+  background-size: 160px 160px;
+  pointer-events: none;
+}
+
+.gta-splash-copy {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+  padding: 16px 18px max(16px, env(safe-area-inset-bottom));
+  background: linear-gradient(to top, rgba(8, 6, 4, 0.94), rgba(8, 6, 4, 0.78) 70%, transparent);
+  animation: rise-in 0.7s var(--ease-out) both;
+}
+
+#enter-the-6 {
+  width: 100%;
+  margin-top: 16px;
+  padding: 14px 18px 12px;
+  border: 0;
+  border-radius: 2px;
+  background: var(--gta-ivory);
+  color: var(--gta-ink);
+  font-family: var(--font-display);
+  font-size: 34px;
+  letter-spacing: 0.12em;
+  line-height: 1;
+  box-shadow: 0 0 0 3px #000, 4px 4px 0 #000;
+  cursor: pointer;
+}
+
+#enter-the-6:hover:not(:disabled) {
+  background: var(--gta-gold);
+}
+
+#enter-the-6:disabled {
+  background: transparent;
+  color: var(--gta-ivory);
+  box-shadow: inset 0 0 0 2px var(--gta-ivory), 0 0 0 3px #000;
+  cursor: default;
+}
+
+#loading-overlay .loader-track {
+  width: 100%;
+  height: 6px;
+  margin: 0 0 10px;
+  border-radius: 0;
+  background: rgba(244, 233, 213, 0.16);
+  box-shadow: 0 0 0 2px #000;
+}
+
+#loading-overlay .loader-fill {
+  border-radius: 0;
+  background: var(--gta-gold);
+}
+
+#loading-status {
+  font-family: var(--font-hud);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gta-ivory);
+  text-shadow: 0 1px 0 #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Circular radar. The canvas still draws the same map; the ring clips it. */
+.radar.panel {
+  width: 188px;
+  height: 188px;
+  padding: 0;
+  border: 9px solid #2f9b93;
+  border-radius: 50%;
+  background: #14201c;
+  box-shadow: 0 0 0 3px #101010, 0 8px 18px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.radar:hover {
+  transform: none;
+}
+
+.radar::after {
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.72);
+}
+
+.radar-north {
+  top: 7px;
+  width: auto;
+  height: auto;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  color: #fff;
+  font-family: var(--font-hud);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 0 #000, 0 0 4px #000;
+  box-shadow: none;
+}
+
+.radar-key {
+  display: none;
+}
+
+/* Neighbourhood title */
+.location-place {
+  font-family: var(--font-display);
+  font-size: 46px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 0.9;
+  color: var(--gta-ivory);
+  text-shadow:
+    -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000,
+    0 4px 0 #000;
+  animation: gta-title 0.65s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.location-place::after {
+  content: '';
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin-top: 6px;
+  background: var(--gta-gold);
+  box-shadow: 0 0 0 1px #000;
+}
+
+.street-sign {
+  max-width: none;
+  padding: 0;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  box-shadow: none;
+  font-family: var(--font-hud);
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow:
+    -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+@keyframes gta-title {
+  from { opacity: 0; transform: translateX(-36px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Speed. The walk / drive / cycle / fly switch keeps its own look. */
+.cluster.panel {
+  width: auto;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.gauge {
+  padding: 0;
+  text-align: right;
+}
+
+.gauge-label,
+.gauge-unit,
+.gauge-alt-label {
+  font-family: var(--font-hud);
+  letter-spacing: 0.16em;
+  color: var(--gta-gold);
+}
+
+#hud-speed {
+  font-family: var(--font-hud);
+  font-weight: 800;
+  font-size: 54px;
+  letter-spacing: 0;
+  color: var(--gta-ivory);
+  text-shadow: 0 2px 0 #000;
+}
+
+.gauge-meter {
+  height: 6px;
+  border-radius: 0;
+  background: rgba(244, 233, 213, 0.14);
+}
+
+#hud-speed-meter {
+  border-radius: 0;
+  background: var(--gta-ivory);
+}
+
+body.is-boosting #hud-speed-meter {
+  background: var(--gta-orange);
+}
+
+.mode-switch {
+  border-radius: 16px;
+}
+
+.mode-indicator {
+  border-radius: 12px;
+  background: #2477cc;
+}
+
+.mode-btn {
+  border-radius: 12px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.mode-btn.active,
+.mode-btn.active:hover {
+  color: #fff;
+}
+
+.toast {
+  border-radius: 2px;
+  border-left: 4px solid var(--gta-gold);
+  font-family: var(--font-hud);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 720px) {
+  .location-place { font-size: 34px; }
+  #hud-speed { font-size: 42px; }
+  #enter-the-6 { font-size: 28px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .location-place { animation: none; }
+}
+
+#cameo-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 25;
+  pointer-events: none;
+}
+
+.cameo-name {
+  position: absolute;
+  transform: translate(-50%, -120%);
+  font-family: var(--font-hud);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gta-ivory);
+  font-size: 15px;
+  text-shadow: 0 0 2px #000, 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  white-space: nowrap;
+}
+
+#cameo-prompt {
+  position: fixed;
+  left: 50%;
+  bottom: 18%;
+  transform: translateX(-50%);
+  z-index: 26;
+  pointer-events: none;
+  font-family: var(--font-hud);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gta-ivory);
+  font-size: 22px;
+  text-shadow: 0 2px 0 #000, 2px 2px 0 #000, -1px -1px 0 #000;
+}
+
+#cameo-prompt[hidden],
+#cameo-box[hidden],
+.cameo-name[hidden] {
+  display: none;
+}
+
+#cameo-box {
+  position: fixed;
+  left: 50%;
+  bottom: 11%;
+  transform: translateX(-50%);
+  z-index: 70;
+  width: min(560px, calc(100% - 32px));
+  background: rgba(23, 21, 20, 0.94);
+  color: var(--gta-ivory);
+  box-shadow: 0 0 0 2px #000, 0 0 0 5px var(--gta-gold);
+  padding: 14px 18px 12px;
+  cursor: pointer;
+  font-family: var(--font-hud);
+}
+
+#cameo-box .who {
+  font-family: var(--font-display);
+  letter-spacing: 0.14em;
+  font-size: 28px;
+  color: var(--gta-gold);
+  line-height: 1;
+}
+
+#cameo-box .line {
+  margin: 8px 0 4px;
+  font-size: 22px;
+  line-height: 1.25;
+}
+
+#cameo-box .hint {
+  text-align: right;
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+body.cameo-cinematic::before,
+body.cameo-cinematic::after {
+  content: '';
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: clamp(34px, 6.5vh, 74px);
+  z-index: 60;
+  pointer-events: none;
+  background: #050505;
+  animation: cameo-letterbox-in 280ms ease-out both;
+}
+
+body.cameo-cinematic::before { top: 0; }
+body.cameo-cinematic::after { bottom: 0; }
+
+body.cameo-cinematic .hud,
+body.cameo-cinematic #camera-switch,
+body.cameo-cinematic #cameo-layer {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease;
+}
+
+body.cameo-cinematic #cameo-box {
+  bottom: max(9%, calc(clamp(34px, 6.5vh, 74px) + 18px));
+}
+
+@keyframes cameo-letterbox-in {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.cameo-cinematic::before,
+  body.cameo-cinematic::after { animation: none; }
+}
+
+#pistol-crosshair {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 34px;
+  height: 34px;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.98;
+}
+#pistol-crosshair[hidden] { display: none; }
+#pistol-crosshair i {
+  position: absolute;
+  background: var(--gta-ivory);
+  box-shadow: 0 0 0 1px #000, 0 0 4px #000;
+}
+#pistol-crosshair i:nth-child(1),
+#pistol-crosshair i:nth-child(2) { width: 10px; height: 2px; top: 16px; }
+#pistol-crosshair i:nth-child(1) { left: 0; }
+#pistol-crosshair i:nth-child(2) { right: 0; }
+#pistol-crosshair i:nth-child(3),
+#pistol-crosshair i:nth-child(4) { width: 2px; height: 10px; left: 16px; }
+#pistol-crosshair i:nth-child(3) { top: 0; }
+#pistol-crosshair i:nth-child(4) { bottom: 0; }
+
+#pistol-ammo {
+  position: fixed;
+  top: 62px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 16;
+  pointer-events: none;
+  text-align: center;
+  white-space: nowrap;
+  font-family: var(--font-hud);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  font-size: 22px;
+  color: var(--gta-ivory);
+  text-shadow: 0 2px 0 #000, 1px 1px 0 #000;
+}
+#pistol-ammo[hidden] { display: none; }
+
+#wanted-stars {
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 18;
+  display: flex;
+  gap: 4px;
+  pointer-events: none;
+}
+#wanted-stars svg {
+  width: 28px;
+  height: 28px;
+  fill: rgba(23, 21, 20, 0.55);
+  stroke: var(--gta-ivory);
+  stroke-width: 1.4;
+  filter: drop-shadow(0 2px 0 #000);
+}
+#wanted-stars svg.is-on { fill: var(--gta-gold); stroke: #3a2508; }
+
+#wanted-health {
+  position: fixed;
+  top: 46px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 18;
+  width: 156px;
+  height: 8px;
+  pointer-events: none;
+  background: rgba(23, 21, 20, 0.72);
+  box-shadow: 0 0 0 2px #000;
+}
+#wanted-health span {
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform-origin: left center;
+  background: #c4473a;
+}
+#wanted-health.is-low span { background: #ff5a3c; }
+
+#wasted {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  pointer-events: auto;
+  background: rgba(120, 12, 16, 0.28);
+  box-shadow: inset 0 0 180px 40px rgba(90, 0, 0, 0.72);
+}
+#wasted[hidden] { display: none; }
+
+/* Keep the combat readout off the phone, the street signs, and an open handset. */
+body:has(#game-phone.is-open) #wanted-stars,
+body:has(#game-phone.is-open) #wanted-health,
+body:has(#game-phone.is-open) #pistol-ammo,
+body:has(#game-phone.is-open) #pistol-crosshair {
+  visibility: hidden;
+}
+body.riding-transit #wanted-stars,
+body.in-subway #wanted-stars { top: 108px; }
+body.riding-transit #wanted-health,
+body.in-subway #wanted-health { top: 140px; }
+body.riding-transit #pistol-ammo,
+body.in-subway #pistol-ammo { top: 156px; }
+#wasted p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(92px, 16vw, 168px);
+  letter-spacing: 0.16em;
+  line-height: 0.85;
+  color: #f4e9d5;
+  text-shadow: 4px 4px 0 #000, -2px 0 0 #000, 0 6px 0 rgba(0, 0, 0, 0.45);
+  animation: wasted-flash 0.18s steps(2, end) 3;
+}
+@keyframes wasted-flash {
+  50% { opacity: 0.35; }
+}
+
+/* GTA-era HUD pass: squared corners, warm ivory type and olive/amber controls. */
+.hud-top-right .panel,
+.settings-panel,
+.popover,
+.ride-hud,
+.ride-prompt,
+.vehicle-interaction-prompt {
+  border: 1px solid rgba(207, 174, 79, .62);
+  border-radius: 2px;
+  background: linear-gradient(180deg, rgba(31, 39, 27, .96), rgba(10, 14, 10, .96));
+  box-shadow: 3px 3px 0 rgba(0,0,0,.48), inset 0 1px rgba(255,231,144,.12);
+}
+.tool-btn,.time-btn,.camera-current,.icon-btn { border-radius: 2px; font-family: 'Barlow Condensed', Arial, sans-serif; letter-spacing: .04em; text-transform: uppercase; }
+.tool-btn:hover,.tool-btn.is-open,.time-btn:hover,.camera-current:hover { color: #ffe28a; background: rgba(185, 143, 42, .18); }
+.time-btn.active,.time-btn.active:hover { color: #151a0e; background: #d3a83f; }
+.popover { padding: 5px; }
+.pop-title { color: #d5ae50; font-family: 'Bebas Neue', Impact, sans-serif; letter-spacing: .13em; }
+.pop-item { border-radius: 1px; color: #e9dfbe; }
+.pop-item:hover { color: #fff0ac; background: rgba(185, 143, 42, .18); }
+.radar { width: 288px; height: 184px; border: 2px solid #b09245; border-radius: 2px; background: #101710; box-shadow: 3px 3px 0 rgba(0,0,0,.5), inset 0 0 0 1px rgba(231,209,122,.18); }
+.radar::before { content: 'RADAR'; position: absolute; z-index: 1; left: 8px; bottom: 7px; color: rgba(239,221,155,.78); font: 800 10px/1 'Barlow Condensed', Arial, sans-serif; letter-spacing: .14em; text-shadow: 1px 1px #000; pointer-events: none; }
+.radar::after { border-radius: 0; box-shadow: inset 0 0 0 1px rgba(233,210,118,.28), inset 0 0 25px rgba(0,0,0,.6); }
+.radar-north { width: 18px; height: 18px; border-radius: 1px; color: #1c1b10; background: #d7b04a; box-shadow: 1px 1px 0 #000; }
+.radar-key { border-radius: 1px; color: #ead69a; background: rgba(5,9,5,.82); }
+.location-place,.location-near,.controls-hint { font-family: 'Barlow Condensed', Arial, sans-serif; letter-spacing: .08em; text-shadow: 2px 2px 0 #000; }
+.street-sign { border-radius: 1px; background: linear-gradient(#467b42,#1c4927); outline: 2px solid #e9e6c7; box-shadow: 2px 2px 0 #000; }
+#wasted { background: rgba(78, 7, 12, .46); box-shadow: inset 0 0 180px 40px rgba(70,0,0,.84); }
+#wasted p { animation: wasted-flash .18s steps(2,end) 4, wasted-drop .42s cubic-bezier(.18,.8,.2,1) both; }
+@keyframes wasted-drop { from { opacity: 0; transform: scale(1.24) translateY(-18px); } to { opacity: 1; transform: scale(1) translateY(0); } }
