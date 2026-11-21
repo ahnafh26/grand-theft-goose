@@ -23,3 +23,7 @@ tools/prop-src/
 # local agent and design-tool state
 .claude/
 .impeccable/
+tools/data-waterloo/
+HANDOFF-WATERLOO.md
+.env
+.env.*

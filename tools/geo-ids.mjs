@@ -20,7 +20,7 @@ export const byOsmKey = (a, b) => RANK[osmType(a)] - RANK[osmType(b)] || a.id - 
 
 // 3D Massing editions read by the build -> the dataset part of their IDs. A record number holds only within its edition
 // (the shapefile has no feature ID column): a new edition is a new dataset, its IDs reached through aliases.
-const MASSING_EDITIONS = { '3DMassingShapefile_2025_WGS84': 'to-3dmassing-2025' };
+const MASSING_EDITIONS = { '3DMassingShapefile_2025_WGS84': 'to-3dmassing-2025', 'osm-waterloo-2026': 'wl-osm-buildings-2026' };
 export function massingDataset(massing) {
   const ds = MASSING_EDITIONS[massing.edition];
   if (!ds) throw new Error(`massing.json edition ${JSON.stringify(massing.edition)} has no ID dataset: re-run tools/fetch-massing.mjs, or add the edition to MASSING_EDITIONS`);

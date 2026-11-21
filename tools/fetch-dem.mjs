@@ -10,8 +10,8 @@ const DATA = process.env.GEO_DATA || fileURLToPath(new URL('data/', import.meta.
 const OUT = `${DATA}/dem.i16`;
 const META = `${DATA}/dem-meta.json`;
 const Z = 13;
-// About 26 km round downtown: the lake to the south, the rise to the Oak Ridges north, Mississauga & Scarborough
-const S = 43.40, N = 43.88, W = -79.70, E = -79.05;
+// About 20 km round Waterloo
+const S = 43.40, N = 43.54, W = -80.68, E = -80.40; // Waterloo, Kitchener and the countryside around them
 
 const tileX = (lon) => ((lon + 180) / 360) * 2 ** Z;
 const tileY = (lat) => {
@@ -109,4 +109,4 @@ fs.writeFileSync(META, JSON.stringify({ source: 'AWS Terrain Tiles (terrarium), 
 let lo = Infinity, hi = -Infinity;
 for (const v of h) { if (v / 10 < lo) lo = v / 10; if (v / 10 > hi) hi = v / 10; }
 console.log(`[dem] ${nLat} x ${nLon} grid, ${lo.toFixed(0)}..${hi.toFixed(0)} m; tiles span ${latOf(ty1 + 1).toFixed(3)}..${latOf(ty0).toFixed(3)}N ${lonOf(tx0).toFixed(3)}..${lonOf(tx1 + 1).toFixed(3)}E`);
-console.log(`[dem] CN Tower base: ${heightAt(43.6426, -79.3871).toFixed(0)} m; Bloor & Yonge: ${heightAt(43.6709, -79.3866).toFixed(0)} m; Scarborough Bluffs top: ${heightAt(43.706, -79.233).toFixed(0)} m`);
+console.log(`[dem] UW Ring Road: ${heightAt(43.4710, -80.5440).toFixed(0)} m; Laurier: ${heightAt(43.4738, -80.5275).toFixed(0)} m; Uptown square: ${heightAt(43.4643, -80.5204).toFixed(0)} m`);

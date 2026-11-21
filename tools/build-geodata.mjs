@@ -55,9 +55,9 @@ const BIN = ARGS.bin || (ARGS.out ? OUT.replace(/\.js$/, '') + '.bin' : fileURLT
 // the identity sidecar beside it (tools/geo-ids.mjs): toronto-geodata.js -> toronto-geodata-ids.js
 const IDS_OUT = ARGS.ids || OUT.replace(/\.js$/, '-ids.js');
 // the mapped poles packed beside GEO (tools/build-poles.mjs's script, not rebuilt here)
-const POLES_IN = ARGS.poles || fileURLToPath(new URL('../js/toronto-poles.js', import.meta.url));
+const POLES_IN = ARGS.poles || fileURLToPath(new URL('../js/waterloo-poles.js', import.meta.url));
 // and the parked cars (tools/build-parked-cars.mjs's script, not rebuilt here)
-const PARKED_IN = ARGS.parked || fileURLToPath(new URL('../js/toronto-parked-cars.js', import.meta.url));
+const PARKED_IN = ARGS.parked || fileURLToPath(new URL('../js/waterloo-parked-cars.js', import.meta.url));
 const q = (v) => Math.round(v * 10) / 10;
 const flat = (pts) => pts.flatMap(([x, z]) => [q(x), q(z)]);
 

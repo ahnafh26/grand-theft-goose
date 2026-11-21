@@ -4,7 +4,7 @@
 // GEO.streetTrees: flat [x, z, model index, height dm, ...] with TREE_MODELS below.
 import fs from 'node:fs';
 import path from 'node:path';
-import { toWorld, log } from './geo-base.mjs';
+import { toWorld, log, load } from './geo-base.mjs';
 import { inDetail } from './geo-roads.mjs';
 import { fields } from './geo-props.mjs';
 
@@ -43,7 +43,27 @@ function modelFor(form, dbh, r) {
 const heightOf = (form, dbh) => Math.max(3, Math.min(form === 'small' ? 9 : 26, (form === 'small' ? 2.5 : 4) + dbh * (form === 'small' ? 0.18 : 0.28)));
 
 export const streetTrees = [];
-{
+if (!fs.existsSync(path.join(RAW, 'street-trees.csv'))) {
+  // Waterloo: the trees mapped in OpenStreetMap (natural=tree), with their genus / species / leaf type / height tags
+  let el = [];
+  try { el = load('osm_props.json').elements.filter((e) => e.tags?.natural === 'tree'); } catch { el = []; }
+  const forms = {};
+  for (const e of el) {
+    const [x, z] = toWorld(e.lon, e.lat);
+    if (!inDetail(x, z)) continue;
+    const t = e.tags;
+    const name = t['genus:en'] || t['species:en'] || t.genus || t.species || t.taxon || '';
+    const form = t.leaf_type === 'needleleaved' ? 'conifer' : formOf(name.trim());
+    forms[form] = (forms[form] || 0) + 1;
+    const r = Math.abs(Math.sin(x * 12.9898 + z * 78.233) * 43758.5453) % 1;
+    // trunk size from the circumference tag (m), else a plausible mix
+    const circ = parseFloat(t.circumference);
+    const dbh = circ > 0 ? (circ * 100) / Math.PI : 14 + r * 40;
+    const h = parseFloat(t.height) > 0 ? parseFloat(t.height) : heightOf(form, dbh);
+    streetTrees.push(Math.round(x * 10) / 10, Math.round(z * 10) / 10, modelFor(form, dbh, r), Math.round(h * 10));
+  }
+  log(`street trees (OpenStreetMap): ${streetTrees.length / 4} (${Object.entries(forms).map(([k, v]) => `${k} ${v}`).join(', ')})`);
+} else {
   const lines = fs.readFileSync(path.join(RAW, 'street-trees.csv'), 'utf8').split(/\r?\n/);
   const head = fields(lines[0]);
   const NAME = head.indexOf('COMMON_NAME'), DBH = head.indexOf('DBH_TRUNK'), GEOM = head.indexOf('geometry');

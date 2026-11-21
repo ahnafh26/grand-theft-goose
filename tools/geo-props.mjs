@@ -23,7 +23,28 @@ export function fields(line) {
   out.push(cur);
   return out;
 }
+// Waterloo has no city CSV exports in this pipeline: street props come from OpenStreetMap (osm_props.json), by kind
+let osmProps = null;
+function osmPoints(test) {
+  if (!osmProps) {
+    try { osmProps = load('osm_props.json').elements; } catch { osmProps = []; }
+  }
+  const pts = [];
+  for (const e of osmProps) {
+    if (e.lat === undefined || !test(e.tags || {})) continue;
+    const [x, z] = toWorld(e.lon, e.lat);
+    if (inDetail(x, z)) pts.push(q(x), q(z));
+  }
+  return pts;
+}
+const OSM_FALLBACK = {
+  'water-hydrants.csv': (t) => t.emergency === 'fire_hydrant',
+  'bicycle-parking.csv': (t) => t.amenity === 'bicycle_parking',
+  'transit-shelters.csv': (t) => (t.highway === 'bus_stop' && t.shelter === 'yes') || (t.amenity === 'shelter' && t.shelter_type === 'public_transport'),
+  'litter-receptacles.csv': (t) => t.amenity === 'waste_basket' || (t.amenity === 'recycling' && t.recycling_type === 'container'),
+};
 function cityPoints(file, keep = () => true) {
+  if (!fs.existsSync(path.join(RAW, file))) return OSM_FALLBACK[file] ? osmPoints(OSM_FALLBACK[file]) : [];
   const lines = fs.readFileSync(path.join(RAW, file), 'utf8').split(/\r?\n/);
   const head = fields(lines[0]);
   const gi = head.indexOf('geometry');

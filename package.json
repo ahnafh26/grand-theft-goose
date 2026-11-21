@@ -29,5 +29,8 @@
   "overrides": {
     "@takram/three-atmosphere": "$@takram/three-atmosphere",
     "@takram/three-geospatial": "$@takram/three-geospatial"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }

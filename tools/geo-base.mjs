@@ -24,8 +24,8 @@ const log = (...a) => console.log('[geodata]', ...a);
 // 1. FRAME
 // =====================================================================================================================
 // Tangent plane at the Central Area (WGS84 radii of curvature at its latitude)
-const LAT0 = 43.6453;
-const LON0 = -79.3806;
+const LAT0 = 43.4725; // Waterloo: University Ave W by Wilfrid Laurier
+const LON0 = -80.531;
 const A = 6378137.0;
 const E2 = 6.69437999014e-3;
 const PHI0 = (LAT0 * Math.PI) / 180;
@@ -299,7 +299,8 @@ const osmPlaces = load('osm_places.json');
   // Bearing: length-weighted median direction (mod 90°) of the straight road pieces in the Central Business District,
   // whose avenues (Independence & Constitution Aves, Moshood Abiola Way...) run along the National Axis and whose
   // cross streets (Shehu Shagari Way, Herbert Macaulay Way...) square with them
-  const CORE = { s: 43.645, n: 43.668, w: -79.405, e: -79.375 };
+  // Waterloo: the main roads between UW, Laurier and Uptown (no single grid; take the dominant one)
+  const CORE = { s: 43.458, n: 43.484, w: -80.562, e: -80.512 };
   const angs = [];
   for (const e of osmRoads.elements) {
     const t = e.tags || {};
@@ -333,9 +334,9 @@ const osmPlaces = load('osm_places.json');
   THETA = (north * Math.PI) / 180;
 
   // Origin: Union Station's Front Street entrance (the downtown grid's centre for this world)
-  const o = [-79.3806, 43.6453];
+  const o = [-80.531, 43.4725]; // University Ave W by Laurier
   ORIGIN = gridUV(o[0], o[1]);
-  log(`grid bearing ${(THETA * 180 / Math.PI).toFixed(2)}° (avenues ${(THETA * 180 / Math.PI + 90).toFixed(2)}°), origin Union Station at ${o[1].toFixed(5)}N ${o[0].toFixed(5)}E`);
+  log(`grid bearing ${(THETA * 180 / Math.PI).toFixed(2)}° (avenues ${(THETA * 180 / Math.PI + 90).toFixed(2)}°), origin University Ave W at ${o[1].toFixed(5)}N ${o[0].toFixed(5)}E`);
 }
 
 const geo = { THETA, ORIGIN, LAT0, LON0, KX, KY };

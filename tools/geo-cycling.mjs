@@ -156,7 +156,8 @@ function osmAt(x, z, dx, dz) {
 // ---------------------------------------------------------------------------------------------------------------------
 // The City's segments
 // ---------------------------------------------------------------------------------------------------------------------
-const features = JSON.parse(fs.readFileSync(FILE, 'utf8')).features;
+// Waterloo: no city cycling-network export yet, so no bikeway paint (OSM roads still carry the trails)
+const features = fs.existsSync(FILE) ? JSON.parse(fs.readFileSync(FILE, 'utf8')).features : [];
 const inBox = (x, z, m = 0) => x > DETAIL.x0 + m && x < DETAIL.x1 - m && z > DETAIL.z0 + m && z < DETAIL.z1 - m;
 // Each line resampled every `step` m: [{ x, z, dx, dz }]
 function resample(pts, step) {
