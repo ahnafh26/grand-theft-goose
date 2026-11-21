@@ -559,6 +559,11 @@ function buildCityBlocks(scene) {
     const [u0, u1, v0, v1] = parts[0];
     const local = (u, v) => [cx + u * cs + v * sn, cz - u * sn + v * cs];
     const detail = { cx, cz, tanks: [], acs: [], dishes: [], fireEscapes: [], ry: ang };
+    // the walls' 3D relief, built near the camera (sills & lintels, floor ledges, fins: facadeRelief below)
+    if (edges && mat < 2 || edges && mat >= 5) {
+      const walls = edges.filter((e) => e.kind >= 0 && e.kind !== WALL_KINDS.lotLine && e.len >= 2.5);
+      if (walls.length) detail.relief = { mat, h, base: foot ? Math.min(foot.base, h - 0.5) : 0, walls, paint: paintHex };
+    }
     // --- Fire escapes (js/fire-escapes.js, mrdoob's 8c17250): on the older brick walk-ups and main-street blocks of
     // 3 to 8 storeys, about two in five, on the rear wall (the lane side), never the street front; a landing per floor
     // from the 2nd up, one escape per 15 m of wall
@@ -627,7 +632,7 @@ function buildCityBlocks(scene) {
         detail.dishes.push({ x: dx, y: topY + (roof === 1 ? 0.2 : 0), z: dz, ry: rnd() * Math.PI * 2 });
       }
     }
-    if (detail.tanks.length || detail.acs.length || detail.dishes.length || detail.fireEscapes.length) {
+    if (detail.tanks.length || detail.acs.length || detail.dishes.length || detail.fireEscapes.length || detail.relief) {
       quadtree.insert(detail);
       allBlocks.push(detail);
     }
@@ -746,6 +751,75 @@ function buildCityBlocks(scene) {
     m.count = 0;
     group.add(m);
   }
+  // The walls' relief, matched to each facade style's window grid (facadeCell in tsl-materials.js: whole bays between
+  // the corner piers, storeys from the ground): a stone sill & a lintel at each punched window, a concrete ledge along
+  // each band of ribbon windows, and the fins of the ribbed & slit walls standing off the wall. Near the camera only.
+  const RELIEF_R = 190; // m
+  const MAX_SILLS = 24000, MAX_LEDGES = 6000, MAX_FINS = 16000;
+  const reliefMat = new THREE.MeshStandardNodeMaterial({ roughness: 0.82, metalness: 0.0 });
+  const unitBox = new THREE.BoxGeometry(1, 1, 1);
+  const sillInst = new THREE.InstancedMesh(unitBox, reliefMat, MAX_SILLS);
+  const ledgeInst = new THREE.InstancedMesh(unitBox, reliefMat, MAX_LEDGES);
+  const finInst = new THREE.InstancedMesh(unitBox, reliefMat, MAX_FINS);
+  for (const m of [sillInst, ledgeInst, finInst]) {
+    m.castShadow = m.receiveShadow = true;
+    m.frustumCulled = false;
+    m.count = 0;
+    m.setColorAt(0, new THREE.Color(1, 1, 1));
+    group.add(m);
+  }
+  sillInst.name = 'FacadeSills'; ledgeInst.name = 'FacadeLedges'; finInst.name = 'FacadeFins';
+  const STONE = new THREE.Color(0xd9d3c6);
+  const reliefColour = new THREE.Color();
+  const rq = new THREE.Quaternion(), rUp = new THREE.Vector3(0, 1, 0), rPos = new THREE.Vector3(), rScale = new THREE.Vector3(), rM = new THREE.Matrix4();
+  // a box on the wall: `s` m along it from a, its bottom at y, w wide, ht tall, standing `depth` out of it
+  function wallBox(inst, i, e, s, y, w, ht, depth) {
+    const ux = (e.bx - e.ax) / e.len, uz = (e.bz - e.az) / e.len;
+    rq.setFromAxisAngle(rUp, Math.atan2(e.nx, e.nz));
+    rPos.set(e.ax + ux * s + e.nx * (depth / 2 - 0.02), y + ht / 2, e.az + uz * s + e.nz * (depth / 2 - 0.02));
+    rScale.set(w, ht, depth);
+    rM.compose(rPos, rq, rScale);
+    inst.setMatrixAt(i, rM);
+  }
+  const reliefCount = { s: 0, l: 0, f: 0 };
+  function facadeRelief(d) {
+    const R = d.relief;
+    const o = facadeStyles[R.mat][1];
+    const fh = o.floorHeight, ww = o.windowWidth, rx = o.windowRatioX ?? 0.46, ry = o.windowRatioY ?? 0.5, cp = o.cornerPier ?? 0.7;
+    reliefColour.setHex(R.paint).multiplyScalar(1.08);
+    const ribbed = R.mat === 11 || R.mat === 7, ribbon = rx > 0.85;
+    const floors = Math.floor((R.h - 0.6) / fh);
+    for (const e of R.walls) {
+      const pier = cp > 0 ? Math.min(cp, e.len * 0.2) : 0, inner = e.len - 2 * pier;
+      const bays = Math.max(Math.round(inner / ww), 1), bw = inner / bays;
+      if (ribbed) {
+        // fins between the bays, the wall's full height above its base
+        for (let b = 0; b <= bays && reliefCount.f < MAX_FINS; b++) {
+          wallBox(finInst, reliefCount.f, e, pier + b * bw, R.base + 0.3, Math.max(0.12, bw * (1 - rx) * 0.55), R.h - R.base - 0.6, R.mat === 11 ? 0.38 : 0.28);
+          finInst.setColorAt(reliefCount.f++, reliefColour);
+        }
+        continue;
+      }
+      for (let k = 1; k < floors; k++) {
+        const y0 = k * fh + fh * (1 - ry) / 2, y1 = (k + 1) * fh - fh * (1 - ry) / 2;
+        if (y0 < R.base + 0.2) continue;
+        if (ribbon) {
+          // a concrete ledge under each band of windows, the wall's length
+          if (reliefCount.l >= MAX_LEDGES) break;
+          wallBox(ledgeInst, reliefCount.l, e, e.len / 2, y0 - 0.22, e.len, 0.22, 0.26);
+          ledgeInst.setColorAt(reliefCount.l++, reliefColour);
+          continue;
+        }
+        for (let b = 0; b < bays && reliefCount.s + 1 < MAX_SILLS; b++) {
+          const mid = pier + (b + 0.5) * bw, w = bw * rx;
+          wallBox(sillInst, reliefCount.s, e, mid, y0 - 0.09, w + 0.16, 0.09, 0.16);
+          sillInst.setColorAt(reliefCount.s++, STONE);
+          wallBox(sillInst, reliefCount.s, e, mid, y1, w + 0.1, 0.13, 0.07);
+          sillInst.setColorAt(reliefCount.s++, STONE);
+        }
+      }
+    }
+  }
   // Wrought-iron fire escapes: one instanced escape at every distance, nearby ones casting shadows (fire-escapes.js)
   const fireEscapeSystem = window.CITY.createFireEscapes(group);
 
@@ -766,7 +840,9 @@ function buildCityBlocks(scene) {
     activeCount = near.length;
     let nt = 0, na = 0, nd = 0;
     fireEscapeSystem.begin(fx, fz);
+    reliefCount.s = reliefCount.l = reliefCount.f = 0;
     for (const d of near) {
+      if (d.relief && (d.cx - fx) ** 2 + (d.cz - fz) ** 2 < RELIEF_R * RELIEF_R) facadeRelief(d);
       for (const fe of d.fireEscapes || []) fireEscapeSystem.add(fe);
       for (const t of d.tanks) {
         if (nt >= MAX_TANKS) break;
@@ -808,6 +884,11 @@ function buildCityBlocks(scene) {
     flagRange(acInst.instanceMatrix, na);
     flagRange(dishInst.instanceMatrix, nd);
     fireEscapeSystem.end();
+    sillInst.count = reliefCount.s; ledgeInst.count = reliefCount.l; finInst.count = reliefCount.f;
+    for (const [m, n] of [[sillInst, reliefCount.s], [ledgeInst, reliefCount.l], [finInst, reliefCount.f]]) {
+      flagRange(m.instanceMatrix, n);
+      if (m.instanceColor) flagRange(m.instanceColor, n);
+    }
   }
   update(0, 0, true);
 
