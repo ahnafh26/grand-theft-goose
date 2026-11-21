@@ -1,0 +1,1016 @@
+{
+ "241 pizza": {
+  "name": "241 Pizza",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476864,
+  "lon": -80.524889,
+  "bg": 16777215,
+  "ink": 14820122,
+  "type": "box",
+  "text": "241 PIZZA"
+ },
+ "247 king dental": {
+  "name": "247 King Dental",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476117,
+  "lon": -80.525763,
+  "bg": 4868942,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "247 KING DENTAL"
+ },
+ "7 eleven": {
+  "name": "7-Eleven (with Canada Post counter)",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476677,
+  "lon": -80.524775,
+  "bg": 16777215,
+  "ink": 16089632,
+  "type": "box",
+  "text": "7-ELEVEn"
+ },
+ "accommod8u": {
+  "name": "Accommod8u",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.472397,
+  "lon": -80.536038
+ },
+ "akkila dental clinic": {
+  "name": "Akkila Dental Clinic",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.47244,
+  "lon": -80.537556
+ },
+ "asakusa": {
+  "name": "Asakusa",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.472792,
+  "lon": -80.536125
+ },
+ "auntys kitchen": {
+  "name": "Aunty's Kitchen | Restaurant & Catering",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472223,
+  "lon": -80.537257,
+  "bg": 4079942,
+  "ink": 14100014,
+  "type": "letters",
+  "text": "AUNTY'S KITCHEN"
+ },
+ "baba grill": {
+  "name": "Baba Grill (Baba Chicken Grill)",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472711,
+  "lon": -80.538084,
+  "bg": 1973790,
+  "ink": 13901866,
+  "type": "letters",
+  "text": "Baba & Grill"
+ },
+ "banh mi saigon": {
+  "name": "Banh Mi Saigon",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.47219,
+  "lon": -80.539149
+ },
+ "bb q village": {
+  "name": "bb.q Village",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.473,
+  "lon": -80.534431
+ },
+ "best value optical": {
+  "name": "Best Value Optical",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472151,
+  "lon": -80.536742
+ },
+ "bmo bank of montreal": {
+  "name": "BMO Bank of Montreal",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477876,
+  "lon": -80.525655
+ },
+ "booster juice": {
+  "name": "Booster Juice",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476213,
+  "lon": -80.525479,
+  "bg": 4868942,
+  "ink": 16181834,
+  "type": "letters",
+  "text": "Booster Juice"
+ },
+ "brown donkatsu": {
+  "name": "Brown Donkatsu",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.472456,
+  "lon": -80.53595
+ },
+ "burger king": {
+  "name": "Burger King",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.472549,
+  "lon": -80.535695
+ },
+ "burrito boyz": {
+  "name": "Burrito Boyz",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477,
+  "lon": -80.52491,
+  "bg": 15132387,
+  "ink": 13115434,
+  "type": "letters"
+ },
+ "campus convenience": {
+  "name": "Campus Convenience",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.472503,
+  "lon": -80.535821
+ },
+ "campus eyes": {
+  "name": "Campus Eyes",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.475598,
+  "lon": -80.524471
+ },
+ "campus pizza": {
+  "name": "Campus Pizza",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472245,
+  "lon": -80.538092,
+  "bg": 16179738,
+  "ink": 13901866,
+  "type": "box"
+ },
+ "chatime": {
+  "name": "Chatime",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477286,
+  "lon": -80.525591,
+  "bg": 7225251,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "Chatime"
+ },
+ "chungchun rice hot dog": {
+  "name": "Chungchun Rice Hot Dog",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.47222,
+  "lon": -80.538161,
+  "bg": 16777215,
+  "ink": 1710618,
+  "type": "box",
+  "text": "chungchun RICE HOT-DOG"
+ },
+ "churchs texas chicken": {
+  "name": "Church's Texas Chicken",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476196,
+  "lon": -80.525557,
+  "bg": 4868942,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "CHURCH'S TEXAS CHICKEN"
+ },
+ "city pizza": {
+  "name": "City Pizza",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.475604,
+  "lon": -80.524543
+ },
+ "cluck clucks": {
+  "name": "Cluck Clucks (Chicken & Waffles)",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472189,
+  "lon": -80.537313,
+  "bg": 15222060,
+  "ink": 16777215,
+  "type": "box",
+  "text": "CLUCK CLUCKS CHICKEN & WAFFLES"
+ },
+ "crossroads board game cafe": {
+  "name": "Crossroads Board Game Cafe (upper floor) - not in OSM",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.47715,
+  "lon": -80.5249,
+  "bg": 1710618,
+  "ink": 16777215,
+  "type": "box",
+  "text": "CROSSROADS Board Game Cafe"
+ },
+ "d spot dessert cafe": {
+  "name": "D Spot Dessert Cafe",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472466,
+  "lon": -80.537484,
+  "bg": 1710618,
+  "ink": 16777215,
+  "type": "box",
+  "text": "d spot DESSERTS"
+ },
+ "dine stination": {
+  "name": "Dine Stination (formerly Waterloo Star Chinese Hotpot & BBQ - closed)",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472835,
+  "lon": -80.537783,
+  "closed": true,
+  "bg": 16777215,
+  "ink": 1710618,
+  "type": "box"
+ },
+ "fantastic wok": {
+  "name": "Fantastic! Wok",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472948,
+  "lon": -80.53751,
+  "bg": 16777215,
+  "ink": 13115434,
+  "type": "box",
+  "text": "知味餐厅 Fantastic! WOK"
+ },
+ "farah foods": {
+  "name": "Farah Foods (King St)",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.475773,
+  "lon": -80.524558,
+  "bg": 1710618,
+  "ink": 16777215,
+  "type": "box",
+  "text": "24 FARAH (FOODS)"
+ },
+ "fat bastard burrito co": {
+  "name": "Fat Bastard Burrito Co.",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477207,
+  "lon": -80.525586,
+  "bg": 7304313,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "FAT BASTARD BURRITO CO."
+ },
+ "fresh burrito": {
+  "name": "Fresh Burrito",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476253,
+  "lon": -80.525375,
+  "bg": 4868942,
+  "ink": 8241730,
+  "type": "letters"
+ },
+ "freshii": {
+  "name": "Freshii",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477163,
+  "lon": -80.52558,
+  "bg": 4160047,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "freshii EAT. ENERGIZE."
+ },
+ "ginos pizza": {
+  "name": "Gino's Pizza",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476731,
+  "lon": -80.525349,
+  "bg": 3816770,
+  "ink": 14820122,
+  "type": "letters",
+  "text": "GINO'S PIZZA"
+ },
+ "gladiator burger steak": {
+  "name": "Gladiator Burger & Steak",
+  "plaza": "NOT IN EITHER PLAZA"
+ },
+ "gols lanzhou noodle": {
+  "name": "Gol's Lanzhou Noodle",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.472701,
+  "lon": -80.53614
+ },
+ "gyubee japanese grill": {
+  "name": "Gyubee Japanese Grill",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476638,
+  "lon": -80.525325,
+  "bg": 3816770,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "GYUBEE JAPANESE GRILL"
+ },
+ "hakka nation": {
+  "name": "Hakka Nation",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.471517,
+  "lon": -80.538317,
+  "bg": 2829099,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "HAKKA NATION"
+ },
+ "harveys": {
+  "name": "Harvey's",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.471723,
+  "lon": -80.538779,
+  "bg": 16777215,
+  "ink": 13901866,
+  "type": "box",
+  "text": "HARVEY'S"
+ },
+ "hazukido": {
+  "name": "Hazukido (Japanese bakery cafe; new, OSM missing)",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.47215,
+  "lon": -80.53912,
+  "bg": 2042432,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "HAZUKIDO (partially seen as 'HAZU...')"
+ },
+ "heytea": {
+  "name": "Heytea",
+  "plaza": "Adjacent to University Shops Plaza: Elora House podium (250 Phillip St, ground-floor retail)",
+  "lat": 43.473104,
+  "lon": -80.536779
+ },
+ "hi yogurt": {
+  "name": "Hi Yogurt",
+  "plaza": "Adjacent to University Shops Plaza: Elora House podium (250 Phillip St, ground-floor retail)"
+ },
+ "home garden": {
+  "name": "Home Garden (Taste of Taiwan)",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472413,
+  "lon": -80.537629,
+  "bg": 8006174,
+  "ink": 16777215,
+  "type": "box"
+ },
+ "hooka house": {
+  "name": "Hooka House (hookah lounge)",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472079,
+  "lon": -80.537169,
+  "bg": 4079942,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "HOOKA HOUSE (assumed)"
+ },
+ "indian sweet master": {
+  "name": "Indian Sweet Master",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.471565,
+  "lon": -80.538385,
+  "bg": 13111342,
+  "ink": 16777215,
+  "type": "box",
+  "text": "Indian Sweet Master"
+ },
+ "ink den": {
+  "name": "Ink Den (tattoo)",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.475627,
+  "lon": -80.524498
+ },
+ "ipho": {
+  "name": "iPho",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.472645,
+  "lon": -80.5361
+ },
+ "ipotato": {
+  "name": "iPotato",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472375,
+  "lon": -80.538808,
+  "bg": 14273971,
+  "ink": 15906076,
+  "type": "letters",
+  "text": "iPOTATO"
+ },
+ "izna poke plus": {
+  "name": "Izna Poke Plus",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.471673,
+  "lon": -80.538579,
+  "bg": 16777215,
+  "ink": 13901866,
+  "type": "box"
+ },
+ "jersey mikes subs": {
+  "name": "Jersey Mike's Subs (in former Starbucks corner unit)",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476311,
+  "lon": -80.525243,
+  "bg": 4868942,
+  "ink": 14820122,
+  "type": "letters",
+  "text": "Jersey Mike's SUBS"
+ },
+ "kabob hut": {
+  "name": "Kabob Hut",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.471669,
+  "lon": -80.538689,
+  "bg": 13091771,
+  "ink": 13115434,
+  "type": "letters",
+  "text": "KaBob HUT"
+ },
+ "kabob shack": {
+  "name": "Kabob Shack",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.47253,
+  "lon": -80.536109
+ },
+ "kajun chicken seafood": {
+  "name": "Kajun Chicken & Seafood",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477243,
+  "lon": -80.525589,
+  "bg": 7304313,
+  "ink": 14820122,
+  "type": "letters",
+  "text": "Kajun chicken & seafood"
+ },
+ "kims kitchen": {
+  "name": "Kim's Kitchen (halal Korean chicken)",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476935,
+  "lon": -80.524901,
+  "bg": 1710618,
+  "ink": 14820122,
+  "type": "box"
+ },
+ "kismet restaurant": {
+  "name": "Kismet Restaurant (Bangladeshi)",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472603,
+  "lon": -80.537234,
+  "bg": 15913499,
+  "ink": 5974662,
+  "type": "box"
+ },
+ "lazeez shawarma": {
+  "name": "Lazeez Shawarma",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477572,
+  "lon": -80.525652,
+  "bg": 1710618,
+  "ink": 14820122,
+  "type": "letters",
+  "text": "Lazeez Shawarma"
+ },
+ "live switchboard": {
+  "name": "Live Switchboard",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.472616,
+  "lon": -80.536031
+ },
+ "meet fresh": {
+  "name": "Meet Fresh",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.472458,
+  "lon": -80.536207
+ },
+ "mels diner": {
+  "name": "Mel's Diner",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.47297,
+  "lon": -80.535597
+ },
+ "meltwich food co": {
+  "name": "Meltwich Food Co.",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477049,
+  "lon": -80.525562,
+  "bg": 7304313,
+  "ink": 15909376,
+  "type": "letters",
+  "text": "MELTWICH"
+ },
+ "menchies frozen yogurt": {
+  "name": "Menchie's Frozen Yogurt",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476158,
+  "lon": -80.525641,
+  "bg": 4868942,
+  "ink": 14694783,
+  "type": "letters",
+  "text": "menchie's frozen yogurt"
+ },
+ "mengami": {
+  "name": "Mengami",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.471739,
+  "lon": -80.538673
+ },
+ "mizu restaurant": {
+  "name": "Mizu Restaurant",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.472749,
+  "lon": -80.536243
+ },
+ "mochi mochi": {
+  "name": "mochi mochi",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.47285,
+  "lon": -80.534847
+ },
+ "molly blooms irish pub": {
+  "name": "Molly Bloom's Irish Pub",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472996,
+  "lon": -80.537325,
+  "bg": 13088668,
+  "ink": 2046506,
+  "type": "letters",
+  "text": "Molly Bloom's Irish Pub"
+ },
+ "momo": {
+  "name": "momo",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.473041,
+  "lon": -80.535394
+ },
+ "morals village": {
+  "name": "Morals Village (hot pot)",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.47247,
+  "lon": -80.537343,
+  "bg": 13111342,
+  "ink": 16777215,
+  "type": "box",
+  "text": "德庄 MORALS VILLAGE"
+ },
+ "mozys shawarma": {
+  "name": "Mozy's Shawarma",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476129,
+  "lon": -80.52573,
+  "bg": 4868942,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "mozy's AUTHENTIC SHAWARMA"
+ },
+ "mr yin": {
+  "name": "Mr. Yin",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)"
+ },
+ "northern chinese restaurant": {
+  "name": "Northern Chinese Restaurant",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472534,
+  "lon": -80.537187
+ },
+ "nuri village": {
+  "name": "Nuri Village (Korean)",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472361,
+  "lon": -80.537774,
+  "bg": 16111882,
+  "ink": 1710618,
+  "type": "box",
+  "text": "Nuri Village (+ Korean text, phone)"
+ },
+ "onnuri": {
+  "name": "Onnuri",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.473007,
+  "lon": -80.535491
+ },
+ "pair a dice cafe": {
+  "name": "Pair a Dice Cafe (board games)",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477108,
+  "lon": -80.52488,
+  "bg": 1710618,
+  "ink": 12597642,
+  "type": "letters",
+  "text": "PAIR A DICE CAFE"
+ },
+ "pasha lounge": {
+  "name": "Pasha Lounge (hookah)",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476677,
+  "lon": -80.525439,
+  "bg": 3811882,
+  "ink": 12950060,
+  "type": "letters",
+  "text": "PASHA LOUNGE HOOKAH · CIGAR · TOBACCO"
+ },
+ "pennys hot chicken": {
+  "name": "Penny's Hot Chicken",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476782,
+  "lon": -80.525344
+ },
+ "perfect image studio": {
+  "name": "Perfect Image Studio (tattoo & piercing)",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476675,
+  "lon": -80.524569,
+  "bg": 3948356,
+  "ink": 14820122,
+  "type": "letters",
+  "text": "Pi TATTOO PIERCING"
+ },
+ "pharmasave campus pharmacy": {
+  "name": "Pharmasave Campus Pharmacy",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.47183,
+  "lon": -80.538959,
+  "bg": 16777215,
+  "ink": 13901866,
+  "type": "box",
+  "text": "PHARMASAVE Campus Pharmacy"
+ },
+ "philthy phillys": {
+  "name": "Philthy Philly's (Cheesesteaks & Poutinerie) - new, not in OSM",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.4761,
+  "lon": -80.52582,
+  "bg": 4868942,
+  "ink": 15901980,
+  "type": "letters"
+ },
+ "pho anh vu": {
+  "name": "Pho Anh Vu",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.4721,
+  "lon": -80.539235,
+  "bg": 16777215,
+  "ink": 12950060,
+  "type": "letters",
+  "text": "Phở Anh Vu Authentic Vietnamese Cuisine"
+ },
+ "phoenix cannabis": {
+  "name": "Phoenix Cannabis",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472678,
+  "lon": -80.538173
+ },
+ "pin up arcade bar": {
+  "name": "Pin Up Arcade Bar",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476078,
+  "lon": -80.525864,
+  "bg": 1710618,
+  "ink": 15909376,
+  "type": "letters",
+  "text": "ARCADE BAR PIN UP"
+ },
+ "pizza nova": {
+  "name": "Pizza Nova",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.47236,
+  "lon": -80.536139
+ },
+ "poke box": {
+  "name": "Poke Box",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477079,
+  "lon": -80.525569,
+  "bg": 7304313,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "Poke Box (partially visible)"
+ },
+ "popeyes supplements": {
+  "name": "Popeye's Supplements",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472179,
+  "lon": -80.536662,
+  "bg": 16777215,
+  "ink": 1785743,
+  "type": "box",
+  "text": "POPEYE'S SUPPLEMENTS"
+ },
+ "rani chettinad": {
+  "name": "Rani Chettinad - The Indian Kitchen (OSM: 'Reni Chettinand')",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472303,
+  "lon": -80.538987,
+  "bg": 1710618,
+  "ink": 16777215,
+  "type": "box",
+  "text": "Rani Chettinad The Indian Kitchen"
+ },
+ "rbc royal bank": {
+  "name": "RBC Royal Bank",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476046,
+  "lon": -80.524506,
+  "bg": 20901,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "RBC Royal Bank"
+ },
+ "roosters fried chicken more": {
+  "name": "Roosters Fried Chicken & More",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472042,
+  "lon": -80.537092,
+  "bg": 4079942,
+  "ink": 15760418,
+  "type": "letters",
+  "text": "ROOSTERS Fried Chicken & More"
+ },
+ "seoul soul": {
+  "name": "Seoul Soul",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472339,
+  "lon": -80.538897,
+  "bg": 1710618,
+  "ink": 16777215,
+  "type": "box",
+  "text": "SEOUL SOUL (Korean fried chicken)"
+ },
+ "shawarma royal": {
+  "name": "Shawarma Royal(e)",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.47693,
+  "lon": -80.5249,
+  "closed": true
+ },
+ "shawerma plus": {
+  "name": "Shawerma Plus",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472159,
+  "lon": -80.537173,
+  "bg": 4079942,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "Shawerma Plus"
+ },
+ "shinwa asian cuisine": {
+  "name": "Shinwa Asian Cuisine",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472287,
+  "lon": -80.537978,
+  "bg": 13115434,
+  "ink": 16777215,
+  "type": "box",
+  "text": "Shinwa Asian Cuisine"
+ },
+ "slap burgers": {
+  "name": "Slap Burgers",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472793,
+  "lon": -80.537885,
+  "bg": 16777215,
+  "ink": 4176068,
+  "type": "letters",
+  "text": "Slap Burgers"
+ },
+ "smokes poutinerie": {
+  "name": "Smoke's Poutinerie",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477594,
+  "lon": -80.525652,
+  "bg": 7304313,
+  "ink": 14820122,
+  "type": "letters",
+  "text": "SMOKE'S POUTINERIE"
+ },
+ "sowon": {
+  "name": "Sowon (Korean dining)",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.471777,
+  "lon": -80.538869
+ },
+ "starbucks": {
+  "name": "Starbucks (CLOSED Sept 2025)",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.4763,
+  "lon": -80.52525,
+  "closed": true,
+  "bg": 4868942,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "STARBUCKS COFFEE"
+ },
+ "subway": {
+  "name": "Subway",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477123,
+  "lon": -80.525575,
+  "bg": 7304313,
+  "ink": 16761358,
+  "type": "letters",
+  "text": "SUBWAY"
+ },
+ "sultans mediterranean grill": {
+  "name": "Sultans Mediterranean Grill",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476782,
+  "lon": -80.525391
+ },
+ "super chicken": {
+  "name": "Super Chicken",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472611,
+  "lon": -80.538272
+ },
+ "sweet dreams teashop": {
+  "name": "Sweet Dreams Teashop",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.471935,
+  "lon": -80.539135,
+  "bg": 14208178,
+  "ink": 1710618,
+  "type": "letters",
+  "text": "sweet dreams teashop"
+ },
+ "sweet loop": {
+  "name": "Sweet Loop",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477503,
+  "lon": -80.525632
+ },
+ "sweet tooth": {
+  "name": "Sweet Tooth (delivery listing)",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)"
+ },
+ "tahinis": {
+  "name": "Tahini's",
+  "plaza": "Adjacent to University Shops Plaza: Elora House podium (250 Phillip St, ground-floor retail)",
+  "lat": 43.473022,
+  "lon": -80.536736,
+  "bg": 7040883,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "TAHINI'S"
+ },
+ "tandoori zaoka": {
+  "name": "Tandoori Zaoka",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472125,
+  "lon": -80.536815
+ },
+ "thai express": {
+  "name": "Thai Express",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477547,
+  "lon": -80.525642
+ },
+ "the alley": {
+  "name": "The Alley (bubble tea)",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.471615,
+  "lon": -80.538599,
+  "bg": 16777215,
+  "ink": 1710618,
+  "type": "box",
+  "text": "THE ALLEY"
+ },
+ "the bingsu cafe": {
+  "name": "The Bingsu Cafe",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.472489,
+  "lon": -80.53588
+ },
+ "the chef signature": {
+  "name": "The Chef Signature",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477328,
+  "lon": -80.525604
+ },
+ "the china bowl": {
+  "name": "The China Bowl",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477171,
+  "lon": -80.524947,
+  "bg": 1710618,
+  "ink": 16777215,
+  "type": "box",
+  "text": "THE CHINA BOWL + 品味居"
+ },
+ "the friendly vapour": {
+  "name": "The Friendly Vapour",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472921,
+  "lon": -80.537575
+ },
+ "the owl of minerva": {
+  "name": "The Owl of Minerva (Korean)",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477449,
+  "lon": -80.525627,
+  "bg": 16176142,
+  "ink": 1710618,
+  "type": "box",
+  "text": "The OWL of Minerva"
+ },
+ "twisted indian fusion street food": {
+  "name": "Twisted Indian Fusion Street Food",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.4761,
+  "lon": -80.525808,
+  "bg": 4868942,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "TWISTED Indian FUSION STREET FOOD"
+ },
+ "uniclaw": {
+  "name": "UniClaw",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.472923,
+  "lon": -80.534647
+ },
+ "university convenience": {
+  "name": "University Convenience",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472739,
+  "lon": -80.538019
+ },
+ "university dental hygiene clinic": {
+  "name": "University Dental Hygiene Clinic (UDHC)",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.477034,
+  "lon": -80.52486
+ },
+ "university pharmacy": {
+  "name": "University Pharmacy",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.475677,
+  "lon": -80.524518,
+  "bg": 1710618,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "UNIVERSITY PHARMACY"
+ },
+ "waterloo walk in clinic": {
+  "name": "Waterloo Walk-in Clinic",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.471884,
+  "lon": -80.539049,
+  "bg": 16777215,
+  "ink": 1785743,
+  "type": "box",
+  "text": "Waterloo Walk-in Clinic"
+ },
+ "williams fresh cafe": {
+  "name": "Williams Fresh Cafe",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472446,
+  "lon": -80.538628,
+  "bg": 5983040,
+  "ink": 15985362,
+  "type": "letters",
+  "text": "Williams fresh cafe"
+ },
+ "wine rack": {
+  "name": "Wine Rack",
+  "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
+  "lat": 43.476992,
+  "lon": -80.525578,
+  "bg": 5974662,
+  "ink": 16777215,
+  "type": "letters",
+  "text": "wine rack"
+ },
+ "yangs braised chicken rice": {
+  "name": "Yang's Braised Chicken Rice",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.4729,
+  "lon": -80.537626,
+  "bg": 1710618,
+  "ink": 15909376,
+  "type": "box",
+  "text": "黄焖鸡米饭 YANG'S BRAISED CHICKEN RICE"
+ },
+ "ye house": {
+  "name": "Ye House",
+  "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
+  "lat": 43.472466,
+  "lon": -80.536211
+ },
+ "yu xiao shan": {
+  "name": "Yu Xiao Shan",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472459,
+  "lon": -80.537135
+ },
+ "yummy chongqing": {
+  "name": "Yummy Chongqing (Chongqing noodles)",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472387,
+  "lon": -80.537702,
+  "bg": 16777215,
+  "ink": 13115434,
+  "type": "box",
+  "text": "Chinese characters + 'Yummy Chongqing'"
+ },
+ "yunshang rice noodle": {
+  "name": "Yunshang Rice Noodle",
+  "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
+  "lat": 43.472875,
+  "lon": -80.537685,
+  "bg": 16777215,
+  "ink": 13111342,
+  "type": "box",
+  "text": "云尚米线 YUNSHANG RICE NOODLE"
+ }
+}

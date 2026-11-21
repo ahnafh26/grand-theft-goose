@@ -35,6 +35,18 @@ function imageAspect(file) {
   }
   return 1;
 }
+// The plaza stores' real signs (tools/import-store-looks.mjs): by name, near enough to the place
+const STORE_LOOKS_FILE = new URL('./data/store-looks.json', import.meta.url);
+const STORE_LOOKS = fs.existsSync(STORE_LOOKS_FILE) ? JSON.parse(fs.readFileSync(STORE_LOOKS_FILE, 'utf8')) : {};
+const storeKey = (name) => String(name || '').split(/\s[|(–-]\s|\(/)[0].normalize('NFKD').toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+function storeLookFor(name, lon, lat) {
+  const k = storeKey(name);
+  if (!k) return null;
+  const near = (v) => v.lat === undefined || lat === undefined || Math.hypot((v.lat - lat) * 111000, (v.lon - lon) * 80700) < 90;
+  if (STORE_LOOKS[k] && near(STORE_LOOKS[k])) return STORE_LOOKS[k];
+  for (const [sk, v] of Object.entries(STORE_LOOKS)) if ((sk.startsWith(k + ' ') || k.startsWith(sk + ' ')) && near(v)) return v;
+  return null;
+}
 const logoOf = (q) => {
   const l = q && LOGOS[q];
   if (!l) return null;
@@ -351,6 +363,12 @@ export function styleFor(record) {
 export function compileStorefronts({ GEO, IDS, manifest, geodataHash }) {
   if (manifest?.schema !== 1 || !Array.isArray(manifest.records)) throw new Error('storefront manifest: unknown schema');
   const resolve = idResolver(IDS);
+  // world (x, z) -> [lon, lat] (GEO.frame.projection, the inverse of tools/geo-base.mjs toWorld)
+  const P = GEO.frame.projection;
+  const lonLatOf = (x, z) => {
+    const X = x + P.ox, Z = -(z + P.oz), c = Math.cos(P.theta), sn = Math.sin(P.theta);
+    return [P.lon0 + (X * c + Z * sn) / P.kx, P.lat0 + (-X * sn + Z * c) / P.ky];
+  };
   const signs = [], dropped = [];
   const seen = new Set();
   for (const r of manifest.records) {
@@ -361,6 +379,7 @@ export function compileStorefronts({ GEO, IDS, manifest, geodataHash }) {
     if (STYLES.indexOf(r.style ?? 'fascia') < 0) throw new Error(`storefront manifest: unknown style ${r.style} on ${r.id}`);
     const place = resolve(r.id), face = resolve(r.face);
     if (!place || place.kind !== 'poi') { dropped.push({ id: r.id, reason: 'place ID does not resolve' }); continue; }
+    if (storeLookFor(r.name, ...lonLatOf(...GEO.pois[place.row]))?.closed) { dropped.push({ id: r.id, reason: 'closed (reference research)' }); continue; }
     if (!face || face.kind !== 'face') { dropped.push({ id: r.id, reason: 'face ID does not resolve' }); continue; }
     const building = GEO.buildings[face.row];
     const [s0, s1] = r.span || [];
@@ -381,6 +400,11 @@ export function compileStorefronts({ GEO, IDS, manifest, geodataHash }) {
       x: Math.round(wall.x * 100) / 100, z: Math.round(wall.z * 100) / 100,
       nx: Math.round(wall.nx * 1e4) / 1e4, nz: Math.round(wall.nz * 1e4) / 1e4,
       width: Math.round((s1 - s0) * 100) / 100, h: building[4],
+      ...(() => {
+        const [px, pz] = GEO.pois[place.row];
+        const v = storeLookFor(r.name, ...lonLatOf(px, pz));
+        return v && v.bg !== undefined ? { bg: v.bg, ink: v.ink, signType: v.type, ...(v.text ? { text: v.text } : {}) } : {};
+      })(),
       ...(logoOf(r.brand) || {})
     });
   }

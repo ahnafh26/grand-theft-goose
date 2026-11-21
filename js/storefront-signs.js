@@ -138,11 +138,14 @@ function buildStorefrontSigns(scene, { facadeOf = () => null } = {}) {
   const DEPTH = 0.07;
 
   signs.forEach((s, i) => {
-    const style = s.logo ? STYLES.lightbox : (STYLES[s.style] || STYLES.fascia);
+    // (a store whose sign was photographed: its own board & letter colours, a light box or letters on a band)
+    const real = s.bg !== undefined && !s.logo;
+    const style = s.logo ? STYLES.lightbox : real ? (s.signType === 'box' ? STYLES.lightbox : STYLES.colour) : (STYLES[s.style] || STYLES.fascia);
+    const label = real && s.text ? s.text : s.name;
     const h = hashId(s.id);
     const lay = s.logo
       ? { lines: [], px: 8, cellW: 8, textW: 0.01, boardW: Math.max(MIN_W, s.logoW + 0.3) }
-      : layoutSign(s.name, Math.min(MAX_W, s.width - 0.3), measure(style));
+      : layoutSign(label, Math.min(MAX_W, s.width - 0.3), measure(style));
     // the lettering, white on black in a scratch cell, copied into its atlas cell's channel (rows flipped: v = 0 at the
     // bottom of the board)
     ctx.setTransform(res, 0, 0, res, 0, 0);
@@ -168,7 +171,7 @@ function buildStorefrontSigns(scene, { facadeOf = () => null } = {}) {
     // the board's atlas rect, channel, colours & style
     rect.setXYZW(i, ox / size.w, oy / size.h, (ox + cw) / size.w, (oy + chh) / size.h);
     channel.setXYZW(i, ch === 0 ? 1 : 0, ch === 1 ? 1 : 0, ch === 2 ? 1 : 0, ch === 3 ? 1 : 0);
-    const bc = lin(s.logo ? 0xfbfaf6 : style.boards[h % style.boards.length]), ic = lin(style.inks[(h >>> 8) % style.inks.length]);
+    const bc = lin(s.logo ? 0xfbfaf6 : real ? s.bg : style.boards[h % style.boards.length]), ic = lin(real ? s.ink : style.inks[(h >>> 8) % style.inks.length]);
     board.setXYZW(i, bc.r, bc.g, bc.b, style.frame);
     ink.setXYZW(i, ic.r, ic.g, ic.b, lay.textW / lay.boardW);
     // stood on the wall, its lettering facing out of it (the box's +z), over the middle of its frontage

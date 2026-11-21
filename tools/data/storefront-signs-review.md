@@ -185,7 +185,7 @@ Corridor: University Avenue West, x -1000000000 to 1000000000 (Ossington Avenue 
 | Shinwa Asian Cuisine | undefined undefined | amenity=restaurant |  | medium | rules 2026-11-21 | `osm:way/39606029` · `wl-osm-buildings-2026:14833.10:s` 0.77–11.77 m | yes |
 | Chungchun | undefined undefined | amenity=fast_food |  | medium | rules 2026-11-21 | `osm:way/39606033` · `wl-osm-buildings-2026:14833.12:s` 0.3–6.1 m | yes |
 | Super Chicken | undefined undefined | amenity=fast_food |  | medium | rules 2026-11-21 | `osm:way/39606038` · `wl-osm-buildings-2026:11:s` 5.8–11.6 m | yes |
-| Dine Stination | undefined undefined | amenity=restaurant |  | medium | rules 2026-11-21 | `osm:way/39606041` · `wl-osm-buildings-2026:13:s` 0.3–10.31 m | yes |
+| Dine Stination | undefined undefined | amenity=restaurant |  | medium | rules 2026-11-21 | `osm:way/39606041` · `wl-osm-buildings-2026:13:s` 0.3–10.31 m | dropped |
 | Slap Burger | undefined undefined | amenity=fast_food |  | medium | rules 2026-11-21 | `osm:way/39606042` · `wl-osm-buildings-2026:14:s` 0.3–6.7 m | yes |
 | Yunshang Rice Noodle | undefined undefined | amenity=restaurant |  | medium | rules 2026-11-21 | `osm:way/39606043` · `wl-osm-buildings-2026:15:s` 0.3–6.5 m | yes |
 | Baba Chicken Grill | undefined undefined | amenity=fast_food |  | medium | rules 2026-11-21 | `osm:way/39606047` · `wl-osm-buildings-2026:16:s` 0.3–7.9 m | yes |
