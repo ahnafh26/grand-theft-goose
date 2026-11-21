@@ -665,7 +665,7 @@ function buildLandmarks(scene) {
   // lathe, the main pod with its glass band, the SkyPod and the antenna mast (main pod ~342-352 m, SkyPod 447 m; the
   // lathe profile is one-minute-ride's).
   // =========================================================================
-  {
+  if (GEO.points.cnTower && window.CITY.SHOW_CN_TOWER) { // Toronto's CN Tower: off in Waterloo
     const p = GEO.points.cnTower;
     const s = S.cnTower || { x: p[0], z: p[1] };
     const prof = [

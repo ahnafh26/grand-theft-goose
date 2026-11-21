@@ -4,29 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="city-build" content="__CITY_BUILD__" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Larp Theft Auto: The 6 · Downtown Toronto</title>
-  <link rel="icon" href="./assets/brand/larp-theft-auto-mark.svg" type="image/svg+xml" />
+  <title>Grand Theft Goose: Waterloo Edition</title>
+  <link rel="icon" href="./assets/brand/goose-mark.svg" type="image/svg+xml" />
   <link rel="manifest" href="./assets/manifest.webmanifest" />
   <meta name="theme-color" content="#07111d" />
-  <meta name="description" content="Larp Theft Auto: The 6 — explore downtown Toronto and the waterfront in 3D. Walk, cycle, drive or fly from the Humber Bay Arch Bridge to Sugar Beach, the CN Tower and the Distillery District." />
+  <meta name="description" content="Grand Theft Goose: Waterloo Edition: an open-world browser game on the real streets of Waterloo, Ontario. Walk, drive and get chased around the University of Waterloo, Wilfrid Laurier, University Ave and Uptown." />
   <!-- social: link previews -->
   <link rel="canonical" href="./explore.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Larp Theft Auto: The 6" />
-  <meta property="og:locale" content="en_CA" />
-  <meta property="og:url" content="https://sloptoronto.ca/explore" />
-  <meta property="og:title" content="Explore Toronto in 3D · Larp Theft Auto: The 6" />
-  <meta property="og:description" content="Downtown Toronto and the waterfront in 3D, in your browser: walk, cycle, drive or fly past the CN Tower, along the lake and through the downtown streets." />
-  <meta property="og:image" content="https://sloptoronto.ca/assets/og-toronto.jpg" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Larp Theft Auto: The 6 — Toronto's skyline and the CN Tower over Lake Ontario" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Explore Toronto in 3D · Larp Theft Auto: The 6" />
-  <meta name="twitter:description" content="Downtown Toronto and the waterfront in 3D, in your browser: walk, cycle, drive or fly past the CN Tower, along the lake and through the downtown streets." />
-  <meta name="twitter:image" content="https://sloptoronto.ca/assets/og-toronto.jpg" />
-  <meta name="twitter:image:alt" content="Larp Theft Auto: The 6 — Toronto's skyline and the CN Tower over Lake Ontario" />
   <!-- /social -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <script>
@@ -161,7 +145,6 @@
   <!-- Umami analytics (self-hosted, no cookies), counting visits only on the production hosts (data-domains).
        Session replay is deliberately left out (counter only).
        async, not defer: deferred scripts run in document order, so the city's module script below would wait for them. -->
-  <script async src="https://umami.cloud6711.workers.dev/script.js" data-website-id="75a0f1a3-3bb4-4dd9-adde-eade0b719665" data-domains="sloptoronto.ca,www.sloptoronto.ca"></script>
 </head>
 <body>
   <!-- Icon sprite (24 × 24 stroke icons, drawn in currentColor) -->
@@ -227,23 +210,23 @@
     </defs>
   </svg>
 
-  <!-- Entry screen. Cover art: assets/brand/larp-theft-auto-poster.jpg. The progress ids stay so the city can fill the bar. -->
+  <!-- Entry screen. Cover art: assets/brand/goose-poster.jpg. The progress ids stay so the city can fill the bar. -->
   <div id="loading-overlay" role="status" aria-live="polite">
     <div class="gta-splash">
-      <img id="gta-poster" class="gta-poster" alt="" src="./assets/brand/larp-theft-auto-poster.jpg" />
-      <img id="gta-logo-fallback" class="gta-logo" alt="Larp Theft Auto: The 6" src="./assets/brand/larp-theft-auto-logo.svg" hidden />
+      <img id="gta-poster" class="gta-poster" alt="" src="./assets/brand/goose-poster.jpg" />
+      <img id="gta-logo-fallback" class="gta-logo" alt="Grand Theft Goose: Waterloo Edition" src="./assets/brand/goose-logo.svg" />
       <div class="gta-splash-shade"></div>
       <div class="gta-splash-grain" aria-hidden="true"></div>
       <div class="loader gta-splash-copy">
         <div class="loader-track is-indeterminate" aria-hidden="true"><span id="loading-progress" class="loader-fill"></span></div>
         <div id="loading-status">Initializing WebGPURenderer &amp; TSL Shaders...</div>
-        <button id="enter-the-6" type="button" disabled>ENTER THE 6</button>
+        <button id="enter-the-6" type="button" disabled>PLAY</button>
       </div>
     </div>
   </div>
 
   <!-- 3D WebGPU Viewport Container -->
-  <main id="canvas-container" aria-label="Larp Theft Auto: The 6 downtown Toronto"></main>
+  <main id="canvas-container" aria-label="Grand Theft Goose: Waterloo Edition"></main>
   <div id="gta-grain" aria-hidden="true"></div>
 
   <!-- Top-Left: Search, place card & directions (tour-guide.js) -->
@@ -267,9 +250,9 @@
       </div>
     </section>
     <div id="search-box" class="panel search-box" role="search">
-      <a class="brand-home" href="./index.html" title="Larp Theft Auto: The 6" aria-label="Larp Theft Auto: The 6 home"><img src="./assets/brand/larp-theft-auto-mark.svg" alt="" width="36" height="36" /></a>
+      <a class="brand-home" href="./index.html" title="Grand Theft Goose" aria-label="Grand Theft Goose home"><img src="./assets/brand/goose-mark.svg" alt="" width="36" height="36" /></a>
       <svg class="icon search-icon" aria-hidden="true"><use href="#i-search"/></svg>
-      <input id="place-search" class="search-input" type="text" placeholder="Search Toronto" aria-label="Search places, streets and districts in Toronto" autocomplete="off" spellcheck="false" />
+      <input id="place-search" class="search-input" type="text" placeholder="Search Waterloo" aria-label="Search places, streets and districts in Waterloo" autocomplete="off" spellcheck="false" />
       <kbd class="search-kbd" aria-hidden="true">/</kbd>
       <button id="search-clear" class="icon-btn search-clear" type="button" title="Clear" aria-label="Clear search"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
       <button id="btn-locate" class="icon-btn locate-btn" type="button" title="Use my real location" aria-label="Use my real location"><svg class="icon" aria-hidden="true"><use href="#i-gps"/></svg></button>
@@ -280,7 +263,7 @@
 
     <div id="locate-prompt" class="panel locate-prompt" hidden>
       <svg class="icon" aria-hidden="true"><use href="#i-gps"/></svg>
-      <span>Are you in Toronto right now?</span>
+      <span>Are you in Waterloo right now?</span>
       <button id="locate-yes" class="btn btn-sm btn-primary" type="button">Use my location</button>
       <button id="locate-no" class="icon-btn" type="button" aria-label="Not now"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-close"/></svg></button>
     </div>
@@ -362,7 +345,7 @@
     <div id="settings-panel" class="panel settings-panel" hidden>
     <div id="hud-toolbar" class="toolbar">
       <div class="time-switch" role="group" aria-label="Atmosphere &amp; time of day">
-        <button id="time-live" class="time-btn live-btn" data-live type="button" aria-pressed="false" aria-label="Live: Toronto's time of day and weather right now">
+        <button id="time-live" class="time-btn live-btn" data-live type="button" aria-pressed="false" aria-label="Live: the time of day right now">
           <svg class="icon" aria-hidden="true"><use href="#i-live"/></svg><span class="seg-label">Live</span>
         </button>
         <button id="time-golden" class="time-btn active" data-time="golden" type="button" title="Golden Hour">
@@ -382,7 +365,7 @@
       <button id="btn-teleport" class="tool-btn" type="button" popovertarget="teleport-popover" title="Teleport the active player">
         <svg class="icon" aria-hidden="true"><use href="#i-star"/></svg><span class="tool-label">Sights</span><svg class="icon icon-sm" aria-hidden="true"><use href="#i-chevron-down"/></svg>
       </button>
-      <button id="btn-open-map" class="tool-btn" type="button" title="Full Toronto street map [M]">
+      <button id="btn-open-map" class="tool-btn" type="button" title="Full Waterloo street map [M]">
         <svg class="icon" aria-hidden="true"><use href="#i-map"/></svg><span class="tool-label">Map</span><kbd>M</kbd>
       </button>
       <button id="btn-mp" class="tool-btn" type="button" title="Ride with a friend: copies a link to your own room" hidden>
@@ -416,26 +399,20 @@
 
   <!-- Teleport Destinations (native popover: light-dismiss & Esc) -->
   <div id="teleport-popover" class="popover" popover data-side="below" data-anchor="btn-teleport" data-align="settings-panel" aria-label="Teleport the active player">
-    <div class="pop-title">Featured ride</div>
-    <button id="tp-ride504" class="pop-item tp-btn ride-btn" data-ride="504" type="button"><span class="pop-name">Ride the 504 along King</span><span class="pop-sub">Board a King streetcar · sit back &amp; watch the city</span></button>
-    <button class="pop-item tp-btn ride-btn" data-ride="subway" type="button"><span class="pop-name">Ride the subway across the Don Valley</span><span class="pop-sub">Castle Frank ↔ Broadview · Line 2</span></button>
-    <button class="pop-item tp-btn ride-btn" data-ride="1" type="button"><span class="pop-name">Ride the subway under Yonge</span><span class="pop-sub">Queen ↔ King · Line 1 · walk down from the street</span></button>
-    <div class="pop-title">Go to a sight</div>
-    <button id="tp-humberArch" class="pop-item tp-btn" data-teleport="humberArch" type="button"><span class="pop-name">Humber Bay Arch Bridge</span><span class="pop-sub">Martin Goodman Trail · Humber Bay</span></button>
-    <button id="tp-cnTower" class="pop-item tp-btn" data-teleport="cnTower" type="button"><span class="pop-name">CN Tower</span><span class="pop-sub">Bremner Blvd · Entertainment District</span></button>
-    <button id="tp-rogersCentre" class="pop-item tp-btn" data-teleport="rogersCentre" type="button"><span class="pop-name">Rogers Centre</span><span class="pop-sub">Blue Jays Way · Entertainment District</span></button>
-    <button id="tp-unionStation" class="pop-item tp-btn" data-teleport="unionStation" type="button"><span class="pop-name">Union Station</span><span class="pop-sub">Front St · Financial District</span></button>
-    <button id="tp-cityHall" class="pop-item tp-btn" data-teleport="cityHall" type="button"><span class="pop-name">City Hall &amp; Nathan Phillips Square</span><span class="pop-sub">Queen St W · Downtown</span></button>
-    <button id="tp-harbourfront" class="pop-item tp-btn" data-teleport="harbourfront" type="button"><span class="pop-name">Harbourfront Centre</span><span class="pop-sub">Queens Quay W · Harbourfront</span></button>
-    <button id="tp-distillery" class="pop-item tp-btn" data-teleport="distillery" type="button"><span class="pop-name">Distillery District</span><span class="pop-sub">Mill St · Corktown</span></button>
-    <button id="tp-rom" class="pop-item tp-btn" data-teleport="rom" type="button"><span class="pop-name">Royal Ontario Museum</span><span class="pop-sub">Bloor St W · Yorkville</span></button>
-    <button id="tp-legislature" class="pop-item tp-btn" data-teleport="legislature" type="button"><span class="pop-name">Queen's Park</span><span class="pop-sub">University Ave · Discovery District</span></button>
+    <div class="pop-title">Go to a place</div>
+    <button id="tp-uw" class="pop-item tp-btn" data-teleport="uw" type="button"><span class="pop-name">University of Waterloo</span><span class="pop-sub">Ring Road · Main campus</span></button>
+    <button id="tp-danaPorter" class="pop-item tp-btn" data-teleport="danaPorter" type="button"><span class="pop-name">Dana Porter Library</span><span class="pop-sub">Ring Road · UW</span></button>
+    <button id="tp-laurier" class="pop-item tp-btn" data-teleport="laurier" type="button"><span class="pop-name">Wilfrid Laurier University</span><span class="pop-sub">University Ave W</span></button>
+    <button id="tp-plaza" class="pop-item tp-btn" data-teleport="plaza" type="button"><span class="pop-name">University Plaza</span><span class="pop-sub">University Ave W · Phillip St</span></button>
+    <button id="tp-waterlooPark" class="pop-item tp-btn" data-teleport="waterlooPark" type="button"><span class="pop-name">Waterloo Park</span><span class="pop-sub">Laurel Creek · Seagram Dr</span></button>
+    <button id="tp-columbiaLake" class="pop-item tp-btn" data-teleport="columbiaLake" type="button"><span class="pop-name">Columbia Lake</span><span class="pop-sub">Columbia St W · North Campus</span></button>
+    <button id="tp-uptown" class="pop-item tp-btn" data-teleport="uptown" type="button"><span class="pop-name">Uptown Waterloo</span><span class="pop-sub">King St N · Waterloo Public Square</span></button>
   </div>
 
   <!-- Bottom-Left: Street-Name Signs & Live GPS Radar Minimap -->
   <div class="hud hud-bottom-left">
     <div id="hud-location" class="location" aria-live="off"></div>
-    <aside id="minimap-card" class="panel radar" aria-label="Live street radar minimap" title="Open the full Toronto street map [M]">
+    <aside id="minimap-card" class="panel radar" aria-label="Live street radar minimap" title="Open the full Waterloo street map [M]">
       <canvas id="minimap-canvas"></canvas>
       <span class="radar-north" aria-hidden="true">N</span>
       <kbd class="radar-key">M</kbd>
@@ -509,43 +486,43 @@
     </div>
   </section>
 
-  <!-- All Cameras: 3 Follow Cameras + Toronto's Landmark Vantage Points + Auto-Director Drone -->
+  <!-- All Cameras: 3 Follow Cameras + Auto-Director Drone -->
   <div id="camera-popover" class="popover" popover data-side="below" data-anchor="camera-switch" data-align="settings-panel" aria-label="Multiple Camera Angles">
     <div class="pop-title">Follow</div>
     <button id="cam-chase" class="pop-item cam-btn active" data-camera="chase" type="button"><span class="pop-name">3rd-Person Chase</span><kbd>5</kbd></button>
     <button id="cam-action" class="pop-item cam-btn" data-camera="action" type="button"><span class="pop-name">Low-Angle Action</span><kbd>6</kbd></button>
     <button id="cam-pov" class="pop-item cam-btn" data-camera="pov" type="button"><span class="pop-name">First-Person / Cockpit</span><kbd>7</kbd></button>
     <div class="pop-title">Scenic</div>
-    <button id="cam-trail" class="pop-item cam-btn" data-camera="trail" type="button"><span class="pop-name">Martin Goodman Trail</span><kbd>8</kbd></button>
-    <button id="cam-islands" class="pop-item cam-btn" data-camera="islands" type="button"><span class="pop-name">Skyline from the Islands</span><kbd>9</kbd></button>
-    <button id="cam-cnTower" class="pop-item cam-btn" data-camera="cnTower" type="button"><span class="pop-name">CN Tower</span><kbd>0</kbd></button>
-    <button id="cam-cityHall" class="pop-item cam-btn" data-camera="cityHall" type="button"><span class="pop-name">City Hall</span></button>
-    <button id="cam-rom" class="pop-item cam-btn" data-camera="rom" type="button"><span class="pop-name">Royal Ontario Museum</span></button>
-    <button id="cam-unionStation" class="pop-item cam-btn" data-camera="unionStation" type="button"><span class="pop-name">Union Station</span></button>
-    <button id="cam-legislature" class="pop-item cam-btn" data-camera="legislature" type="button"><span class="pop-name">Queen's Park</span></button>
-    <button id="cam-sugarBeach" class="pop-item cam-btn" data-camera="sugarBeach" type="button"><span class="pop-name">Sugar Beach</span></button>
-    <button id="cam-humberBay" class="pop-item cam-btn" data-camera="humberBay" type="button"><span class="pop-name">Sunset over Humber Bay</span></button>
-    <button id="cam-skyline" class="pop-item cam-btn" data-camera="skyline" type="button"><span class="pop-name">Skyline from the Lake</span></button>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <button id="cam-drone" class="pop-item cam-btn" data-camera="drone" type="button"><span class="pop-name">Auto-Director Aerial</span></button>
   </div>
 
-  <!-- Full-Screen Interactive Toronto Street Map ([M]) -->
-  <section id="fullmap-modal" class="fullmap-modal hidden" role="dialog" aria-modal="true" aria-label="Full interactive Toronto street map">
+  <!-- Full-Screen Interactive Street Map ([M]) -->
+  <section id="fullmap-modal" class="fullmap-modal hidden" role="dialog" aria-modal="true" aria-label="Full interactive Waterloo street map">
     <div id="fullmap-canvas-wrap" class="fullmap-canvas-wrap">
       <canvas id="fullmap-canvas"></canvas>
     </div>
 
     <div class="fullmap-header">
       <div class="panel fullmap-title">
-        <img class="map-logo" src="./assets/brand/larp-theft-auto-mark.svg" alt="" width="36" height="36" />
+        <img class="map-logo" src="./assets/brand/goose-mark.svg" alt="" width="36" height="36" />
         <div>
-          <h2>Larp Theft Auto: The 6 <span>Map</span></h2>
-          <p id="fullmap-player-info" class="fullmap-subtitle">You are by Union Station</p>
+          <h2>Grand Theft Goose <span>Map</span></h2>
+          <p id="fullmap-player-info" class="fullmap-subtitle">You are in Waterloo</p>
         </div>
       </div>
       <label class="panel fullmap-search-wrap">
         <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
-        <input id="fullmap-search" class="fullmap-search" type="text" placeholder="Search places, streets &amp; districts: Queens Quay, CN Tower, café…" aria-label="Search places, streets and districts" autocomplete="off" spellcheck="false" />
+        <input id="fullmap-search" class="fullmap-search" type="text" placeholder="Search places, streets &amp; districts: Ring Road, Laurier, café…" aria-label="Search places, streets and districts" autocomplete="off" spellcheck="false" />
         <div id="fullmap-search-results" class="panel ac-list" hidden></div>
       </label>
       <button id="close-fullmap-btn" class="panel tool-btn fullmap-close" type="button" title="Close map [M / Esc]">
@@ -554,7 +531,7 @@
     </div>
 
     <div class="map-controls">
-      <div class="panel map-compass" title="True north · the map is drawn along downtown Toronto's street grid, about 17° west of it">
+      <div class="panel map-compass" title="True north · the map is drawn along Waterloo's main streets, about 28° west of it">
         <svg viewBox="0 0 44 44" aria-hidden="true">
           <g id="map-compass-needle">
             <path d="M22 9.5 25.6 22h-7.2z" fill="#f05a4f"/>
@@ -570,7 +547,7 @@
       <div class="panel map-zoom">
         <button id="map-real-location" class="icon-btn" type="button" title="Where I really am" aria-label="Show my real location"><svg class="icon" aria-hidden="true"><use href="#i-gps"/></svg></button>
         <button id="map-center-player" class="icon-btn" type="button" title="Street view around your character" aria-label="Center on player"><svg class="icon" aria-hidden="true"><use href="#i-locate"/></svg></button>
-        <button id="map-view-all" class="icon-btn" type="button" title="The whole city (Humber Bay to the Distillery District)" aria-label="Fit the whole city"><svg class="icon" aria-hidden="true"><use href="#i-fit"/></svg></button>
+        <button id="map-view-all" class="icon-btn" type="button" title="The whole map (UW to Uptown)" aria-label="Fit the whole city"><svg class="icon" aria-hidden="true"><use href="#i-fit"/></svg></button>
       </div>
     </div>
 
@@ -612,7 +589,7 @@
   <div id="help-modal" class="help-modal" hidden role="dialog" aria-modal="true" aria-labelledby="help-title">
     <div class="panel help-card">
       <div class="help-head">
-        <h2 id="help-title">How to explore Toronto</h2>
+        <h2 id="help-title">How to play</h2>
         <button id="help-close" class="icon-btn" type="button" aria-label="Close help"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
       </div>
       <div class="help-grid">
@@ -663,7 +640,7 @@
           <ul><li>Mouse: click the city to capture, then move to turn and look · hold right mouse to aim/zoom · <kbd>Esc</kbd> releases</li><li><kbd>1</kbd> Equip pistol · left-click to fire · <kbd>R</kbd> reload · scroll to zoom · <kbd>V</kbd> Next camera</li><li><kbd>5</kbd>–<kbd>0</kbd> Cameras &amp; sights · <kbd>H</kbd> Clean view · <kbd>?</kbd> This help</li><li><kbd>N</kbd> Sound on / off</li></ul>
         </section>
       </div>
-      <p class="help-foot">Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a> (ODbL) and City of Toronto Open Data (Open Government Licence – Toronto). Built on <a href="https://github.com/mrdoob/slop-newyork" target="_blank" rel="noopener noreferrer">Slop New York</a> by mrdoob and Abuja Tour (MIT). <a href="./index.html#credits">All credits</a>. Storefront signs show each shop's name, not its trademarked logo. <span class="help-fps">three.js WebGPU · <span id="hud-fps" class="fps-ok">60</span> fps</span></p>
+      <p class="help-foot">Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a> (ODbL). Built on <a href="https://github.com/mrdoob/slop-newyork" target="_blank" rel="noopener noreferrer">Slop New York</a> by mrdoob and Abuja Tour (MIT). Full credits in CREDITS.md. <span class="help-fps">three.js WebGPU · <span id="hud-fps" class="fps-ok">60</span> fps</span></p>
     </div>
   </div>
 

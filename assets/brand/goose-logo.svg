@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" font-family="'Bebas Neue','Oswald','Impact',sans-serif">
+  <g transform="skewX(-8) translate(40 0)">
+    <text x="20" y="92" font-size="92" fill="#f4f1e8" stroke="#0b0b0b" stroke-width="10" paint-order="stroke" letter-spacing="3">GRAND THEFT</text>
+    <text x="14" y="232" font-size="170" fill="#f4f1e8" stroke="#0b0b0b" stroke-width="12" paint-order="stroke" letter-spacing="4">GOOSE</text>
+    <rect x="22" y="248" width="330" height="42" fill="#f3c34a" stroke="#0b0b0b" stroke-width="5"/>
+    <text x="36" y="282" font-size="36" fill="#111" letter-spacing="6">WATERLOO EDITION</text>
+  </g>
+</svg>
