@@ -9,16 +9,11 @@ const CAMERA_PRESETS = [
   { id: 'chase',       name: '3rd-Person Chase',            short: 'Chase',       category: 'follow', fov: 56 },
   { id: 'action',      name: 'Low-Angle Action',            short: 'Action',      category: 'follow', fov: 60 },
   { id: 'pov',         name: 'First-Person / Cockpit',      short: 'POV / Dash',  category: 'follow', fov: 68 },
-  { id: 'trail',       name: 'Martin Goodman Trail',        short: 'Trail',       category: 'scenic', fov: 50 },
-  { id: 'islands',     name: 'Skyline from the Islands',    short: 'Islands',     category: 'scenic', fov: 46 },
-  { id: 'cnTower',     name: 'CN Tower',                    short: 'CN Tower',    category: 'scenic', fov: 54 },
-  { id: 'cityHall',    name: 'City Hall',                   short: 'City Hall',   category: 'scenic', fov: 52 },
-  { id: 'rom',         name: 'Royal Ontario Museum',        short: 'ROM',         category: 'scenic', fov: 54 },
-  { id: 'unionStation', name: 'Union Station',              short: 'Union',       category: 'scenic', fov: 54 },
-  { id: 'legislature', name: "Queen's Park",                short: "Queen's Park", category: 'scenic', fov: 52 },
-  { id: 'sugarBeach',  name: 'Sugar Beach',                 short: 'Sugar Beach', category: 'scenic', fov: 50 },
-  { id: 'humberBay',   name: 'Sunset over Humber Bay',      short: 'Humber Bay',  category: 'scenic', fov: 48 },
-  { id: 'skyline',     name: 'Skyline from the Lake',       short: 'Skyline',     category: 'scenic', fov: 44 },
+  { id: 'universityAve', name: 'University Avenue',           short: 'University Ave', category: 'scenic', fov: 50 },
+  { id: 'uwCampus',    name: 'University of Waterloo',      short: 'UW',          category: 'scenic', fov: 52 },
+  { id: 'laurier',     name: 'Wilfrid Laurier University',  short: 'Laurier',     category: 'scenic', fov: 52 },
+  { id: 'uptown',      name: 'Uptown Waterloo',             short: 'Uptown',      category: 'scenic', fov: 50 },
+  { id: 'columbiaLake', name: 'Columbia Lake',              short: 'Columbia Lake', category: 'scenic', fov: 48 },
   { id: 'drone',       name: 'Auto-Director Aerial',        short: 'Director',    category: 'scenic', fov: 50 }
 ];
 
@@ -403,64 +398,35 @@ class CameraSystem {
         break;
       }
 
-      case 'trail':
-      case 'islands':
-      case 'sugarBeach':
-      case 'humberBay': {
-        // Fixed eye points on the real shore (lat / lon), looking at the CN Tower or a point of their own
-        const { worldFromLatLon, GEO } = window.CITY;
-        const cn = GEO.points.cnTower;
-        const [lat, lon, eye, lookY, lookAt] = {
-          trail: [43.63075, -79.4679, 3.2, 180],     // just east of the Humber Bay Arch Bridge
-          islands: [43.6215, -79.3772, 4.0, 150],    // Centre Island's north shore, across the harbour
-          sugarBeach: [43.6421, -79.3662, 2.6, 120], // on the sand at the water, looking west along the waterfront
-          humberBay: [43.6262, -79.4232, 4.0, 8, [43.6303, -79.4705]] // Ontario Place's west shore to the arch bridge
+      case 'universityAve':
+      case 'uwCampus':
+      case 'laurier':
+      case 'uptown':
+      case 'columbiaLake': {
+        // Fixed eye points over Waterloo (lat, lon, metres up), each looking at a point of its own, swaying gently
+        const { worldFromLatLon } = window.CITY;
+        const [eyeLat, eyeLon, eyeY, lookLat, lookLon, lookY] = {
+          universityAve: [43.47335, -80.5326, 3.4, 43.4712, -80.5412, 6],   // in the median, looking west to UW
+          uwCampus: [43.4748, -80.5383, 95, 43.4703, -80.5437, 4],          // over University & Phillip, onto the campus
+          laurier: [43.4762, -80.5242, 48, 43.4737, -80.5283, 6],           // over Albert St, onto Laurier's quad
+          uptown: [43.4676, -80.5243, 16, 43.4628, -80.5196, 5],            // up King St, looking down into Uptown
+          columbiaLake: [43.4774, -80.5552, 5, 43.4801, -80.5486, 3]        // on the shore, across the lake
         }[this.activePresetId];
-        const p = worldFromLatLon(lat, lon);
-        const sway = Math.sin(elapsed * 0.2) * 2.0;
-        desiredPos.set(p.x + sway, eye, p.z);
-        const t = lookAt ? worldFromLatLon(lookAt[0], lookAt[1]) : { x: cn[0], z: cn[1] };
+        const p = worldFromLatLon(eyeLat, eyeLon), t = worldFromLatLon(lookLat, lookLon);
+        const sway = Math.sin(elapsed * 0.2) * (eyeY > 20 ? 12.0 : 1.5);
+        desiredPos.set(p.x + sway, eyeY, p.z);
         desiredLook.set(t.x, lookY, t.z);
         break;
       }
 
-      case 'cnTower':
-      case 'cityHall':
-      case 'rom':
-      case 'unionStation':
-      case 'legislature': {
-        const [key, site, eye, lookY] = {
-          cnTower: ['cnTower', 'cnTower', 6, 260],
-          cityHall: ['cityHall', 'cityHall', 6, 40],
-          rom: ['rom', 'rom', 5, 18],
-          unionStation: ['unionStation', 'unionStation', 5, 14],
-          legislature: ['legislature', 'legislature', 5, 25]
-        }[this.activePresetId];
-        if (!landmarkView(key, site, eye, lookY, elapsed, { pos: desiredPos, look: desiredLook })) {
-          const cn = window.CITY.GEO.points.cnTower;
-          desiredPos.set(cn[0] - 300, 40, cn[1] + 300);
-          desiredLook.set(cn[0], 200, cn[1]);
-        }
-        break;
-      }
-
-      case 'skyline': {
-        // Out over the lake, south of the Islands, the whole waterfront from Ontario Place to the Port Lands
-        const cn = window.CITY.GEO.points.cnTower;
-        const pan = Math.sin(elapsed * 0.12) * 300.0;
-        desiredPos.set(cn[0] + 400.0 + pan, 140.0, cn[1] + 4200.0);
-        desiredLook.set(cn[0] + 600.0, 120.0, cn[1]);
-        break;
-      }
-
       case 'drone': {
-        // Orbiting downtown round the CN Tower: the Financial District, the waterfront, the Islands
-        const cn = window.CITY.GEO.points.cnTower;
+        // Orbiting University Ave between the two campuses: UW, Laurier, the plaza and King St
+        const c = window.CITY.worldFromLatLon(43.4718, -80.5358);
         const angle = elapsed * 0.06 + 0.65;
-        const radius = 1500.0 + Math.sin(elapsed * 0.23) * 250.0;
-        const alt = 380.0 + Math.cos(elapsed * 0.19) * 110.0;
-        desiredPos.set(cn[0] + Math.cos(angle) * radius, alt, cn[1] + Math.sin(angle) * radius);
-        desiredLook.set(cn[0] + 300.0, 80.0, cn[1] - 300.0);
+        const radius = 850.0 + Math.sin(elapsed * 0.23) * 150.0;
+        const alt = 240.0 + Math.cos(elapsed * 0.19) * 60.0;
+        desiredPos.set(c.x + Math.cos(angle) * radius, alt, c.z + Math.sin(angle) * radius);
+        desiredLook.set(c.x, 20.0, c.z);
         break;
       }
     }

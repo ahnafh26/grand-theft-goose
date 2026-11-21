@@ -1139,13 +1139,13 @@ async function initApp() {
         selectCamera('pov', true);
         break;
       case 'Digit8':
-        selectCamera('trail', true);
+        selectCamera('universityAve', true);
         break;
       case 'Digit9':
-        selectCamera('islands', true);
+        selectCamera('uwCampus', true);
         break;
       case 'Digit0':
-        selectCamera('cnTower', true);
+        selectCamera('uptown', true);
         break;
       case 'KeyV':
         cycleCamera(e.shiftKey ? -1 : 1);
