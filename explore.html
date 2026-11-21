@@ -18,6 +18,7 @@
     const cityAppScripts = (() => {
       return [
         './js/quality.js',
+        './js/toronto-storefronts.js',
         './js/transit.js',
         // ?donvalley=1: the Don Valley terrain pilot (docs/don-valley-terrain.md), before city-config.js reads it
         ...(new URLSearchParams(location.search).get('donvalley') === '1' ? ['./js/don-valley-data.js', './js/don-valley.js'] : []),

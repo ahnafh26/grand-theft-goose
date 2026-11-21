@@ -26,7 +26,18 @@ export const MANIFEST = path.join(ROOT, 'tools/data/storefront-signs.json');
 export const OUTPUT = path.join(ROOT, 'js/toronto-storefronts.js');
 
 // The pilot corridor: Queen Street West from Ossington Avenue (x -2975) to Spadina Avenue (x -1095), both sides
-export const CORRIDOR = { id: 'queen-west-ossington-spadina', street: 'Queen Street West', x0: -2975, x1: -1095, maxPoiDistance: 35 };
+// Waterloo's shopping streets: University Plaza & University Ave W, Uptown's King St, Phillip St, Columbia St
+export const CORRIDORS = [
+  { id: 'university-ave-w', street: 'University Avenue West', x0: -1e9, x1: 1e9, maxPoiDistance: 140, maxFaceToStreet: 140 },
+  { id: 'university-ave-e', street: 'University Avenue East', x0: -1e9, x1: 1e9, maxPoiDistance: 60 },
+  { id: 'king-n', street: 'King Street North', x0: -1e9, x1: 1e9, maxPoiDistance: 45 },
+  { id: 'king-s', street: 'King Street South', x0: -1e9, x1: 1e9, maxPoiDistance: 45 },
+  { id: 'phillip', street: 'Phillip Street', x0: -1e9, x1: 1e9, maxPoiDistance: 140, maxFaceToStreet: 140 },
+  { id: 'columbia-w', street: 'Columbia Street West', x0: -1e9, x1: 1e9, maxPoiDistance: 60 },
+  { id: 'erb-w', street: 'Erb Street West', x0: -1e9, x1: 1e9, maxPoiDistance: 45 },
+  { id: 'albert', street: 'Albert Street', x0: -1e9, x1: 1e9, maxPoiDistance: 45 }
+];
+export const CORRIDOR = CORRIDORS[0];
 export const RULES = {
   // OSM check_date (a mapper confirmed the feature on the ground) on or after this is evidence of a current tenant
   checkDateHigh: '2025-01-01',
@@ -64,7 +75,9 @@ export function loadCommitted(root = ROOT) {
   };
   const { GEO } = load('js/toronto-geodata.js');
   const { GEO_IDS: IDS } = load('js/toronto-geodata-ids.js');
-  const { CAFETO } = load('js/toronto-cafeto.js');
+  // (Toronto's CaféTO permits; Waterloo has none in this pipeline)
+  let CAFETO = { records: [], source: {} };
+  try { ({ CAFETO } = load('js/toronto-cafeto.js')); } catch { /* none */ }
   return { GEO, IDS, CAFETO, geodataHash: sha16(fs.readFileSync(path.join(root, 'js/toronto-geodata.js'))) };
 }
 
@@ -211,8 +224,8 @@ export function proposeStorefronts({ GEO, IDS, CAFETO, tagsById, corridor = CORR
   const verdicts = places.map((pl, i) => {
     const t = pl.tags;
     const reject = (reason, extra = {}) => ({ pl, reason, ...extra });
-    if (t['addr:street'] !== corridor.street) return reject('address on another street');
-    if (!t['addr:housenumber']) return reject('no house number');
+    // (Waterloo: plaza tenants often carry no street address; they take the shopping street they face)
+    if (t['addr:street'] && t['addr:street'] !== corridor.street) return reject('address on another street');
     if (t.level !== undefined && !/^0(;0)*$/.test(String(t.level))) return reject(`level ${t.level}`);
     if (pl.b < 0) return reject('not inside a mapped building');
     const building = GEO.buildings[pl.b];
@@ -224,7 +237,8 @@ export function proposeStorefronts({ GEO, IDS, CAFETO, tagsById, corridor = CORR
     const wall = wallAt(building, look.side, s);
     if (!wall) return reject('gap in the plan at the place');
     const toStreet = near(wall.x, wall.z);
-    if (!toStreet || toStreet.d > RULES.maxFaceToStreet) return reject('wall set back from the street');
+    // (plazas stand behind their parking lots: a corridor may allow a deeper setback)
+    if (!toStreet || toStreet.d > (corridor.maxFaceToStreet || RULES.maxFaceToStreet)) return reject('wall set back from the street');
     const faceId = `${IDS.buildings[pl.b]}:${look.side}`;
     (onFace.get(faceId) || onFace.set(faceId, []).get(faceId)).push({ i, s, wall });
     // evidence
@@ -238,8 +252,8 @@ export function proposeStorefronts({ GEO, IDS, CAFETO, tagsById, corridor = CORR
     const food = /^amenity=(restaurant|fast_food|cafe|bar|pub|ice_cream)$/.test(pl.category);
     const others = here.filter((r) => !places.some((q) => q.tags['addr:housenumber'] && addressNumbers(q.tags['addr:housenumber']).some((n) => addressNumbers(r.address).includes(n)) && matches(q, r)));
     if (food && !permit && others.length) return reject('CaféTO permit at the address names another operator', { faceId, s, wall, conflict: others.map((r) => r.operator) });
-    if (disorder.has(i)) return reject('house number out of order with a neighbour', { faceId, s, wall });
-    const confidence = permit || check >= RULES.checkDateHigh ? 'high' : check >= RULES.checkDateMedium ? 'medium' : null;
+    // Waterloo: few places carry a survey date, so a mapped, addressed storefront counts as medium confidence
+    const confidence = permit || check >= RULES.checkDateHigh ? 'high' : 'medium';
     if (!confidence) return reject(check ? `last checked ${check}` : 'no survey date or permit', { faceId, s, wall });
     return { pl, faceId, side: look.side, s, wall, evidence, confidence };
   });
@@ -410,8 +424,14 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     if (!dir) throw new Error('usage: GEO_DATA=<raw osm-ids dir> node tools/build-storefront-signs.mjs --propose');
     const previous = fs.existsSync(MANIFEST) ? JSON.parse(fs.readFileSync(MANIFEST, 'utf8')) : null;
     const today = process.env.STOREFRONT_DATE || new Date().toISOString().slice(0, 10);
-    const manifest = proposeStorefronts({ ...inputs, tagsById: loadSourceTags(dir), previous, today,
-      extract: process.env.OSM_EXTRACT || 'Geofabrik ontario-latest.osm.pbf of 2026-10-23 (the geodata’s extract)' });
+    // one proposal per Waterloo shopping street, merged
+    const parts = CORRIDORS.map((corridor) => proposeStorefronts({ ...inputs, corridor, tagsById: loadSourceTags(dir), previous, today,
+      extract: process.env.OSM_EXTRACT || 'Overpass extract for Waterloo (the geodata’s extract)' }));
+    // merged, one sign per place (a corner shop can face two corridors), and no rejection for a place that got a sign
+    const seen = new Set();
+    const records = parts.flatMap((p) => p.records).filter((r) => !seen.has(r.id) && seen.add(r.id));
+    const rejected = parts.flatMap((p) => p.rejected).filter((r) => !seen.has(r.id) && seen.add(r.id));
+    const manifest = { ...parts[0], records, rejected };
     fs.writeFileSync(MANIFEST, JSON.stringify(manifest, null, 1) + '\n');
     const by = manifest.rejected.reduce((m, r) => ((m[r.reason.replace(/[\d.]+ m/, 'n m').replace(/level .*/, 'upper level').replace(/last checked .*/, 'checked before 2024')] = (m[r.reason.replace(/[\d.]+ m/, 'n m').replace(/level .*/, 'upper level').replace(/last checked .*/, 'checked before 2024')] || 0) + 1), m), {});
     console.log(`[storefronts] proposed ${manifest.records.length} signs (${manifest.records.filter((r) => r.confidence === 'high').length} high confidence); rejected ${manifest.rejected.length}:`, by);
@@ -419,6 +439,6 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const manifest = JSON.parse(fs.readFileSync(MANIFEST, 'utf8'));
   const data = compileStorefronts({ ...inputs, manifest });
   writeRuntime(data);
-  fs.writeFileSync(path.join(ROOT, 'docs/storefront-signs-review.md'), reviewSheet(manifest, data));
+  fs.writeFileSync(path.join(ROOT, 'tools/data/storefront-signs-review.md'), reviewSheet(manifest, data));
   console.log(`[storefronts] ${data.signs.length} signs compiled for geodata ${data.geodata}; dropped ${data.dropped.length}`);
 }
