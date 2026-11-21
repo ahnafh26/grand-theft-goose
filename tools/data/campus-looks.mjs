@@ -19,26 +19,27 @@ export const STYLE = {
 };
 export const LOOKS = {
   // ---- University of Waterloo (reference pass 1)
-  'Dana Porter Library': { tall: { from: 25, wall: 'ribs', colour: 0xd8d2c4 }, low: { wall: 'darkGlass' } },
-  'Mathematics & Computer': { wall: 'ribbon', colour: 0xb9b3a8 }, // brutalist slab, ribbon bands between thick spandrels
-  'Mathematics 3': { wall: 'silverGlass' },
-  'William G. Davis Computer Research Centre': { wall: 'ribbon', colour: 0xc9c6be }, // pale "toaster" panels & block
-  'Student Life Centre': { wall: 'office', colour: 0x8a4b36, brick: true },
-  'Engineering 5': { wall: 'silverGlass' }, // white-fritted glass
+  'Dana Porter Library': { tall: { from: 25, wall: 'ribs', colour: 0xd9d9d4 }, low: { wall: 'darkGlass' } }, // big ribbed cube over a recessed base (photo)
+  'Mathematics & Computer': { wall: 'ribbon', colour: 0xb8b2a6 }, // grey-beige concrete, rows of small windows (photo)
+  'Mathematics 3': { wall: 'office', colour: 0xc4532f, brick: true }, // orange-red brick & blue-green glass (photo)
+  'William G. Davis Computer Research Centre': { wall: 'ribbon', colour: 0xa8a49a }, // corrugated silver metal, glass barrel vault (photo)
+  'Student Life Centre': { wall: 'office', colour: 0x8e6b4e, brick: true }, // curved glass front between buff-brick ends (photo)
+  'Engineering 5': { wall: 'silverGlass' }, // grey-blue fritted glass in folded triangles (photo)
   'Pearl Sullivan Engineering Building': { wall: 'silverGlass' }, // E7
-  'Engineering 6': { wall: 'ribbon', colour: 0xd5d7d6 },
+  'Engineering 6': { wall: 'office', colour: 0x4b5058 }, // dark charcoal panels, mixed punched windows (photo)
   'Mike & Ophelia Lazaridis Quantum Nano Centre': { wall: 'glass' },
   'Ira G. Needles Hall': { wall: 'ribbon', colour: 0xbdb7ac },
-  'J. G. Hagey Hall of the Humanities': { wall: 'slits', colour: 0xa9a398 },
+  'J. G. Hagey Hall of the Humanities': { wall: 'slits', colour: 0x8c5a3c, brick: true }, // red-brown brick, blank fly tower (photo)
   'Physical Activities Complex': { wall: 'blank', colour: 0x7c4a38, brick: true },
   'Columbia Icefield': { wall: 'blank', colour: 0xc8cbcd },
   'Feridun Hamdullahpur Field House': { wall: 'blank', colour: 0xa8a6a0 },
-  'Physics': { wall: 'office', colour: 0xc8b79a },
+  'Physics': { wall: 'office', colour: 0xb79a72, brick: true }, // buff brick, 1960s window grid, rooftop dome (photo)
   'Chemistry 2': { wall: 'ribbon', colour: 0x9c7f62 },
   'Earth Sciences & Chemistry': { wall: 'ribbon', colour: 0x9c7f62 },
   'Environment 1': { wall: 'render', colour: 0x8c6a52, brick: true },
   'Environment 2': { wall: 'render', colour: 0x8c6a52, brick: true },
-  'Tatham Centre for Co-operative Education and Career Action': { wall: 'silverGlass' },
+  'Environment 3': { wall: 'ribbon', colour: 0xc9c6c0 }, // grey & lime-green bands, green canopy (photo)
+  'Tatham Centre for Co-operative Education and Career Action': { wall: 'ribbon', colour: 0x8b3a2e, brick: true }, // red-brown brick, glass corner (photo)
   'Arts Lecture Hall': { wall: 'blank', colour: 0xb5aa98 },
   'Student Village 1 Central Complex': { wall: 'residence', colour: 0x7e4e3a, brick: true },
   'Ron Eydt Village': { wall: 'residence', colour: 0x8b5a44, brick: true },
@@ -46,8 +47,8 @@ export const LOOKS = {
   'Claudette Millar Hall': { wall: 'residence', colour: 0xcfcbc4 },
   'Beck Hall': { wall: 'residence', colour: 0xc4b49c },
   'Eby Hall': { wall: 'residence', colour: 0xc4b49c },
-  'Conrad Grebel University College': { wall: 'render', colour: 0x9a7a5c, brick: true },
-  "St. Jerome's University": { wall: 'render', colour: 0x7f4936, brick: true },
+  'Conrad Grebel University College': { wall: 'render', colour: 0x8a4a38, brick: true }, // red-brown brick, glass stair tower (photo)
+  "St. Jerome's University": { wall: 'render', colour: 0xb08a6a, brick: true }, // low tan brick (photo)
   // ---- University of Waterloo (reference pass 2)
   'Biology 1': { wall: 'ribs', colour: 0xedede9 }, // white banded concrete, tall grouped windows between aggregate piers (photo)
   'Biology 2': { wall: 'ribbon', colour: 0x8a6a4e, brick: true },
