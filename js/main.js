@@ -1326,6 +1326,7 @@ async function initApp() {
   if (window.CITY.cameos) window.CITY.cameos.mount(scene);
   if (window.CITY.combat) window.CITY.combat.mount({ scene, controllerManager, cameraSystem, trafficSystem });
   if (window.CITY.wanted) window.CITY.wanted.mount({ scene, controllerManager, cameraSystem, trafficSystem });
+  if (window.CITY.geese) window.CITY.geese.mount({ scene, controllerManager, trafficSystem }); // (geese.js: the campus geese)
   // The quality safety net & the ?fps=1 readout (quality.js), fed every real-time frame
   const qualityNet = QUALITY.attach(window.__CITY_APP);
 
@@ -1559,6 +1560,7 @@ async function initApp() {
       );
       if (window.CITY.combat) window.CITY.combat.postUpdate(dt);
       if (window.CITY.wanted) window.CITY.wanted.update(dt);
+      if (window.CITY.geese) window.CITY.geese.update(dt);
       highwayTraffic.update(dt, cameraSystem.camera, playerEnt, controllerManager.activeMode);
       if (!document.hidden && now >= nextPlayerSave) {
         savePlayerState();
