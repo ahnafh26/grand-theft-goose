@@ -352,7 +352,7 @@ function signedWalls(data = window.CITY.STOREFRONTS) {
   }
   return walls;
 }
-const FLOOR_HEIGHTS = [3.4, 3.6, 3.8, 3.8, 3.8, 4.6, 3.9, 4.2, 2.9, 6.0, 3.9]; // the facade materials' storeys (buildCityBlocks `materials`)
+const FLOOR_HEIGHTS = [3.4, 3.6, 3.8, 3.8, 3.8, 4.6, 3.9, 4.2, 2.9, 6.0, 3.9, 3.3]; // the facade materials' storeys (buildCityBlocks `materials`)
 
 // The Distillery District: the Gooderham & Worts distillery's Victorian industrial buildings (1859 to the 1920s, the
 // largest such collection in North America) on their lanes off Mill St. The City's massing gives them as plain blocks
@@ -414,7 +414,9 @@ function buildCityBlocks(scene) {
     // [9] gyms & halls: big blank walls, a few high windows (PAC, the athletics complexes)
     [createRenderedFacadeMaterial, { windowWidth: 7.0, floorHeight: 6.0, windowRatioX: 0.14, windowRatioY: 0.18, litProbability: 0.3, warmth: 0.8, seed: 151.0, cornerPier: 1.0 }],
     // [10] collegiate brick: tall, evenly spaced windows (Laurier's red-brick halls)
-    [createRenderedFacadeMaterial, { windowWidth: 2.3, floorHeight: 3.9, windowRatioX: 0.38, windowRatioY: 0.6, litProbability: 0.45, warmth: 0.9, seed: 163.0, cornerPier: 0.8 }]
+    [createRenderedFacadeMaterial, { windowWidth: 2.3, floorHeight: 3.9, windowRatioX: 0.38, windowRatioY: 0.6, litProbability: 0.45, warmth: 0.9, seed: 163.0, cornerPier: 0.8 }],
+    // [11] precast ribs: a close grid of thin vertical concrete fins over deep slots (Dana Porter Library's tower)
+    [createRenderedFacadeMaterial, { windowWidth: 0.95, floorHeight: 3.3, windowRatioX: 0.42, windowRatioY: 0.96, litProbability: 0.25, warmth: 0.7, seed: 179.0, cornerPier: 1.0 }]
   ];
   const materials = facadeStyles.map(([create, opts]) => create(opts));
   const buckets = materials.map(() => []);
@@ -479,7 +481,7 @@ function buildCityBlocks(scene) {
     // (Waterloo: the look the building is known by, js/waterloo-looks.js: OSM's colour & material, else its campus's)
     const look = window.CITY.BUILDING_LOOKS && window.CITY.BUILDING_LOOKS[bi];
     if (look) {
-      if (look[2]) mat = 2;
+      if (look[2]) mat = look[2] === 1 ? 2 : look[2]; // (glass: 1 the blue-grey curtain wall, else that facade style)
       else { mat = look[3] !== undefined ? look[3] : mat >= 2 ? 1 : mat; paintHex = look[0]; brick = !!look[1]; }
     }
     // (the Distillery District's heritage blocks: its Victorian brick, whatever the draws above said)

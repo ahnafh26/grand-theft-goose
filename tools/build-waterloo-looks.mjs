@@ -48,7 +48,8 @@ const RESIDENCE = /^(dormitory|residential|apartments)$/;
 
 // The buildings people know by their look: [paint hex, brick, glass 0, wall style (buildings.js facadeStyles)]
 const NAMED_LOOK = {
-  'Dana Porter Library': [0xcfc9bb, 0, 0, 7], // pale precast concrete, deep narrow windows
+  // pale ribbed precast tower over a dark glass podium & ground floor (its OSM parts)
+  'Dana Porter Library': (part) => (part.max >= 25 ? [0xdcd6c8, 0, 0, 11] : [0x1e2326, 0, 3]),
   'J. G. Hagey Hall of the Humanities': [0xb3a993, 0, 0, 7],
   'Mathematics & Computer': [0xbebbb3, 0, 0, 6], // light-grey concrete, window bands
   'Ira G. Needles Hall': [0xc4bfb3, 0, 0, 6],
@@ -85,7 +86,7 @@ IDS.forEach((id, row) => {
   const hex = colourOf(t['building:colour']);
   if (GLASS.test(t.name || '') || mat === 'glass') { looks[row] = [0x2a3744, 0, 1]; tally.glass++; return; }
   const named = NAMED_LOOK[t.name];
-  if (named && where) { looks[row] = named; tally.named++; return; }
+  if (named && where) { looks[row] = typeof named === 'function' ? named(part) : named; tally.named++; return; }
   const res = RESIDENCE.test(t.building || '') || /Village|Residence|Hall$|House$|^(North|South|East|West) \d$/.test(t.name || '') && !/Lecture|Needles|Hagey|Pollock|Federation|Hall of/.test(t.name || '');
   const big = BIG.test(t.name || '');
   // the wall: [6] ribbon (UW's academic concrete), [8] residence, [9] gym & hall, [10] Laurier's collegiate brick
