@@ -16,7 +16,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
 import { geo, toWorld, toLonLat, log, load, osmRoads, pointInRing, bbox, centroid } from './geo-base.mjs';
-import { DETAIL, buildRoadGraph, deckOut, roadLines, roadCutOut } from './geo-roads.mjs';
+import { DETAIL, buildRoadGraph, deckOut, roadLines, roadCutOut, inDetail } from './geo-roads.mjs';
 import { areas, streams, walls, isWater, waterRings, islandRings, lake } from './geo-land.mjs';
 import { Raster } from './geo-base.mjs';
 import { blocks, SIDEWALK, blockRaster, blockLabels } from './geo-blocks.mjs';
@@ -173,6 +173,32 @@ const cnTower = toWorld(-79.387057, 43.642566);
 // the City's park name signs at the parks' entrances, clear of the street props & the City's trees (tools/geo-parksigns.mjs)
 props.parkSign = parkSigns(props, streetTrees);
 
+// Every walkway on the ground (Waterloo: the campuses' paths between the buildings, city-grid.js lays them on the
+// islands' yards): OpenStreetMap's footways, paths, pedestrian ways & cycleways off the street, not the sidewalks or
+// crossings, nor the indoor corridors, tunnels, bridges & links on other floors. [width, x, z, ...]
+const walkways = (() => {
+  const out = [];
+  for (const e of osmRoads.elements) {
+    const t = e.tags || {};
+    if (!/^(footway|path|pedestrian|cycleway|steps)$/.test(t.highway || '') || t.area === 'yes' || !e.geometry || e.geometry.length < 2) continue;
+    if (/^(sidewalk|crossing|traffic_island)$/.test(t.footway || '') || t.indoor === 'yes' || t.tunnel && t.tunnel !== 'no' || t.bridge && t.bridge !== 'no' ||
+      t.covered === 'yes' || (t.layer && t.layer !== '0') || (t.level && !/^0(;0)?$/.test(t.level))) continue;
+    const w = Math.min(6, parseFloat(t.width) || (t.highway === 'pedestrian' ? 4 : t.highway === 'cycleway' ? 2.5 : t.highway === 'path' ? 1.8 : 2.2));
+    const pts = e.geometry.map((g) => toWorld(g.lon, g.lat));
+    if (!pts.some(([x, z]) => inDetail(x, z))) continue;
+    out.push([w, ...pts.flatMap(([x, z]) => [q(x), q(z)])]);
+  }
+  log(`walkways: ${out.length} ground-level paths`);
+  return out;
+})();
+// Pedestrian plazas (highway=pedestrian areas): paved over the yards, as the parking lots are
+for (const e of osmRoads.elements) {
+  const t = e.tags || {};
+  if (t.highway !== 'pedestrian' || t.area !== 'yes' || !e.geometry || e.geometry.length < 4 || t.indoor === 'yes') continue;
+  const ring = e.geometry.map((g) => toWorld(g.lon, g.lat)).slice(0, -1);
+  if (!ring.some(([x, z]) => inDetail(x, z))) continue;
+  areas.push({ kind: 'plaza', name: t.name || '', ring, area: 0 });
+}
 // The paths through the small parks (the parkettes on islands that are mostly not park: city-grid.js lays their lawns
 // and these paths on the islands' yards). OpenStreetMap's footways, paths & pedestrian ways (not the sidewalks or the
 // crossings), cut to each park's outline: [width, x, z, ...] per run inside a park
@@ -268,6 +294,8 @@ const GEO = {
   // Land cover: [kind, name, outline, holes (Lake Ontario's islands) [outline, ...]]
   // The paths through the small parks: [width, x, z, ...] (see parkPaths above)
   parkPaths,
+  // Every ground-level walkway: [width, x, z, ...] (see walkways above)
+  walkways,
   areas: areas.filter((a) => !a.kind.startsWith('zone') || a.area > 20000).map((a) => (a.holes ? [a.kind, a.name, flat(a.ring), a.holes.map(flat)] : [a.kind, a.name, flat(a.ring)])),
   // Streams & rivers: [name, channel width, kind, centre line]; compound walls mapped: [height, line]
   streams: streams.map((s) => [s.name, s.w, s.kind, flat(s.pts)]),

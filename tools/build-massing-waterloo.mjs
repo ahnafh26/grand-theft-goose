@@ -81,6 +81,9 @@ let fid = 0;
 for (const e of osm.elements) {
   const t = e.tags || {};
   if (!t.building || t.building === 'no') continue;
+  // the enclosed bridges between buildings (MC-QNC, DC-EIT, PAC-SLC, E2-DWE...) start a floor up: the engine stands
+  // every building on the ground, so they would wall off the walkways under them
+  if (t.building === 'bridge' || (num(t['building:min_level']) >= 1 && !(num(t['building:levels']) > 4)) || num(t.min_height) >= 3) continue;
   const h = heights(t);
   const own = e.type === 'way' && e.geometry?.length >= 4 ? closed(ringOf(e.geometry)) : null;
   const split = own ? partsOf(own) : null;

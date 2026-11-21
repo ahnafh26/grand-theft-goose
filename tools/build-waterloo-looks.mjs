@@ -59,6 +59,13 @@ const lookFor = (spec, part) => {
   return [v.colour ?? 0xb8b0a0, v.brick ? 1 : 0, 0, wall];
 };
 const BIG = /Physical Activities|Icefield|Field House|Athletics|Gym|Arena|Theatre Auditorium|Warehouse|Commisary|Central Services/;
+// the universities' own names where OpenStreetMap's differ (the campus map check)
+const OFFICIAL_NAME = {
+  'Leopold Residence': 'Leupold Residence',
+  'Athletics Complex': 'Athletic Complex',
+  'Science Research Building': 'Science Research Centre',
+  'Applied Health Sciences Expansion Building': 'Health Expansion Building'
+};
 const looks = {};
 const signOf = new Map(); // OSM building -> its sign: [row, campus 0 UW | 1 Laurier, name] (js/campus-signs.js)
 const tally = { named: 0, osm: 0, laurier: 0, uw: 0, glass: 0 };
@@ -74,7 +81,7 @@ IDS.forEach((id, row) => {
     const a = Math.abs(part.ring.reduce((acc, p, i, r) => (i ? acc + r[i - 1][0] * p[1] - p[0] * r[i - 1][1] : acc), 0));
     const key = `${part.src}`;
     const prev = signOf.get(key);
-    if (!prev || a > prev.a) signOf.set(key, { a, sign: [row, where === 'uw' ? 0 : 1, t.name] });
+    if (!prev || a > prev.a) signOf.set(key, { a, sign: [row, where === 'uw' ? 0 : 1, OFFICIAL_NAME[t.name] || t.name] });
   }
   const mat = (t['building:material'] || '').toLowerCase();
   const hex = colourOf(t['building:colour']);

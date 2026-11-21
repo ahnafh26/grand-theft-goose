@@ -681,7 +681,7 @@ function buildCityGrid(scene) {
   const wildMat = createTerrainMaterial();
   const blockSidewalks = []; // { cx, cz, w, d, block, cover } axis-aligned cover of each island (street-details.js)
   const roadSidewalks = []; // rectangles inside the curbs that bound the roads (road-network.js)
-  const geos = { curb: [], walk: [], lawn: [], plot: [], wild: [], paved: [], rail: [], lot: [] };
+  const geos = { curb: [], walk: [], lawn: [], plot: [], wild: [], paved: [], rail: [], lot: [], plaza: [] };
   // Downtown is concrete to the building line: the core from Spadina to Parliament between the lake & Bloor, and
   // anywhere else a block holds towers or big buildings. Houses keep their front lawns.
   const blockBuilt = new Map(); // block -> { n, area, top }
@@ -766,7 +766,7 @@ function buildCityGrid(scene) {
   // Surface parking lots (GEO.areas 'parking'): asphalt over the yards of the islands they lie on, cut to each yard
   const lotsOn = new Map(); // block -> the parking lot outlines over it
   for (const a of window.CITY.AREAS) {
-    if (a.kind !== 'parking') continue;
+    if (a.kind !== 'parking' && a.kind !== 'plaza') continue;
     for (const b of window.CITY.blocksInRect(a.minX, a.maxX, a.minZ, a.maxZ)) {
       if (b.median || b.maxX < a.minX || b.minX > a.maxX || b.maxZ < a.minZ || b.minZ > a.maxZ) continue;
       if (!lotsOn.has(b)) lotsOn.set(b, []);
@@ -778,11 +778,12 @@ function buildCityGrid(scene) {
     const lots = lotsOn.get(b);
     if (!lots) return null;
     const propTris = trianglesXZ(prop);
-    const pieces = [];
+    const pieces = [], plazas = [];
     for (const a of lots) {
       const ps = intersectXZ(trianglesXZ(a.pts), propTris);
-      if (ps.length) { pieces.push(...ps); lotCount++; }
+      if (ps.length) { (a.kind === 'plaza' ? plazas : pieces).push(...ps); lotCount++; }
     }
+    if (plazas.length) geos.plaza.push(flatPiecesGeometry(plazas, SW_TOP + 0.007));
     return pieces.length ? flatPiecesGeometry(pieces, SW_TOP + 0.005) : null;
   };
   const cellKey = (x, z, c) => Math.floor(x / c) * 100003 + Math.floor(z / c);
@@ -1057,7 +1058,49 @@ function buildCityGrid(scene) {
   mergeInto(geos.walk, sidewalkMat, false, 'Walkways');
   mergeInto(geos.lawn, lawnMat, false, 'Lawns');
   mergeInto(geos.plot, plotMat, false, 'Yards');
-  mergeInto(geos.paved, createForecourtMaterial(), false, 'Forecourts');
+  const forecourtMat = createForecourtMaterial();
+  mergeInto(geos.paved, forecourtMat, false, 'Forecourts');
+  // The walkways (GEO.walkways: the campuses' paths between the buildings, every ground-level footway off the street):
+  // paved strips over the islands' yards, joined at their bends by a square of paving; none over the roadway
+  {
+    const pos = [];
+    const quad = (ax, az, bx, bz, w, y) => {
+      const L = Math.hypot(bx - ax, bz - az);
+      if (L < 0.05) return;
+      const sx = ((az - bz) / L) * w * 0.5, sz = ((bx - ax) / L) * w * 0.5;
+      pos.push(ax - sx, y, az - sz, bx + sx, y, bz + sz, bx - sx, y, bz - sz, ax - sx, y, az - sz, ax + sx, y, az + sz, bx + sx, y, bz + sz); // (up-facing)
+    };
+    const onIsland = (x, z) => { const b = window.CITY.blockAt(x, z); return b && !b.median; };
+    let runs = 0;
+    for (const [w, ...flat] of GEO.walkways || []) {
+      const y = SW_TOP + 0.011;
+      for (let i = 2; i < flat.length; i += 2) {
+        const ax = flat[i - 2], az = flat[i - 1], bx = flat[i], bz = flat[i + 1];
+        // a long segment in 4 m pieces, each kept only where it lies on an island (a path crossing a street stops at it)
+        const L = Math.hypot(bx - ax, bz - az), n = Math.max(1, Math.ceil(L / 4));
+        for (let k = 0; k < n; k++) {
+          const x0 = ax + ((bx - ax) * k) / n, z0 = az + ((bz - az) * k) / n, x1 = ax + ((bx - ax) * (k + 1)) / n, z1 = az + ((bz - az) * (k + 1)) / n;
+          if (onIsland((x0 + x1) / 2, (z0 + z1) / 2)) quad(x0, z0, x1, z1, w, y);
+        }
+        if (i + 2 < flat.length && onIsland(bx, bz)) quad(bx - w * 0.35, bz, bx + w * 0.35, bz, w * 0.7, y); // the bend
+      }
+      runs++;
+    }
+    if (pos.length) {
+      const g = new THREE.BufferGeometry();
+      g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+      const n = pos.length / 3, nor = new Float32Array(n * 3), uv = new Float32Array(n * 2);
+      for (let i = 0; i < n; i++) { nor[3 * i + 1] = 1; uv[2 * i] = pos[3 * i]; uv[2 * i + 1] = -pos[3 * i + 2]; }
+      g.setAttribute('normal', new THREE.BufferAttribute(nor, 3));
+      g.setAttribute('uv', new THREE.BufferAttribute(uv, 2));
+      const m = new THREE.Mesh(g, forecourtMat);
+      m.receiveShadow = true;
+      m.name = 'CampusPaths';
+      group.add(m);
+    }
+    mergeInto(geos.plaza, forecourtMat, false, 'Plazas');
+    console.info(`[cityGrid] ${runs} walkways laid, ${geos.plaza.length} pedestrian plazas`);
+  }
   mergeInto(geos.wild, wildMat, false, 'OpenLand');
   mergeInto(geos.lot, roadMat, false, 'ParkingLots');
   console.info(`[cityGrid] ${lotCount} parking lots laid in asphalt`);
