@@ -4,8 +4,8 @@
 // (tools/build-storefront-signs.mjs from tools/data/storefront-signs.json) as fascia boards over their shops' fronts.
 // Each record is keyed by its OpenStreetMap place and its building face; the board stands on the face's real wall,
 // over its own stretch of frontage, at the storefront's fascia (tsl-materials.js createStorefront). Plain lettering in a
-// few Toronto main-street styles: painted fascias in sans or serif, backlit light boxes, coloured boards. No logos:
-// those are the businesses' trademarks.
+// few main-street styles: painted fascias in sans or serif, backlit light boxes, coloured boards. A chain's sign shows
+// its real logo instead (Wikimedia Commons via Wikidata), on a white board sized to it.
 // Cheap at every distance: one instanced mesh of thin boxes (one draw), and one shared, mipmapped atlas that packs four
 // boards' lettering into each cell, one per colour channel (the board and ink colours are per-instance), within the
 // adoption spec's sign-atlas ceilings (ID-4: 24 MiB high, 8 MiB low, mips included). Names are only ever drawn with
@@ -17,6 +17,7 @@ const { Fn, texture, uv, attribute, mix, smoothstep, step, vec2, vec3, float, do
 const CW = 1024, CH = 128; // an atlas cell: one board's lettering (in one colour channel), at full resolution
 const BOARD_H = 0.55; // m: a fascia board
 const MIN_W = 1.6, MAX_W = 7.2, PAD = 0.2; // m
+const LOGO_MAX_H = 0.9; // m: the tallest logo on a sign
 const ATLAS_CEILING = { high: 24 * 1048576, medium: 24 * 1048576, low: 8 * 1048576 }; // bytes, mips included
 
 // Board [colours], ink [colours] and lettering per style (sRGB); a hash of the source ID picks within a style
@@ -89,7 +90,16 @@ function buildStorefrontSigns(scene, { facadeOf = () => null } = {}) {
     const fh = facadeOf(s.b)?.floorHeight || 3.6;
     const top = fh - 0.12; // the fascia's top, under the first-floor sills
     if (s.h < top + 0.3) { skip('too low'); continue; }
-    signs.push({ ...s, y: top - BOARD_H / 2 });
+    // a brand's sign: a white board sized to its logo (up to 0.9 m tall), the logo drawn on it by addLogos()
+    if (s.logo && s.logoAspect > 0) {
+      const room = Math.min(MAX_W, s.width - 0.3) - 0.3;
+      const lh = Math.max(0.36, Math.min(LOGO_MAX_H, room / s.logoAspect));
+      const lw = Math.min(room, lh * s.logoAspect);
+      const bh = lh + 0.14;
+      signs.push({ ...s, y: top - bh / 2, boardH: bh, logoW: lw, logoH: lh });
+      continue;
+    }
+    signs.push({ ...s, y: top - BOARD_H / 2, boardH: BOARD_H });
   }
   // the atlas at this tier's resolution, halved until it fits its ceiling
   let res = (QUALITY.signRes ?? 1) < 1 ? 0.5 : 1;
@@ -124,9 +134,11 @@ function buildStorefrontSigns(scene, { facadeOf = () => null } = {}) {
   const DEPTH = 0.07;
 
   signs.forEach((s, i) => {
-    const style = STYLES[s.style] || STYLES.fascia;
+    const style = s.logo ? STYLES.lightbox : (STYLES[s.style] || STYLES.fascia);
     const h = hashId(s.id);
-    const lay = layoutSign(s.name, Math.min(MAX_W, s.width - 0.3), measure(style));
+    const lay = s.logo
+      ? { lines: [], px: 8, cellW: 8, textW: 0.01, boardW: Math.max(MIN_W, s.logoW + 0.3) }
+      : layoutSign(s.name, Math.min(MAX_W, s.width - 0.3), measure(style));
     // the lettering, white on black in a scratch cell, copied into its atlas cell's channel (rows flipped: v = 0 at the
     // bottom of the board)
     ctx.setTransform(res, 0, 0, res, 0, 0);
@@ -152,13 +164,13 @@ function buildStorefrontSigns(scene, { facadeOf = () => null } = {}) {
     // the board's atlas rect, channel, colours & style
     rect.setXYZW(i, ox / size.w, oy / size.h, (ox + cw) / size.w, (oy + chh) / size.h);
     channel.setXYZW(i, ch === 0 ? 1 : 0, ch === 1 ? 1 : 0, ch === 2 ? 1 : 0, ch === 3 ? 1 : 0);
-    const bc = lin(style.boards[h % style.boards.length]), ic = lin(style.inks[(h >>> 8) % style.inks.length]);
+    const bc = lin(s.logo ? 0xfbfaf6 : style.boards[h % style.boards.length]), ic = lin(style.inks[(h >>> 8) % style.inks.length]);
     board.setXYZW(i, bc.r, bc.g, bc.b, style.frame);
     ink.setXYZW(i, ic.r, ic.g, ic.b, lay.textW / lay.boardW);
     // stood on the wall, its lettering facing out of it (the box's +z), over the middle of its frontage
     q.setFromAxisAngle(up, Math.atan2(s.nx, s.nz));
     m4.compose(new THREE.Vector3(s.x + s.nx * (DEPTH / 2 + 0.02), s.y, s.z + s.nz * (DEPTH / 2 + 0.02)), q,
-      new THREE.Vector3(lay.boardW, BOARD_H, DEPTH));
+      new THREE.Vector3(lay.boardW, s.boardH, DEPTH));
     mesh.setMatrixAt(i, m4);
     s.boardW = lay.boardW;
     s.glow = style.glow;
@@ -179,11 +191,71 @@ function buildStorefrontSigns(scene, { facadeOf = () => null } = {}) {
   mesh.receiveShadow = true;
   mesh.computeBoundingSphere();
   scene.add(mesh);
+  addLogos(scene, signs.filter((s) => s.logo), DEPTH).catch((e) => console.warn('[storefronts] logos:', e));
   stats.placed = signs.length;
   stats.atlas = { width: size.w, height: size.h, resolution: res, gpuBytes: size.bytes, ceiling };
   CITY.storefrontSigns = signs.map((s) => ({ id: s.id, name: s.name, poi: s.poi, x: s.x, z: s.z, y: s.y, width: s.boardW, confidence: s.confidence, reviewed: s.reviewed }));
   console.info(`[storefronts] ${signs.length} source-keyed signs; atlas ${size.w}x${size.h} (${(size.bytes / 1048576).toFixed(1)} MiB with mips)${Object.keys(stats.skipped).length ? `; skipped ${JSON.stringify(stats.skipped)}` : ''}`);
   return { group: mesh, texture: tex, gpuBytes: size.bytes, cpuBytes: atlas.byteLength, signs };
+}
+
+// The brands' logos (assets/logos, from Wikimedia Commons via Wikidata; tools/fetch-logos.mjs), each fitted into a
+// 512x128 cell of one colour atlas and drawn as a plane on the front of its white board: one instanced draw. Loaded
+// after the city is up; a logo that fails to load leaves its board plain.
+async function addLogos(scene, signs, depth) {
+  if (!signs.length) return;
+  const files = [...new Set(signs.map((s) => s.logo))];
+  const load = (src) => new Promise((ok) => { const im = new Image(); im.onload = () => ok(im); im.onerror = () => ok(null); im.src = src; });
+  const images = new Map((await Promise.all(files.map(load))).map((im, i) => [files[i], im]));
+  const LW = 512, LH = 128, COLS = 4;
+  const rows = Math.ceil(files.length / COLS);
+  const canvas = document.createElement('canvas');
+  canvas.width = LW * COLS;
+  canvas.height = LH * rows;
+  const ctx = canvas.getContext('2d');
+  const rectOf = new Map();
+  files.forEach((f, i) => {
+    const im = images.get(f);
+    if (!im || !im.width) return;
+    const k = Math.min((LW - 8) / im.width, (LH - 8) / im.height);
+    const w = im.width * k, h = im.height * k;
+    const x = (i % COLS) * LW + (LW - w) / 2, y = Math.floor(i / COLS) * LH + (LH - h) / 2;
+    ctx.drawImage(im, x, y, w, h);
+    // (v = 0 at the canvas's bottom: the texture is flipped on upload)
+    rectOf.set(f, [x / canvas.width, 1 - (y + h) / canvas.height, (x + w) / canvas.width, 1 - y / canvas.height]);
+  });
+  const shown = signs.filter((s) => rectOf.has(s.logo));
+  if (!shown.length) return;
+  const tex = new THREE.CanvasTexture(canvas);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = 8;
+  const geometry = new THREE.PlaneGeometry(1, 1);
+  const rect = new THREE.InstancedBufferAttribute(new Float32Array(shown.length * 4), 4);
+  geometry.setAttribute('logoRect', rect);
+  const r = attribute('logoRect', 'vec4');
+  const st = uv();
+  const texel = texture(tex, vec2(mix(r.x, r.z, st.x), mix(r.y, r.w, st.y)));
+  const mat = new THREE.MeshStandardNodeMaterial({ roughness: 0.5, metalness: 0.0 });
+  mat.colorNode = texel.rgb;
+  mat.opacityNode = texel.a;
+  mat.alphaTest = 0.35;
+  mat.emissiveNode = texel.rgb.mul(0.7).mul(smoothstep(0.4, 1.1, window.CITY.cityUniforms.uInteriorGlow));
+  const mesh = new THREE.InstancedMesh(geometry, mat, shown.length);
+  const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), up = new THREE.Vector3(0, 1, 0);
+  shown.forEach((s, i) => {
+    rect.setXYZW(i, ...rectOf.get(s.logo));
+    q.setFromAxisAngle(up, Math.atan2(s.nx, s.nz));
+    const out = depth + 0.03;
+    m4.compose(new THREE.Vector3(s.x + s.nx * out, s.y, s.z + s.nz * out), q, new THREE.Vector3(s.logoW, s.logoH, 1));
+    mesh.setMatrixAt(i, m4);
+  });
+  mesh.name = 'StorefrontLogos';
+  mesh.castShadow = false;
+  mesh.receiveShadow = true;
+  mesh.computeBoundingSphere();
+  scene.add(mesh);
+  window.CITY.storefrontStats.logos = shown.length;
+  console.info(`[storefronts] ${shown.length} brand logos (${rectOf.size} files)`);
 }
 
 // The board: its colour, the lettering's ink where the atlas cell's channel says so (front face only), a frame for the

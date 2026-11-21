@@ -49,7 +49,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -76,7 +76,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -103,7 +103,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -130,7 +130,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -157,7 +157,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -184,7 +184,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -217,7 +217,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -250,7 +250,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -265,6 +265,7 @@
    "name": "Papa John's",
    "sourceName": "Papa John's",
    "category": "amenity=fast_food",
+   "brand": "Q2759586",
    "address": "undefined undefined",
    "span": [
     29.44,
@@ -283,7 +284,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -316,7 +317,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -349,7 +350,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -376,7 +377,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -403,7 +404,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -430,7 +431,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -445,6 +446,7 @@
    "name": "Mucho Burrito",
    "sourceName": "Mucho Burrito",
    "category": "amenity=fast_food",
+   "brand": "Q65148332",
    "address": "undefined undefined",
    "span": [
     58.42,
@@ -463,7 +465,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -490,7 +492,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -505,6 +507,7 @@
    "name": "Menchie's",
    "sourceName": "Menchie's",
    "category": "amenity=ice_cream",
+   "brand": "Q6816528",
    "address": "undefined undefined",
    "span": [
     17.13,
@@ -517,7 +520,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -532,6 +535,7 @@
    "name": "Booster Juice",
    "sourceName": "Booster Juice",
    "category": "amenity=fast_food",
+   "brand": "Q4943796",
    "address": "undefined undefined",
    "span": [
     33.41,
@@ -544,7 +548,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -571,7 +575,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -598,7 +602,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -613,6 +617,7 @@
    "name": "Starbucks",
    "sourceName": "Starbucks",
    "category": "amenity=cafe",
+   "brand": "Q37158",
    "address": "undefined undefined",
    "span": [
     4.8,
@@ -625,7 +630,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -652,7 +657,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -679,7 +684,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -694,6 +699,7 @@
    "name": "Wine Rack",
    "sourceName": "Wine Rack",
    "category": "shop=wine",
+   "brand": "Q86707661",
    "address": "undefined undefined",
    "span": [
     15.85,
@@ -706,7 +712,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -733,7 +739,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -748,6 +754,7 @@
    "name": "Church's Chicken",
    "sourceName": "Church's Chicken",
    "category": "amenity=fast_food",
+   "brand": "Q1089932",
    "address": "undefined undefined",
    "span": [
     24.46,
@@ -760,7 +767,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -775,6 +782,7 @@
    "name": "RBC Royal Bank",
    "sourceName": "RBC Royal Bank",
    "category": "amenity=bank",
+   "brand": "Q735261",
    "address": "undefined undefined",
    "span": [
     2.48,
@@ -787,7 +795,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -814,7 +822,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -841,7 +849,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -868,7 +876,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -895,7 +903,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -922,7 +930,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -949,7 +957,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -964,6 +972,7 @@
    "name": "Popeye's Supplements",
    "sourceName": "Popeye's Supplements",
    "category": "shop=nutrition_supplements",
+   "brand": "Q71096495",
    "address": "158 University Avenue West",
    "span": [
     0.3,
@@ -976,7 +985,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1003,7 +1012,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1030,7 +1039,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1057,7 +1066,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1084,7 +1093,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1111,7 +1120,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1138,7 +1147,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1165,7 +1174,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1192,7 +1201,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1219,7 +1228,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1246,7 +1255,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1273,7 +1282,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1288,6 +1297,7 @@
    "name": "Subway",
    "sourceName": "Subway",
    "category": "amenity=fast_food",
+   "brand": "Q244457",
    "address": "undefined undefined",
    "span": [
     23.7,
@@ -1300,7 +1310,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1327,7 +1337,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1354,7 +1364,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1369,6 +1379,7 @@
    "name": "Chungchun",
    "sourceName": "Chungchun",
    "category": "amenity=fast_food",
+   "brand": "Q115803477",
    "address": "undefined undefined",
    "span": [
     0.3,
@@ -1381,7 +1392,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1408,7 +1419,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1435,7 +1446,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1462,7 +1473,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1489,7 +1500,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1504,6 +1515,7 @@
    "name": "Yunshang Rice Noodle",
    "sourceName": "Yunshang Rice Noodle",
    "category": "amenity=restaurant",
+   "brand": "Q109381268",
    "address": "undefined undefined",
    "span": [
     0.3,
@@ -1516,7 +1528,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1543,7 +1555,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1570,7 +1582,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1597,7 +1609,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1624,7 +1636,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1651,7 +1663,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1678,7 +1690,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1705,7 +1717,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1732,7 +1744,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1747,6 +1759,7 @@
    "name": "Pizza Nova",
    "sourceName": "Pizza Nova",
    "category": "amenity=fast_food",
+   "brand": "Q7199971",
    "address": "undefined undefined",
    "span": [
     0.3,
@@ -1759,7 +1772,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1786,7 +1799,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1813,7 +1826,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1840,7 +1853,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1855,6 +1868,7 @@
    "name": "Burger King",
    "sourceName": "Burger King",
    "category": "amenity=fast_food",
+   "brand": "Q177054",
    "address": "150 University Avenue West",
    "span": [
     1.96,
@@ -1867,7 +1881,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1894,7 +1908,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1921,7 +1935,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1948,7 +1962,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -1975,7 +1989,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2002,7 +2016,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2029,7 +2043,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2056,7 +2070,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2083,7 +2097,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2110,7 +2124,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2137,7 +2151,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2152,6 +2166,7 @@
    "name": "Dulux Paints",
    "sourceName": "Dulux Paints",
    "category": "shop=paint",
+   "brand": "Q50921",
    "address": "undefined undefined",
    "span": [
     0.97,
@@ -2164,7 +2179,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2179,6 +2194,7 @@
    "name": "Williams Coffee Pub",
    "sourceName": "Williams Coffee Pub",
    "category": "amenity=cafe",
+   "brand": "Q106195633",
    "address": "33 University Avenue East",
    "span": [
     0.3,
@@ -2197,7 +2213,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2224,7 +2240,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2251,7 +2267,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2266,6 +2282,7 @@
    "name": "Popeyes",
    "sourceName": "Popeyes",
    "category": "amenity=fast_food",
+   "brand": "Q1330910",
    "address": "85 University Avenue East",
    "span": [
     0.3,
@@ -2278,7 +2295,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2305,7 +2322,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2332,7 +2349,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2347,6 +2364,7 @@
    "name": "Guardian",
    "sourceName": "Guardian",
    "category": "amenity=pharmacy",
+   "brand": "Q65553864",
    "address": "380 King Street North",
    "span": [
     16.96,
@@ -2359,7 +2377,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2386,7 +2404,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2413,7 +2431,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2440,7 +2458,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2467,7 +2485,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2494,7 +2512,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2527,7 +2545,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2554,7 +2572,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2581,7 +2599,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2608,7 +2626,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2635,7 +2653,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2662,7 +2680,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2695,7 +2713,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2722,7 +2740,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2749,7 +2767,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2776,7 +2794,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2803,7 +2821,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2830,7 +2848,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2857,7 +2875,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2884,7 +2902,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2911,7 +2929,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2938,7 +2956,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2965,7 +2983,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -2992,7 +3010,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3019,7 +3037,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3046,7 +3064,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3061,6 +3079,7 @@
    "name": "Long & McQuade",
    "sourceName": "Long & McQuade",
    "category": "shop=musical_instrument",
+   "brand": "Q6672180",
    "address": "undefined undefined",
    "span": [
     3.9,
@@ -3073,7 +3092,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3088,6 +3107,7 @@
    "name": "Jersey Mike's Subs",
    "sourceName": "Jersey Mike's Subs",
    "category": "amenity=fast_food",
+   "brand": "Q6184897",
    "address": "undefined undefined",
    "span": [
     7.97,
@@ -3100,7 +3120,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3127,7 +3147,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3142,6 +3162,7 @@
    "name": "Pür & Simple",
    "sourceName": "Pür & Simple",
    "category": "amenity=restaurant",
+   "brand": "Q118558630",
    "address": "4 King Street North",
    "span": [
     6.34,
@@ -3154,7 +3175,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3181,7 +3202,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3208,7 +3229,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3235,7 +3256,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3262,7 +3283,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3277,6 +3298,7 @@
    "name": "Burrito Boyz",
    "sourceName": "Burrito Boyz",
    "category": "amenity=fast_food",
+   "brand": "Q123409967",
    "address": "258 King Street North",
    "span": [
     21.1,
@@ -3295,7 +3317,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3322,7 +3344,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3355,7 +3377,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3382,7 +3404,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3409,7 +3431,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3424,6 +3446,7 @@
    "name": "Gino's Pizza",
    "sourceName": "Gino's Pizza",
    "category": "amenity=fast_food",
+   "brand": "Q84029134",
    "address": "253 King Street North",
    "span": [
     10.57,
@@ -3436,7 +3459,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3463,7 +3486,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3490,7 +3513,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3505,6 +3528,7 @@
    "name": "Sleep Country",
    "sourceName": "Sleep Country",
    "category": "shop=bed",
+   "brand": "Q7539684",
    "address": "366 King Street North",
    "span": [
     3.4,
@@ -3517,7 +3541,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3532,6 +3556,7 @@
    "name": "241 Pizza",
    "sourceName": "241 Pizza",
    "category": "amenity=fast_food",
+   "brand": "Q4631768",
    "address": "258 King Street North",
    "span": [
     38.02,
@@ -3544,7 +3569,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3571,7 +3596,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3598,7 +3623,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3625,7 +3650,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3652,7 +3677,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3679,7 +3704,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3706,7 +3731,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3733,7 +3758,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3766,7 +3791,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3793,7 +3818,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3820,7 +3845,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3847,7 +3872,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3874,7 +3899,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3901,7 +3926,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3928,7 +3953,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3955,7 +3980,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -3982,7 +4007,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4009,7 +4034,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4024,6 +4049,7 @@
    "name": "7-Eleven",
    "sourceName": "7-Eleven",
    "category": "shop=convenience",
+   "brand": "Q259340",
    "address": "256 King Street North",
    "span": [
     0.84,
@@ -4042,7 +4068,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4069,7 +4095,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4102,7 +4128,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4129,7 +4155,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4144,6 +4170,7 @@
    "name": "BMO",
    "sourceName": "BMO",
    "category": "amenity=bank",
+   "brand": "Q806693",
    "address": "255 King Street North",
    "span": [
     3.52,
@@ -4156,7 +4183,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4183,7 +4210,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4198,6 +4225,7 @@
    "name": "CIBC",
    "sourceName": "CIBC",
    "category": "amenity=bank",
+   "brand": "Q666694",
    "address": "27 King Street North",
    "span": [
     0.3,
@@ -4210,7 +4238,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4237,7 +4265,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4270,7 +4298,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4303,7 +4331,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4330,7 +4358,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4345,6 +4373,7 @@
    "name": "Tim Hortons",
    "sourceName": "Tim Hortons",
    "category": "amenity=cafe",
+   "brand": "Q175106",
    "address": "109 King Street North",
    "span": [
     0.3,
@@ -4357,7 +4386,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4384,7 +4413,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4411,7 +4440,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4438,7 +4467,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4465,7 +4494,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4480,6 +4509,7 @@
    "name": "Running Room",
    "sourceName": "Running Room",
    "category": "shop=sports",
+   "brand": "Q102351412",
    "address": "undefined undefined",
    "span": [
     6.9,
@@ -4492,7 +4522,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4507,6 +4537,7 @@
    "name": "Massage Addict",
    "sourceName": "Massage Addict",
    "category": "shop=massage",
+   "brand": "Q120790290",
    "address": "104 King Street South",
    "span": [
     0.3,
@@ -4519,7 +4550,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4546,7 +4577,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4573,7 +4604,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4600,7 +4631,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4627,7 +4658,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4654,7 +4685,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4681,7 +4712,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4708,7 +4739,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4735,7 +4766,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4762,7 +4793,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4777,6 +4808,7 @@
    "name": "Cinnaholic",
    "sourceName": "Cinnaholic",
    "category": "amenity=cafe",
+   "brand": "Q48965480",
    "address": "undefined undefined",
    "span": [
     0.3,
@@ -4795,7 +4827,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4822,7 +4854,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4849,7 +4881,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4882,7 +4914,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4909,7 +4941,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4936,7 +4968,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4951,6 +4983,7 @@
    "name": "Carter's OshKosh",
    "sourceName": "Carter's OshKosh",
    "category": "shop=clothes",
+   "brand": "Q5047083",
    "address": "15 King Street South",
    "span": [
     22.45,
@@ -4963,7 +4996,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -4990,7 +5023,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5017,7 +5050,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5044,7 +5077,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5071,7 +5104,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5098,7 +5131,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5125,7 +5158,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5140,6 +5173,7 @@
    "name": "LCBO",
    "sourceName": "LCBO",
    "category": "shop=alcohol",
+   "brand": "Q845263",
    "address": "115 King Street South",
    "span": [
     5.19,
@@ -5158,7 +5192,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5173,6 +5207,7 @@
    "name": "Starbucks",
    "sourceName": "Starbucks",
    "category": "amenity=cafe",
+   "brand": "Q37158",
    "address": "undefined undefined",
    "span": [
     0.3,
@@ -5185,7 +5220,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5218,7 +5253,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5233,6 +5268,7 @@
    "name": "Scotiabank",
    "sourceName": "Scotiabank",
    "category": "amenity=bank",
+   "brand": "Q451476",
    "address": "undefined undefined",
    "span": [
     67.98,
@@ -5245,7 +5281,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5260,6 +5296,7 @@
    "name": "TD",
    "sourceName": "TD",
    "category": "amenity=bank",
+   "brand": "Q1080670",
    "address": "15 King Street South",
    "span": [
     41.83,
@@ -5278,7 +5315,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5305,7 +5342,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5332,7 +5369,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5347,6 +5384,7 @@
    "name": "The Works",
    "sourceName": "The Works",
    "category": "amenity=restaurant",
+   "brand": "Q123410138",
    "address": "92 King Street South",
    "span": [
     1.18,
@@ -5365,7 +5403,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5392,7 +5430,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5407,6 +5445,7 @@
    "name": "IRIS",
    "sourceName": "IRIS",
    "category": "shop=optician",
+   "brand": "Q121091944",
    "address": "undefined undefined",
    "span": [
     11.16,
@@ -5419,7 +5458,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5446,7 +5485,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5461,6 +5500,7 @@
    "name": "Marble Slab Creamery",
    "sourceName": "Marble Slab Creamery",
    "category": "amenity=ice_cream",
+   "brand": "Q17020087",
    "address": "110 King Street South",
    "span": [
     0.3,
@@ -5479,7 +5519,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5506,7 +5546,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5539,7 +5579,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5572,7 +5612,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5605,7 +5645,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5638,7 +5678,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5671,7 +5711,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5698,7 +5738,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5725,7 +5765,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5752,7 +5792,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5767,6 +5807,7 @@
    "name": "Ontario Seed Company",
    "sourceName": "Ontario Seed Company",
    "category": "shop=doityourself",
+   "brand": "Q3139611",
    "address": "16 King Street South",
    "span": [
     4.36,
@@ -5779,7 +5820,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5806,7 +5847,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5839,7 +5880,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5854,6 +5895,7 @@
    "name": "BMO",
    "sourceName": "BMO",
    "category": "amenity=bank",
+   "brand": "Q806693",
    "address": "3 King Street South",
    "span": [
     2.54,
@@ -5872,7 +5914,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5899,7 +5941,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5926,7 +5968,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5941,6 +5983,7 @@
    "name": "RBC",
    "sourceName": "RBC",
    "category": "amenity=bank",
+   "brand": "Q735261",
    "address": "70-74 King Street South",
    "span": [
     34.34,
@@ -5953,7 +5996,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -5980,7 +6023,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6007,7 +6050,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6022,6 +6065,7 @@
    "name": "The Burger's Priest",
    "sourceName": "The Burger's Priest",
    "category": "amenity=fast_food",
+   "brand": "Q100255453",
    "address": "212 King Street South",
    "span": [
     0.3,
@@ -6034,7 +6078,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6061,7 +6105,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6088,7 +6132,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6115,7 +6159,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6142,7 +6186,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6169,7 +6213,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6184,6 +6228,7 @@
    "name": "Gong Cha",
    "sourceName": "Gong Cha",
    "category": "amenity=cafe",
+   "brand": "Q5581670",
    "address": "undefined undefined",
    "span": [
     86.38,
@@ -6196,7 +6241,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6229,7 +6274,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6256,7 +6301,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6271,6 +6316,7 @@
    "name": "The UPS Store",
    "sourceName": "The UPS Store",
    "category": "shop=copyshop",
+   "brand": "Q7771029",
    "address": "256C Phillip Street",
    "span": [
     10.58,
@@ -6283,7 +6329,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6310,7 +6356,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6337,7 +6383,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6364,7 +6410,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6391,7 +6437,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6418,7 +6464,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6445,7 +6491,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6472,7 +6518,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6499,7 +6545,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6526,7 +6572,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6553,7 +6599,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6580,7 +6626,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6607,7 +6653,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6634,7 +6680,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6661,7 +6707,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6688,7 +6734,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6715,7 +6761,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6742,7 +6788,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6769,7 +6815,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -6796,7 +6842,7 @@
     "extract": "Overpass extract for Waterloo (the geodata’s extract)",
     "licence": "ODbL-1.0"
    },
-   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.",
+   "rights": "Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.",
    "enabled": true,
    "review": {
     "status": "rules",
@@ -7387,6 +7433,7 @@
   "osm:node/1863120483",
   "osm:node/9061278667",
   "osm:node/9061278668",
+  "osm:node/9061302978",
   "osm:way/143670598",
   "osm:way/143670599",
   "osm:way/177731847",
@@ -7394,20 +7441,37 @@
   "osm:node/10120212692",
   "osm:node/10120212693",
   "osm:node/10120212694",
+  "osm:node/10795183406",
+  "osm:node/10955169579",
   "osm:node/10955446390",
   "osm:node/10955446391",
   "osm:node/11732258739",
   "osm:node/12000187457",
+  "osm:node/12054081115",
+  "osm:node/12054104153",
+  "osm:node/12331548295",
   "osm:node/12383163224",
   "osm:node/12383163225",
+  "osm:node/12889772301",
   "osm:node/12889772302",
   "osm:node/12889772303",
   "osm:node/12889772304",
   "osm:node/12889772305",
+  "osm:node/12889846989",
+  "osm:node/12972371233",
+  "osm:node/12972371234",
+  "osm:node/12972371235",
+  "osm:node/12972371236",
+  "osm:node/12972371237",
   "osm:node/12993610695",
   "osm:node/13191905586",
+  "osm:node/13720039092",
+  "osm:node/13908547488",
+  "osm:node/14190592266",
   "osm:node/1493872357",
   "osm:node/1583468586",
+  "osm:node/1626379693",
+  "osm:node/1626379707",
   "osm:node/2120263917",
   "osm:node/2358060989",
   "osm:node/2436329832",
@@ -7416,21 +7480,27 @@
   "osm:node/2475475450",
   "osm:node/2938254243",
   "osm:node/2938254244",
+  "osm:node/420326579",
   "osm:node/5648014859",
   "osm:node/5650497229",
   "osm:node/5934188968",
   "osm:node/6796160271",
+  "osm:node/6796160272",
   "osm:node/6796160273",
   "osm:node/6796160274",
   "osm:node/6796160284",
   "osm:node/6796203985",
   "osm:node/6796203986",
+  "osm:node/6796203989",
+  "osm:node/6796203990",
   "osm:node/6797657153",
   "osm:node/6818427757",
-  "osm:node/6818427759",
   "osm:node/7797316983",
+  "osm:node/836021619",
   "osm:node/8740263305",
+  "osm:node/9163392497",
   "osm:node/9351625837",
+  "osm:node/9608101479",
   "osm:way/118409041",
   "osm:way/118409045",
   "osm:way/118662119",
@@ -7445,25 +7515,90 @@
   "osm:way/159682093",
   "osm:way/235654808",
   "osm:way/309809148",
+  "osm:node/10822220357",
+  "osm:node/12011210585",
+  "osm:node/12054047122",
+  "osm:node/1214996698",
+  "osm:node/12170061723",
+  "osm:node/12247101275",
+  "osm:node/12247134565",
+  "osm:node/12247134566",
+  "osm:node/12247137936",
+  "osm:node/12885316278",
+  "osm:node/12885316280",
+  "osm:node/12885316282",
+  "osm:node/12885564358",
+  "osm:node/12885564359",
+  "osm:node/12885564361",
+  "osm:node/12887857455",
+  "osm:node/12988709651",
+  "osm:node/14081208290",
+  "osm:node/14393892934",
+  "osm:node/1626379702",
+  "osm:node/1626379710",
+  "osm:node/1629123471",
+  "osm:node/2356449483",
+  "osm:node/2436285754",
+  "osm:node/3220465670",
+  "osm:node/4612317037",
+  "osm:node/503048814",
+  "osm:node/503048817",
+  "osm:node/503048818",
+  "osm:node/503048819",
+  "osm:node/503064485",
+  "osm:node/6159574991",
+  "osm:node/6733990695",
+  "osm:node/6733990697",
+  "osm:node/6733990698",
+  "osm:node/6733990700",
+  "osm:node/6733990701",
+  "osm:node/6733990703",
+  "osm:node/6733990705",
+  "osm:node/6796203987",
+  "osm:node/6796203991",
+  "osm:node/6796203992",
+  "osm:node/6818457979",
+  "osm:node/6818855900",
+  "osm:node/6818855906",
+  "osm:node/6818855907",
+  "osm:node/7274840129",
+  "osm:node/8048414839",
+  "osm:node/9163267598",
+  "osm:node/9163267600",
+  "osm:way/148608720",
+  "osm:way/149825110",
+  "osm:way/149825128",
+  "osm:way/149825129",
+  "osm:way/149976271",
+  "osm:way/149976273",
   "osm:way/217920614",
   "osm:way/220495424",
   "osm:way/235773832",
+  "osm:node/11928740234",
   "osm:node/12203248801",
   "osm:node/12203266501",
+  "osm:node/12331578576",
   "osm:node/2624132499",
   "osm:node/5351696286",
   "osm:node/5359865529",
+  "osm:node/7617151823",
+  "osm:way/156415791",
   "osm:way/157481950",
+  "osm:way/39606013",
   "osm:node/648487903",
   "osm:node/6515563854",
   "osm:node/11234680313",
   "osm:node/2467887734",
   "osm:node/3137856424",
+  "osm:way/222401116",
   "osm:way/255578645",
   "osm:node/11993065158",
+  "osm:node/13290195004",
+  "osm:node/1566613148",
   "osm:node/3151527316",
   "osm:node/5631278760",
   "osm:node/648487942",
-  "osm:node/7165698683"
+  "osm:node/7165698683",
+  "osm:way/133940317"
  ]
 }

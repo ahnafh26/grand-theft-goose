@@ -20,6 +20,27 @@ import vm from 'node:vm';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { faceOf, idResolver } from './geo-ids.mjs';
+// the brand logos tools/fetch-logos.mjs fetched (Wikidata ID -> file in assets/logos/)
+const LOGO_INDEX = new URL('../assets/logos/index.json', import.meta.url);
+const LOGOS = fs.existsSync(LOGO_INDEX) ? JSON.parse(fs.readFileSync(LOGO_INDEX, 'utf8')) : {};
+// a logo's width / height, from its PNG or JPEG header
+function imageAspect(file) {
+  const b = fs.readFileSync(file);
+  if (b[0] === 0x89) return b.readUInt32BE(16) / b.readUInt32BE(20);
+  for (let i = 2; i < b.length - 9;) {
+    if (b[i] !== 0xff) { i++; continue; }
+    const m = b[i + 1];
+    if (m >= 0xc0 && m <= 0xcf && m !== 0xc4 && m !== 0xc8 && m !== 0xcc) return b.readUInt16BE(i + 7) / b.readUInt16BE(i + 5);
+    i += 2 + b.readUInt16BE(i + 2);
+  }
+  return 1;
+}
+const logoOf = (q) => {
+  const l = q && LOGOS[q];
+  if (!l) return null;
+  const file = fileURLToPath(new URL(`../assets/logos/${l.file}`, import.meta.url));
+  return fs.existsSync(file) ? { logo: `assets/logos/${l.file}`, logoAspect: Math.round(imageAspect(file) * 1000) / 1000 } : null;
+};
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 export const MANIFEST = path.join(ROOT, 'tools/data/storefront-signs.json');
@@ -280,12 +301,13 @@ export function proposeStorefronts({ GEO, IDS, CAFETO, tagsById, corridor = CORR
       name: old && old.name !== old.sourceName ? old.name : v.pl.name, // a reviewed correction is kept
       sourceName: v.pl.name,
       category: v.pl.category,
+      ...(t['brand:wikidata'] ? { brand: t['brand:wikidata'] } : {}),
       address: `${t['addr:housenumber']} ${t['addr:street']}`,
       span: [Math.round(s0 * 100) / 100, Math.round(s1 * 100) / 100],
       evidence: v.evidence,
       confidence: v.confidence,
       source: { dataset: 'OpenStreetMap', extract, licence: 'ODbL-1.0' },
-      rights: 'Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as plain lettering; no logo or trade dress.',
+      rights: 'Name from OpenStreetMap (ODbL 1.0, © OpenStreetMap contributors), drawn as lettering, or as the brand’s logo from Wikimedia Commons where it has one.',
       enabled: old ? old.enabled !== false : true,
       review: old?.review || { status: 'rules', by: 'tools/build-storefront-signs.mjs', date: today,
         note: 'Automated evidence rules only; awaiting a person’s review of the contact sheet before release.' },
@@ -358,14 +380,15 @@ export function compileStorefronts({ GEO, IDS, manifest, geodataHash }) {
       b: face.row, bc: [building[0], building[1]], wall: wall.wall, poi: place.row,
       x: Math.round(wall.x * 100) / 100, z: Math.round(wall.z * 100) / 100,
       nx: Math.round(wall.nx * 1e4) / 1e4, nz: Math.round(wall.nz * 1e4) / 1e4,
-      width: Math.round((s1 - s0) * 100) / 100, h: building[4]
+      width: Math.round((s1 - s0) * 100) / 100, h: building[4],
+      ...(logoOf(r.brand) || {})
     });
   }
   return {
     schema: 1,
     geodata: geodataHash,
     corridor: manifest.corridor?.id || null,
-    attribution: 'Storefront names © OpenStreetMap contributors (ODbL 1.0), selected with City of Toronto CaféTO permits (Open Government Licence – Toronto)',
+    attribution: 'Storefront names © OpenStreetMap contributors (ODbL 1.0); brand logos from Wikimedia Commons via Wikidata, trademarks of their owners',
     signs,
     dropped
   };
