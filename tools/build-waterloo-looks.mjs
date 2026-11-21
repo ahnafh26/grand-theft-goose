@@ -46,9 +46,27 @@ const UW_CONCRETE = [0xb8b0a0, 0xa9a396, 0xc4bcaa, 0xb2aa98];
 const UW_BRICK = [0x6e4b3a, 0x7d5a44, 0x684536];
 const RESIDENCE = /^(dormitory|residential|apartments)$/;
 
+// The buildings people know by their look: [paint hex, brick, glass 0, wall style (buildings.js facadeStyles)]
+const NAMED_LOOK = {
+  'Dana Porter Library': [0xcfc9bb, 0, 0, 7], // pale precast concrete, deep narrow windows
+  'J. G. Hagey Hall of the Humanities': [0xb3a993, 0, 0, 7],
+  'Mathematics & Computer': [0xbebbb3, 0, 0, 6], // light-grey concrete, window bands
+  'Ira G. Needles Hall': [0xc4bfb3, 0, 0, 6],
+  'William G. Davis Computer Research Centre': [0xc9b089, 0, 0, 6], // tan panels in bands
+  'Student Life Centre': [0x9c7b5e, 1, 0, 1], // brown brick
+  'Physical Activities Complex': [0xa59b88, 0, 0, 9],
+  'Columbia Icefield': [0xb0aa9c, 0, 0, 9],
+  'Feridun Hamdullahpur Field House': [0xa8a6a0, 0, 0, 9],
+  'Athletics Complex': [0x8a4632, 1, 0, 9],
+  'Laurier Library': [0x8a4632, 1, 0, 7], // the brick tower, narrow windows
+  'Claudette Millar Hall': [0xc2bcae, 0, 0, 8],
+  'Beck Hall': [0xb9b2a2, 0, 0, 8],
+  'Eby Hall': [0xb9b2a2, 0, 0, 8]
+};
+const BIG = /Physical Activities|Icefield|Field House|Athletics|Gym|Arena|Theatre Auditorium|Warehouse|Commisary|Central Services/;
 const looks = {};
 const signOf = new Map(); // OSM building -> its sign: [row, campus 0 UW | 1 Laurier, name] (js/campus-signs.js)
-const tally = { osm: 0, laurier: 0, uw: 0, glass: 0 };
+const tally = { named: 0, osm: 0, laurier: 0, uw: 0, glass: 0 };
 IDS.forEach((id, row) => {
   const m = /^wl-osm-buildings-2026:(\d+(?:\.\d+)?)$/.exec(id);
   const part = m && partOf.get(m[1]);
@@ -66,15 +84,20 @@ IDS.forEach((id, row) => {
   const mat = (t['building:material'] || '').toLowerCase();
   const hex = colourOf(t['building:colour']);
   if (GLASS.test(t.name || '') || mat === 'glass') { looks[row] = [0x2a3744, 0, 1]; tally.glass++; return; }
+  const named = NAMED_LOOK[t.name];
+  if (named && where) { looks[row] = named; tally.named++; return; }
+  const res = RESIDENCE.test(t.building || '') || /Village|Residence|Hall$|House$|^(North|South|East|West) \d$/.test(t.name || '') && !/Lecture|Needles|Hagey|Pollock|Federation|Hall of/.test(t.name || '');
+  const big = BIG.test(t.name || '');
+  // the wall: [6] ribbon (UW's academic concrete), [8] residence, [9] gym & hall, [10] Laurier's collegiate brick
+  const style = where === 'laurier' ? (big ? 9 : res ? 8 : 10) : where === 'uw' ? (big ? 9 : res ? 8 : 6) : undefined;
   if (hex !== null || mat) {
     const brick = mat === 'brick' ? 1 : 0;
     const base = hex ?? (brick ? (where === 'uw' ? pick(UW_BRICK, row) : pick(LAURIER_BRICK, row)) : mat === 'concrete' ? pick(UW_CONCRETE, row) : null);
-    if (base !== null) { looks[row] = [base, brick, 0]; tally.osm++; return; }
+    if (base !== null) { looks[row] = style === undefined ? [base, brick, 0] : [base, brick, 0, brick && style === 6 ? 1 : style]; tally.osm++; return; }
   }
-  if (where === 'laurier') { looks[row] = [pick(LAURIER_BRICK, row), 1, 0]; tally.laurier++; }
+  if (where === 'laurier') { looks[row] = [pick(LAURIER_BRICK, row), 1, 0, style]; tally.laurier++; }
   else if (where === 'uw') {
-    const res = RESIDENCE.test(t.building || '');
-    looks[row] = res ? [pick(UW_BRICK, row), 1, 0] : [pick(UW_CONCRETE, row), 0, 0];
+    looks[row] = res ? [pick(UW_BRICK, row), 1, 0, style] : [pick(UW_CONCRETE, row), 0, 0, style];
     tally.uw++;
   }
 });

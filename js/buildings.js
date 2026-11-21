@@ -352,7 +352,7 @@ function signedWalls(data = window.CITY.STOREFRONTS) {
   }
   return walls;
 }
-const FLOOR_HEIGHTS = [3.4, 3.6, 3.8, 3.8, 3.8, 4.6]; // the facade materials' storeys (buildCityBlocks `materials`)
+const FLOOR_HEIGHTS = [3.4, 3.6, 3.8, 3.8, 3.8, 4.6, 3.9, 4.2, 2.9, 6.0, 3.9]; // the facade materials' storeys (buildCityBlocks `materials`)
 
 // The Distillery District: the Gooderham & Worts distillery's Victorian industrial buildings (1859 to the 1920s, the
 // largest such collection in North America) on their lanes off Mill St. The City's massing gives them as plain blocks
@@ -403,7 +403,18 @@ function buildCityBlocks(scene) {
     [createCurtainWallMaterial, { glassTint: 0x1e2326, frameTint: 0x3a3e40, windowWidth: 1.6, floorHeight: 3.8, litProbability: 0.5, warmth: 0.6, reflectivity: 0.9, seed: 57.0, boxLocal: true }],
     [createCurtainWallMaterial, { glassTint: 0x3d4245, frameTint: 0xb4b8ba, windowWidth: 1.6, floorHeight: 3.8, litProbability: 0.5, warmth: 0.5, reflectivity: 0.94, seed: 73.0, boxLocal: true }],
     // [5] the Distillery District's Victorian brick (VICTORIAN): tall narrow windows close together, tall storeys
-    [createRenderedFacadeMaterial, { windowWidth: 2.7, floorHeight: 4.6, windowRatioX: 0.36, windowRatioY: 0.64, litProbability: 0.38, warmth: 0.95, seed: 97.0, cornerPier: 1.0 }]
+    [createRenderedFacadeMaterial, { windowWidth: 2.7, floorHeight: 4.6, windowRatioX: 0.36, windowRatioY: 0.64, litProbability: 0.38, warmth: 0.95, seed: 97.0, cornerPier: 1.0 }],
+    // Waterloo's campus walls (js/waterloo-looks.js picks one per building):
+    // [6] ribbon windows: long horizontal bands between concrete spandrels (MC, Needles Hall, the 1960s science blocks)
+    [createRenderedFacadeMaterial, { windowWidth: 1.6, floorHeight: 3.9, windowRatioX: 0.96, windowRatioY: 0.4, litProbability: 0.45, warmth: 0.75, seed: 111.0, cornerPier: 1.0 }],
+    // [7] brutalist slits: deep concrete with tall narrow windows far apart (Dana Porter, Hagey Hall)
+    [createRenderedFacadeMaterial, { windowWidth: 1.5, floorHeight: 4.2, windowRatioX: 0.26, windowRatioY: 0.7, litProbability: 0.4, warmth: 0.7, seed: 127.0, cornerPier: 1.0 }],
+    // [8] residences: small punched windows close together, low storeys (V1, REV, MKV, the towers)
+    [createRenderedFacadeMaterial, { windowWidth: 2.4, floorHeight: 2.9, windowRatioX: 0.42, windowRatioY: 0.44, litProbability: 0.55, warmth: 0.9, seed: 139.0, cornerPier: 0.5 }],
+    // [9] gyms & halls: big blank walls, a few high windows (PAC, the athletics complexes)
+    [createRenderedFacadeMaterial, { windowWidth: 7.0, floorHeight: 6.0, windowRatioX: 0.14, windowRatioY: 0.18, litProbability: 0.3, warmth: 0.8, seed: 151.0, cornerPier: 1.0 }],
+    // [10] collegiate brick: tall, evenly spaced windows (Laurier's red-brick halls)
+    [createRenderedFacadeMaterial, { windowWidth: 2.3, floorHeight: 3.9, windowRatioX: 0.38, windowRatioY: 0.6, litProbability: 0.45, warmth: 0.9, seed: 163.0, cornerPier: 0.8 }]
   ];
   const materials = facadeStyles.map(([create, opts]) => create(opts));
   const buckets = materials.map(() => []);
@@ -469,7 +480,7 @@ function buildCityBlocks(scene) {
     const look = window.CITY.BUILDING_LOOKS && window.CITY.BUILDING_LOOKS[bi];
     if (look) {
       if (look[2]) mat = 2;
-      else { if (mat >= 2) mat = 1; paintHex = look[0]; brick = !!look[1]; }
+      else { mat = look[3] !== undefined ? look[3] : mat >= 2 ? 1 : mat; paintHex = look[0]; brick = !!look[1]; }
     }
     // (the Distillery District's heritage blocks: its Victorian brick, whatever the draws above said)
     const victorian = h <= DISTILLERY.maxH && inDistillery(cx, cz);
