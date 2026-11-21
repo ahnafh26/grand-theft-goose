@@ -10,6 +10,7 @@ import vm from 'node:vm';
 import { fileURLToPath } from 'node:url';
 import { toWorld } from './geo-base.mjs';
 import { elemRings } from './geo-land.mjs';
+import { LOOKS, STYLE } from './data/campus-looks.mjs';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const DATA = process.env.GEO_DATA || path.join(ROOT, 'tools/data-waterloo');
@@ -47,22 +48,13 @@ const UW_BRICK = [0x6e4b3a, 0x7d5a44, 0x684536];
 const RESIDENCE = /^(dormitory|residential|apartments)$/;
 
 // The buildings people know by their look: [paint hex, brick, glass 0, wall style (buildings.js facadeStyles)]
-const NAMED_LOOK = {
-  // pale ribbed precast tower over a dark glass podium & ground floor (its OSM parts)
-  'Dana Porter Library': (part) => (part.max >= 25 ? [0xdcd6c8, 0, 0, 11] : [0x1e2326, 0, 3]),
-  'J. G. Hagey Hall of the Humanities': [0xb3a993, 0, 0, 7],
-  'Mathematics & Computer': [0xbebbb3, 0, 0, 6], // light-grey concrete, window bands
-  'Ira G. Needles Hall': [0xc4bfb3, 0, 0, 6],
-  'William G. Davis Computer Research Centre': [0xc9b089, 0, 0, 6], // tan panels in bands
-  'Student Life Centre': [0x9c7b5e, 1, 0, 1], // brown brick
-  'Physical Activities Complex': [0xa59b88, 0, 0, 9],
-  'Columbia Icefield': [0xb0aa9c, 0, 0, 9],
-  'Feridun Hamdullahpur Field House': [0xa8a6a0, 0, 0, 9],
-  'Athletics Complex': [0x8a4632, 1, 0, 9],
-  'Laurier Library': [0x8a4632, 1, 0, 7], // the brick tower, narrow windows
-  'Claudette Millar Hall': [0xc2bcae, 0, 0, 8],
-  'Beck Hall': [0xb9b2a2, 0, 0, 8],
-  'Eby Hall': [0xb9b2a2, 0, 0, 8]
+// the modelled looks by name (tools/data/campus-looks.mjs) -> [paint hex, brick, glass, wall style] for a part
+const GLASS_MAT = { glass: 1, darkGlass: 3, silverGlass: 4 };
+const lookFor = (spec, part) => {
+  const v = spec.tall && part.max >= spec.tall.from ? { ...spec, ...spec.tall } : spec.low && !(spec.tall && part.max >= spec.tall.from) && spec.tall ? { ...spec, ...spec.low } : spec;
+  const wall = STYLE[v.wall] ?? v.wall;
+  if (typeof wall === 'string') return [0x2a3744, 0, GLASS_MAT[wall]];
+  return [v.colour ?? 0xb8b0a0, v.brick ? 1 : 0, 0, wall];
 };
 const BIG = /Physical Activities|Icefield|Field House|Athletics|Gym|Arena|Theatre Auditorium|Warehouse|Commisary|Central Services/;
 const looks = {};
@@ -85,8 +77,8 @@ IDS.forEach((id, row) => {
   const mat = (t['building:material'] || '').toLowerCase();
   const hex = colourOf(t['building:colour']);
   if (GLASS.test(t.name || '') || mat === 'glass') { looks[row] = [0x2a3744, 0, 1]; tally.glass++; return; }
-  const named = NAMED_LOOK[t.name];
-  if (named && where) { looks[row] = typeof named === 'function' ? named(part) : named; tally.named++; return; }
+  const named = LOOKS[t.name];
+  if (named && where) { looks[row] = lookFor(named, part); tally.named++; return; }
   const res = RESIDENCE.test(t.building || '') || /Village|Residence|Hall$|House$|^(North|South|East|West) \d$/.test(t.name || '') && !/Lecture|Needles|Hagey|Pollock|Federation|Hall of/.test(t.name || '');
   const big = BIG.test(t.name || '');
   // the wall: [6] ribbon (UW's academic concrete), [8] residence, [9] gym & hall, [10] Laurier's collegiate brick
