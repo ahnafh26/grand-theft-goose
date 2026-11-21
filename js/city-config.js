@@ -1024,8 +1024,7 @@ const CITY_LANDMARKS = LANDMARK_LABELS.filter(([id]) => LANDMARK_SITES[id]).map(
   const s = LANDMARK_SITES[id];
   return { id, name, short, x: s.x, z: s.z, district: districtAt(s.x, s.z) };
 });
-const CN = GEO.points.cnTower;
-if (!LANDMARK_SITES.cnTower) CITY_LANDMARKS.unshift({ id: 'cnTower', name: 'CN Tower', short: 'CN Tower', x: CN[0], z: CN[1], district: districtAt(CN[0], CN[1]), radius: 60 });
+// (Waterloo has no single skyline landmark like the CN Tower; places are teleport targets below)
 
 // ---------------------------------------------------------------------------------------------------------------------
 // Teleport arrivals: a point on a real road 90-260 m from the landmark, with nothing built between it and the landmark,
@@ -1105,50 +1104,29 @@ for (const [key, id] of Object.entries(TELEPORT_TARGETS)) {
   const p = arrivalFor(s.x, s.z, reach);
   if (p) TELEPORT_LOCATIONS[key] = p;
 }
+// Waterloo: the start and the teleport spots, each onto the nearest real street, facing the place
 {
-  // The start: the Martin Goodman Trail just east of the Humber Bay Arch Bridge, riding towards the skyline
-  let a = worldFromLatLon(43.6316, -79.4668);
-  // the nearest dry ground to that point (the trail itself is not in the street network)
-  search: for (let r = 0; r <= 400; r += 3) {
-    for (let k = 0; k < Math.max(1, Math.round(r / 2)); k++) {
-      const t = (k / Math.max(1, Math.round(r / 2))) * Math.PI * 2;
-      const x = a.x + Math.cos(t) * r, z = a.z + Math.sin(t) * r;
-      if (isOnLand(x, z, 0) && !waterAt(x + 6, z) && !waterAt(x - 6, z) && !waterAt(x, z + 6) && !waterAt(x, z - 6)) { a = { x, z }; break search; }
-    }
+  const place = (lat, lon) => worldFromLatLon(lat, lon);
+  const arriveAt = (key, lat, lon, road) => {
+    const p = place(lat, lon);
+    const a = streetArrival(p.x, p.z);
+    TELEPORT_LOCATIONS[key] = { x: Math.round(a.x * 10) / 10, z: Math.round(a.z * 10) / 10, heading: a.heading ?? 0, road: road || '' };
+  };
+  // The start: University Ave W by Wilfrid Laurier, facing west towards the University of Waterloo
+  {
+    const p = place(43.47493, -80.52837);
+    const a = streetArrival(p.x, p.z);
+    const uw = place(43.4708, -80.5440);
+    TELEPORT_LOCATIONS.start = { x: Math.round(a.x * 10) / 10, z: Math.round(a.z * 10) / 10, heading: Math.atan2(uw.x - a.x, uw.z - a.z), road: 'University Avenue West' };
   }
-  // onto the trail itself (its red asphalt, GEO.cycling's paved trails: the dry ground beside it is the park's lawn),
-  // facing along it the way that runs towards the skyline: the nearest stretch (8 m or longer, within 80 m) that heads
-  // at the CN Tower, else the nearest at all
-  let heading = Math.atan2(CN[0] - a.x, CN[1] - a.z);
-  let best = null;
-  for (const [, surface, , flat] of (GEO.cycling && GEO.cycling.trails) || []) {
-    if (!surface) continue;
-    for (let i = 2; i < flat.length; i += 2) {
-      const ax = flat[i - 2], az = flat[i - 1], dx = flat[i] - ax, dz = flat[i + 1] - az, L = Math.hypot(dx, dz);
-      if (L < 1) continue;
-      const t = Math.max(0.2, Math.min(0.8, ((a.x - ax) * dx + (a.z - az) * dz) / (L * L)));
-      const x = ax + dx * t, z = az + dz * t, d = Math.hypot(x - a.x, z - a.z);
-      if (d > 80 || waterAt(x + 6, z) || waterAt(x - 6, z) || waterAt(x, z + 6) || waterAt(x, z - 6)) continue;
-      const toCN = Math.hypot(CN[0] - x, CN[1] - z), along = (dx * (CN[0] - x) + dz * (CN[1] - z)) / (L * toCN);
-      const score = d + (L >= 8 && Math.abs(along) >= 0.9 ? 0 : 1000);
-      if (best && score >= best.score) continue;
-      const s = along >= 0 ? 1 : -1;
-      best = { x, z, score, heading: Math.atan2(dx * s, dz * s) };
-    }
-  }
-  if (best) { a = best; heading = best.heading; }
-  TELEPORT_LOCATIONS.humberArch = { x: Math.round(a.x * 10) / 10, z: Math.round(a.z * 10) / 10, heading, road: 'Martin Goodman Trail' };
+  arriveAt('uw', 43.4708, -80.5440, 'Ring Road');
+  arriveAt('danaPorter', 43.4699, -80.5422, 'Ring Road');
+  arriveAt('laurier', 43.4747, -80.5268, 'University Avenue West');
+  arriveAt('plaza', 43.4724, -80.5375, 'University Avenue West');
+  arriveAt('waterlooPark', 43.4660, -80.5300, 'Seagram Drive');
+  arriveAt('columbiaLake', 43.4790, -80.5520, 'Columbia Street West');
+  arriveAt('uptown', 43.4646, -80.5210, 'King Street North');
 }
-// Yonge Street just south of Dundas (the start until 2026-10-25), in the northbound lanes, Sankofa Square (Yonge-Dundas Square until
-// 2024) on the right and the intersection ahead (Yonge's centre line runs x 327.3 -> 325.8 from z -1002 to -1182)
-TELEPORT_LOCATIONS.yongeDundas = { x: 330.4, z: -1080, heading: Math.atan2(-1.5, -180.5), road: 'Yonge Street' };
-// The start (John, 2026-10-25): Sugar Beach's lawn by the water, facing the CN Tower and the skyline across the slip
-TELEPORT_LOCATIONS.start = { x: 970.7, z: 575.9, heading: Math.atan2(CN[0] - 970.7, CN[1] - 575.9), road: 'Sugar Beach' };
-if (!TELEPORT_LOCATIONS.cnTower) {
-  const p = arrivalFor(CN[0], CN[1], 40);
-  if (p) TELEPORT_LOCATIONS.cnTower = p;
-}
-
 /**
  * The place at any world (x, z): a landmark's name over its nearest streets, the street corner, the street, or the
  * district
