@@ -49,14 +49,14 @@ export const LOOKS = {
   'Conrad Grebel University College': { wall: 'render', colour: 0x9a7a5c, brick: true },
   "St. Jerome's University": { wall: 'render', colour: 0x7f4936, brick: true },
   // ---- University of Waterloo (reference pass 2)
-  'Biology 1': { wall: 'ribbon', colour: 0x8e6e52, brick: true },
+  'Biology 1': { wall: 'ribs', colour: 0xedede9 }, // white banded concrete, tall grouped windows between aggregate piers (photo)
   'Biology 2': { wall: 'ribbon', colour: 0x8a6a4e, brick: true },
   'Modern Languages': { wall: 'slits', colour: 0x6e4a38, brick: true },
-  'Psychology, Anthropology & Sociology': { wall: 'ribs', colour: 0xbdb4a2 },
-  'Carl A. Pollock Hall': { wall: 'ribbon', colour: 0x8a6a4e, brick: true },
+  'Psychology, Anthropology & Sociology': { wall: 'ribbon', colour: 0xb8ae9e }, // terraced brutalist concrete, ribbon bands (photo)
+  'Carl A. Pollock Hall': { wall: 'blank', colour: 0xb8946a, brick: true }, // buff brick tower (photo)
   'Engineering 2': { wall: 'ribbon', colour: 0x8e6e52, brick: true },
   'Engineering 3': { wall: 'office', colour: 0xc9c2b4 },
-  'Douglas Wright Engineering Building': { wall: 'render', colour: 0x9a5a40, brick: true },
+  'Douglas Wright Engineering Building': { wall: 'blank', colour: 0xb99a6c, brick: true }, // buff brick, glass entrance bay (photo)
   'Centre for Environmental and Information Technology': { wall: 'darkGlass' },
   'School of Optometry & Vision Science': { wall: 'ribbon', colour: 0x9c7f62, brick: true },
   'Science Teaching Complex': { wall: 'silverGlass' },
@@ -64,10 +64,12 @@ export const LOOKS = {
   'South Campus Hall': { wall: 'office', colour: 0x8c5a44, brick: true },
   'Federation Hall': { wall: 'blank', colour: 0x8a5440, brick: true },
   'University Club': { wall: 'office', colour: 0x7e6450, brick: true },
-  'Graduate House': { wall: 'render', colour: 0xd8c9a8, brick: true }, // the old farmhouse in buff brick
-  'United College': { wall: 'render', colour: 0xa88c6c, brick: true },
-  'Minota Hagey Residence': { wall: 'residence', colour: 0x8a5a44, brick: true },
-  'East Campus Hall': { wall: 'render', colour: 0xbfb29a },
+  'Graduate House': { wall: 'render', colour: 0xf2f0ea }, // white stucco farmhouse, brown hipped roof (photo)
+  'United College': { wall: 'residence', colour: 0x7a5040, brick: true }, // long brown-brick block (photo)
+  'Renison University College': { wall: 'render', colour: 0xe2daca }, // cream stucco with stone piers (photo)
+  'Burt Matthews Hall': { wall: 'ribbon', colour: 0xa0583c, brick: true }, // red-orange brick, ribbon windows (photo)
+  'Minota Hagey Residence': { wall: 'residence', colour: 0x8e5444, brick: true },
+  'East Campus Hall': { wall: 'blank', colour: 0xdadddf }, // silver standing-seam metal (photo)
   // ---- Wilfrid Laurier (reference pass)
   'Lazaridis Hall': { wall: 'darkGlass' }, // black zinc, wood & fritted glass
   'Frank C. Peters Building': { wall: 'ribbon', colour: 0xc9c2b4 }, // long concrete block, dark band windows
