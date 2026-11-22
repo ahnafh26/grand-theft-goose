@@ -50,6 +50,7 @@ function storeLookFor(name, lon, lat) {
 const logoOf = (q) => {
   const l = q && LOGOS[q];
   if (!l) return null;
+  if (/\.jpe?g$/i.test(l.file)) return null; // (a JPEG on Wikidata's logo property is a photo of a sign, not the logo)
   const file = fileURLToPath(new URL(`../assets/logos/${l.file}`, import.meta.url));
   return fs.existsSync(file) ? { logo: `assets/logos/${l.file}`, logoAspect: Math.round(imageAspect(file) * 1000) / 1000 } : null;
 };
