@@ -1,5 +1,5 @@
 // tools/render-film.mjs — renders the launch film (js/film.js) offline, frame by frame on a virtual clock, to an MP4
-// (run on the Mac mini via gpu2, never on the laptop; ffmpeg on the PATH)
+// (run on the Mac mini via gpu2, or on a Windows machine with FILM_CHROME=<chrome.exe>; ffmpeg on the PATH, or FFMPEG=<path>)
 // usage: GPU2_OUT=out node tools/render-film.mjs                  the film: $GPU2_OUT/film/slop-toronto-film.mp4
 //        FILM_STILLS=1 node tools/render-film.mjs                 stills only: each shot's start, middle and end
 //        FILM_STILLS="0:0,2:4.5" node tools/render-film.mjs       stills at shot:seconds
@@ -41,9 +41,10 @@ const shotsOverride = shotsFile && !Array.isArray(shotsFile) ? shotsFile.shots :
 const prelude = shotsFile && !Array.isArray(shotsFile) ? shotsFile.prelude || null : null;
 fs.mkdirSync(OUT, { recursive: true });
 
+// (FILM_CHROME: a Chrome to drive instead of Playwright's Chromium; ANGLE on the platform's own GPU API)
 const browser = await chromium.launch({
-  channel: 'chromium',
-  args: ['--enable-unsafe-webgpu', '--use-angle=metal', '--enable-gpu', '--ignore-gpu-blocklist']
+  ...(process.env.FILM_CHROME ? { executablePath: process.env.FILM_CHROME, headless: true } : { channel: 'chromium' }),
+  args: ['--enable-unsafe-webgpu', `--use-angle=${process.platform === 'win32' ? 'd3d11' : 'metal'}`, '--enable-gpu', '--ignore-gpu-blocklist']
 });
 const page = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
 const log = [];
@@ -176,7 +177,7 @@ if (STILLS) {
 } else {
   // the frames go straight into ffmpeg: no frame folder
   const file = path.join(OUT, process.env.FILM_NAME || 'slop-toronto-film.mp4');
-  const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'png', '-i', '-',
+  const ff = spawn(process.env.FFMPEG || 'ffmpeg', ['-y', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'png', '-i', '-',
     '-c:v', 'libx264', '-preset', 'slow', '-crf', process.env.FILM_CRF || '18', '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-x264-params', 'aq-mode=3',
     '-movflags', '+faststart', '-an', file], { stdio: ['pipe', 'inherit', 'inherit'] });
   const done = new Promise((resolve) => ff.on('close', resolve));
