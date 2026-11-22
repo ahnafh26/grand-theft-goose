@@ -171,7 +171,7 @@ function buildStorefrontSigns(scene, { facadeOf = () => null } = {}) {
     // the board's atlas rect, channel, colours & style
     rect.setXYZW(i, ox / size.w, oy / size.h, (ox + cw) / size.w, (oy + chh) / size.h);
     channel.setXYZW(i, ch === 0 ? 1 : 0, ch === 1 ? 1 : 0, ch === 2 ? 1 : 0, ch === 3 ? 1 : 0);
-    const bc = lin(s.logo ? 0xfbfaf6 : real ? s.bg : style.boards[h % style.boards.length]), ic = lin(real ? s.ink : style.inks[(h >>> 8) % style.inks.length]);
+    const bc = lin(s.logo ? (s.logoBoard ?? 0xfbfaf6) : real ? s.bg : style.boards[h % style.boards.length]), ic = lin(real ? s.ink : style.inks[(h >>> 8) % style.inks.length]);
     board.setXYZW(i, bc.r, bc.g, bc.b, style.frame);
     ink.setXYZW(i, ic.r, ic.g, ic.b, lay.textW / lay.boardW);
     // stood on the wall, its lettering facing out of it (the box's +z), over the middle of its frontage

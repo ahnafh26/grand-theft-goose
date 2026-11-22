@@ -403,7 +403,11 @@ export function compileStorefronts({ GEO, IDS, manifest, geodataHash }) {
       ...(() => {
         const [px, pz] = GEO.pois[place.row];
         const v = storeLookFor(r.name, ...lonLatOf(px, pz));
-        return v && v.bg !== undefined ? { bg: v.bg, ink: v.ink, signType: v.type, ...(v.text ? { text: v.text } : {}) } : {};
+        if (!v) return {};
+        const out = v.bg !== undefined ? { bg: v.bg, ink: v.ink, signType: v.type, ...(v.text ? { text: v.text } : {}) } : {};
+        // the store's own logo (tools/import-store-logos.mjs), where it has no brand logo from Wikidata
+        if (v.logo && !logoOf(r.brand) && fs.existsSync(fileURLToPath(new URL(`../${v.logo}`, import.meta.url)))) Object.assign(out, { logo: v.logo, logoAspect: v.logoAspect, logoBoard: v.logoBoard });
+        return out;
       })(),
       ...(logoOf(r.brand) || {})
     });

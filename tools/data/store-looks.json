@@ -7,7 +7,10 @@
   "bg": 16777215,
   "ink": 14820122,
   "type": "box",
-  "text": "241 PIZZA"
+  "text": "241 PIZZA",
+  "logo": "assets/logos/stores/241-pizza.png",
+  "logoAspect": 1,
+  "logoBoard": 16513782
  },
  "247 king dental": {
   "name": "247 King Dental",
@@ -17,7 +20,10 @@
   "bg": 4868942,
   "ink": 16777215,
   "type": "letters",
-  "text": "247 KING DENTAL"
+  "text": "247 KING DENTAL",
+  "logo": "assets/logos/stores/247-king-dental.png",
+  "logoAspect": 3.044,
+  "logoBoard": 16513782
  },
  "7 eleven": {
   "name": "7-Eleven (with Canada Post counter)",
@@ -27,7 +33,10 @@
   "bg": 16777215,
   "ink": 16089632,
   "type": "box",
-  "text": "7-ELEVEn"
+  "text": "7-ELEVEn",
+  "logo": "assets/logos/stores/7-eleven.png",
+  "logoAspect": 1.031,
+  "logoBoard": 32865
  },
  "accommod8u": {
   "name": "Accommod8u",
@@ -89,7 +98,10 @@
   "name": "BMO Bank of Montreal",
   "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
   "lat": 43.477876,
-  "lon": -80.525655
+  "lon": -80.525655,
+  "logo": "assets/logos/stores/bmo-bank-of-montreal.png",
+  "logoAspect": 2.86,
+  "logoBoard": 16513782
  },
  "booster juice": {
   "name": "Booster Juice",
@@ -99,7 +111,10 @@
   "bg": 4868942,
   "ink": 16181834,
   "type": "letters",
-  "text": "Booster Juice"
+  "text": "Booster Juice",
+  "logo": "assets/logos/stores/booster-juice.png",
+  "logoAspect": 1,
+  "logoBoard": 6631275
  },
  "brown donkatsu": {
   "name": "Brown Donkatsu",
@@ -111,7 +126,10 @@
   "name": "Burger King",
   "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
   "lat": 43.472549,
-  "lon": -80.535695
+  "lon": -80.535695,
+  "logo": "assets/logos/stores/burger-king.png",
+  "logoAspect": 0.914,
+  "logoBoard": 16513782
  },
  "burrito boyz": {
   "name": "Burrito Boyz",
@@ -151,7 +169,10 @@
   "bg": 7225251,
   "ink": 16777215,
   "type": "letters",
-  "text": "Chatime"
+  "text": "Chatime",
+  "logo": "assets/logos/stores/chatime.png",
+  "logoAspect": 5.02,
+  "logoBoard": 1907999
  },
  "chungchun rice hot dog": {
   "name": "Chungchun Rice Hot Dog",
@@ -161,7 +182,10 @@
   "bg": 16777215,
   "ink": 1710618,
   "type": "box",
-  "text": "chungchun RICE HOT-DOG"
+  "text": "chungchun RICE HOT-DOG",
+  "logo": "assets/logos/stores/chungchun-rice-hot-dog.png",
+  "logoAspect": 1.309,
+  "logoBoard": 16513782
  },
  "churchs texas chicken": {
   "name": "Church's Texas Chicken",
@@ -171,7 +195,10 @@
   "bg": 4868942,
   "ink": 16777215,
   "type": "letters",
-  "text": "CHURCH'S TEXAS CHICKEN"
+  "text": "CHURCH'S TEXAS CHICKEN",
+  "logo": "assets/logos/stores/churchs-texas-chicken.png",
+  "logoAspect": 1.031,
+  "logoBoard": 16513782
  },
  "city pizza": {
   "name": "City Pizza",
@@ -207,7 +234,10 @@
   "bg": 1710618,
   "ink": 16777215,
   "type": "box",
-  "text": "d spot DESSERTS"
+  "text": "d spot DESSERTS",
+  "logo": "assets/logos/stores/d-spot-dessert-cafe.png",
+  "logoAspect": 2.451,
+  "logoBoard": 16513782
  },
  "dine stination": {
   "name": "Dine Stination (formerly Waterloo Star Chinese Hotpot & BBQ - closed)",
@@ -247,7 +277,10 @@
   "bg": 7304313,
   "ink": 16777215,
   "type": "letters",
-  "text": "FAT BASTARD BURRITO CO."
+  "text": "FAT BASTARD BURRITO CO.",
+  "logo": "assets/logos/stores/fat-bastard-burrito-co.png",
+  "logoAspect": 1.906,
+  "logoBoard": 1907997
  },
  "fresh burrito": {
   "name": "Fresh Burrito",
@@ -256,7 +289,10 @@
   "lon": -80.525375,
   "bg": 4868942,
   "ink": 8241730,
-  "type": "letters"
+  "type": "letters",
+  "logo": "assets/logos/stores/fresh-burrito.png",
+  "logoAspect": 1,
+  "logoBoard": 16513782
  },
  "freshii": {
   "name": "Freshii",
@@ -266,7 +302,10 @@
   "bg": 4160047,
   "ink": 16777215,
   "type": "letters",
-  "text": "freshii EAT. ENERGIZE."
+  "text": "freshii EAT. ENERGIZE.",
+  "logo": "assets/logos/stores/freshii.png",
+  "logoAspect": 1,
+  "logoBoard": 1275453
  },
  "ginos pizza": {
   "name": "Gino's Pizza",
@@ -276,11 +315,17 @@
   "bg": 3816770,
   "ink": 14820122,
   "type": "letters",
-  "text": "GINO'S PIZZA"
+  "text": "GINO'S PIZZA",
+  "logo": "assets/logos/stores/ginos-pizza.png",
+  "logoAspect": 1.406,
+  "logoBoard": 16513782
  },
  "gladiator burger steak": {
   "name": "Gladiator Burger & Steak",
-  "plaza": "NOT IN EITHER PLAZA"
+  "plaza": "NOT IN EITHER PLAZA",
+  "logo": "assets/logos/stores/gladiator-burger-steak.png",
+  "logoAspect": 1.004,
+  "logoBoard": 1381653
  },
  "gols lanzhou noodle": {
   "name": "Gol's Lanzhou Noodle",
@@ -296,7 +341,10 @@
   "bg": 3816770,
   "ink": 16777215,
   "type": "letters",
-  "text": "GYUBEE JAPANESE GRILL"
+  "text": "GYUBEE JAPANESE GRILL",
+  "logo": "assets/logos/stores/gyubee-japanese-grill.png",
+  "logoAspect": 1.375,
+  "logoBoard": 16513782
  },
  "hakka nation": {
   "name": "Hakka Nation",
@@ -306,7 +354,10 @@
   "bg": 2829099,
   "ink": 16777215,
   "type": "letters",
-  "text": "HAKKA NATION"
+  "text": "HAKKA NATION",
+  "logo": "assets/logos/stores/hakka-nation.png",
+  "logoAspect": 3,
+  "logoBoard": 2105376
  },
  "harveys": {
   "name": "Harvey's",
@@ -316,7 +367,10 @@
   "bg": 16777215,
   "ink": 13901866,
   "type": "box",
-  "text": "HARVEY'S"
+  "text": "HARVEY'S",
+  "logo": "assets/logos/stores/harveys.png",
+  "logoAspect": 1.336,
+  "logoBoard": 16513782
  },
  "hazukido": {
   "name": "Hazukido (Japanese bakery cafe; new, OSM missing)",
@@ -332,7 +386,10 @@
   "name": "Heytea",
   "plaza": "Adjacent to University Shops Plaza: Elora House podium (250 Phillip St, ground-floor retail)",
   "lat": 43.473104,
-  "lon": -80.536779
+  "lon": -80.536779,
+  "logo": "assets/logos/stores/heytea.png",
+  "logoAspect": 1.126,
+  "logoBoard": 16513782
  },
  "hi yogurt": {
   "name": "Hi Yogurt",
@@ -396,7 +453,10 @@
   "lon": -80.538579,
   "bg": 16777215,
   "ink": 13901866,
-  "type": "box"
+  "type": "box",
+  "logo": "assets/logos/stores/izna-poke-plus.png",
+  "logoAspect": 1,
+  "logoBoard": 16513782
  },
  "jersey mikes subs": {
   "name": "Jersey Mike's Subs (in former Starbucks corner unit)",
@@ -406,7 +466,10 @@
   "bg": 4868942,
   "ink": 14820122,
   "type": "letters",
-  "text": "Jersey Mike's SUBS"
+  "text": "Jersey Mike's SUBS",
+  "logo": "assets/logos/stores/jersey-mikes-subs.png",
+  "logoAspect": 1.375,
+  "logoBoard": 16513782
  },
  "kabob hut": {
   "name": "Kabob Hut",
@@ -432,7 +495,10 @@
   "bg": 7304313,
   "ink": 14820122,
   "type": "letters",
-  "text": "Kajun chicken & seafood"
+  "text": "Kajun chicken & seafood",
+  "logo": "assets/logos/stores/kajun-chicken-seafood.png",
+  "logoAspect": 2.681,
+  "logoBoard": 0
  },
  "kims kitchen": {
   "name": "Kim's Kitchen (halal Korean chicken)",
@@ -460,25 +526,37 @@
   "bg": 1710618,
   "ink": 14820122,
   "type": "letters",
-  "text": "Lazeez Shawarma"
+  "text": "Lazeez Shawarma",
+  "logo": "assets/logos/stores/lazeez-shawarma.png",
+  "logoAspect": 3.346,
+  "logoBoard": 16513782
  },
  "live switchboard": {
   "name": "Live Switchboard",
   "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
   "lat": 43.472616,
-  "lon": -80.536031
+  "lon": -80.536031,
+  "logo": "assets/logos/stores/live-switchboard.png",
+  "logoAspect": 1.547,
+  "logoBoard": 16513782
  },
  "meet fresh": {
   "name": "Meet Fresh",
   "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
   "lat": 43.472458,
-  "lon": -80.536207
+  "lon": -80.536207,
+  "logo": "assets/logos/stores/meet-fresh.png",
+  "logoAspect": 5.531,
+  "logoBoard": 16513782
  },
  "mels diner": {
   "name": "Mel's Diner",
   "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
   "lat": 43.47297,
-  "lon": -80.535597
+  "lon": -80.535597,
+  "logo": "assets/logos/stores/mels-diner.png",
+  "logoAspect": 1,
+  "logoBoard": 16513782
  },
  "meltwich food co": {
   "name": "Meltwich Food Co.",
@@ -488,7 +566,10 @@
   "bg": 7304313,
   "ink": 15909376,
   "type": "letters",
-  "text": "MELTWICH"
+  "text": "MELTWICH",
+  "logo": "assets/logos/stores/meltwich-food-co.png",
+  "logoAspect": 4.414,
+  "logoBoard": 16513782
  },
  "menchies frozen yogurt": {
   "name": "Menchie's Frozen Yogurt",
@@ -498,7 +579,10 @@
   "bg": 4868942,
   "ink": 14694783,
   "type": "letters",
-  "text": "menchie's frozen yogurt"
+  "text": "menchie's frozen yogurt",
+  "logo": "assets/logos/stores/menchies-frozen-yogurt.png",
+  "logoAspect": 3.325,
+  "logoBoard": 16513782
  },
  "mengami": {
   "name": "Mengami",
@@ -526,7 +610,10 @@
   "bg": 13088668,
   "ink": 2046506,
   "type": "letters",
-  "text": "Molly Bloom's Irish Pub"
+  "text": "Molly Bloom's Irish Pub",
+  "logo": "assets/logos/stores/molly-blooms-irish-pub.png",
+  "logoAspect": 1,
+  "logoBoard": 16513782
  },
  "momo": {
   "name": "momo",
@@ -552,7 +639,10 @@
   "bg": 4868942,
   "ink": 16777215,
   "type": "letters",
-  "text": "mozy's AUTHENTIC SHAWARMA"
+  "text": "mozy's AUTHENTIC SHAWARMA",
+  "logo": "assets/logos/stores/mozys-shawarma.png",
+  "logoAspect": 2.417,
+  "logoBoard": 16513782
  },
  "mr yin": {
   "name": "Mr. Yin",
@@ -588,7 +678,10 @@
   "bg": 1710618,
   "ink": 12597642,
   "type": "letters",
-  "text": "PAIR A DICE CAFE"
+  "text": "PAIR A DICE CAFE",
+  "logo": "assets/logos/stores/pair-a-dice-cafe.png",
+  "logoAspect": 1.5,
+  "logoBoard": 1645087
  },
  "pasha lounge": {
   "name": "Pasha Lounge (hookah)",
@@ -604,7 +697,10 @@
   "name": "Penny's Hot Chicken",
   "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
   "lat": 43.476782,
-  "lon": -80.525344
+  "lon": -80.525344,
+  "logo": "assets/logos/stores/pennys-hot-chicken.png",
+  "logoAspect": 1.855,
+  "logoBoard": 16513782
  },
  "perfect image studio": {
   "name": "Perfect Image Studio (tattoo & piercing)",
@@ -614,7 +710,10 @@
   "bg": 3948356,
   "ink": 14820122,
   "type": "letters",
-  "text": "Pi TATTOO PIERCING"
+  "text": "Pi TATTOO PIERCING",
+  "logo": "assets/logos/stores/perfect-image-studio.png",
+  "logoAspect": 1.504,
+  "logoBoard": 1907999
  },
  "pharmasave campus pharmacy": {
   "name": "Pharmasave Campus Pharmacy",
@@ -624,7 +723,10 @@
   "bg": 16777215,
   "ink": 13901866,
   "type": "box",
-  "text": "PHARMASAVE Campus Pharmacy"
+  "text": "PHARMASAVE Campus Pharmacy",
+  "logo": "assets/logos/stores/pharmasave-campus-pharmacy.png",
+  "logoAspect": 3.507,
+  "logoBoard": 16513782
  },
  "philthy phillys": {
   "name": "Philthy Philly's (Cheesesteaks & Poutinerie) - new, not in OSM",
@@ -643,13 +745,19 @@
   "bg": 16777215,
   "ink": 12950060,
   "type": "letters",
-  "text": "Phở Anh Vu Authentic Vietnamese Cuisine"
+  "text": "Phở Anh Vu Authentic Vietnamese Cuisine",
+  "logo": "assets/logos/stores/pho-anh-vu.png",
+  "logoAspect": 4.988,
+  "logoBoard": 16513782
  },
  "phoenix cannabis": {
   "name": "Phoenix Cannabis",
   "plaza": "University Shops Plaza (158/160/170 University Ave W at Phillip St)",
   "lat": 43.472678,
-  "lon": -80.538173
+  "lon": -80.538173,
+  "logo": "assets/logos/stores/phoenix-cannabis.png",
+  "logoAspect": 2.349,
+  "logoBoard": 16513782
  },
  "pin up arcade bar": {
   "name": "Pin Up Arcade Bar",
@@ -665,7 +773,10 @@
   "name": "Pizza Nova",
   "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
   "lat": 43.47236,
-  "lon": -80.536139
+  "lon": -80.536139,
+  "logo": "assets/logos/stores/pizza-nova.png",
+  "logoAspect": 5.224,
+  "logoBoard": 16513782
  },
  "poke box": {
   "name": "Poke Box",
@@ -685,7 +796,10 @@
   "bg": 16777215,
   "ink": 1785743,
   "type": "box",
-  "text": "POPEYE'S SUPPLEMENTS"
+  "text": "POPEYE'S SUPPLEMENTS",
+  "logo": "assets/logos/stores/popeyes-supplements.png",
+  "logoAspect": 1.744,
+  "logoBoard": 16513782
  },
  "rani chettinad": {
   "name": "Rani Chettinad - The Indian Kitchen (OSM: 'Reni Chettinand')",
@@ -695,7 +809,10 @@
   "bg": 1710618,
   "ink": 16777215,
   "type": "box",
-  "text": "Rani Chettinad The Indian Kitchen"
+  "text": "Rani Chettinad The Indian Kitchen",
+  "logo": "assets/logos/stores/rani-chettinad.png",
+  "logoAspect": 2.462,
+  "logoBoard": 16513782
  },
  "rbc royal bank": {
   "name": "RBC Royal Bank",
@@ -705,7 +822,10 @@
   "bg": 20901,
   "ink": 16777215,
   "type": "letters",
-  "text": "RBC Royal Bank"
+  "text": "RBC Royal Bank",
+  "logo": "assets/logos/stores/rbc-royal-bank.png",
+  "logoAspect": 0.859,
+  "logoBoard": 16513782
  },
  "roosters fried chicken more": {
   "name": "Roosters Fried Chicken & More",
@@ -725,7 +845,10 @@
   "bg": 1710618,
   "ink": 16777215,
   "type": "box",
-  "text": "SEOUL SOUL (Korean fried chicken)"
+  "text": "SEOUL SOUL (Korean fried chicken)",
+  "logo": "assets/logos/stores/seoul-soul.png",
+  "logoAspect": 5.505,
+  "logoBoard": 16513782
  },
  "shawarma royal": {
   "name": "Shawarma Royal(e)",
@@ -772,7 +895,10 @@
   "bg": 7304313,
   "ink": 14820122,
   "type": "letters",
-  "text": "SMOKE'S POUTINERIE"
+  "text": "SMOKE'S POUTINERIE",
+  "logo": "assets/logos/stores/smokes-poutinerie.png",
+  "logoAspect": 1.667,
+  "logoBoard": 16513782
  },
  "sowon": {
   "name": "Sowon (Korean dining)",
@@ -799,13 +925,19 @@
   "bg": 7304313,
   "ink": 16761358,
   "type": "letters",
-  "text": "SUBWAY"
+  "text": "SUBWAY",
+  "logo": "assets/logos/stores/subway.png",
+  "logoAspect": 5.02,
+  "logoBoard": 16513782
  },
  "sultans mediterranean grill": {
   "name": "Sultans Mediterranean Grill",
   "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
   "lat": 43.476782,
-  "lon": -80.525391
+  "lon": -80.525391,
+  "logo": "assets/logos/stores/sultans-mediterranean-grill.png",
+  "logoAspect": 3.938,
+  "logoBoard": 1907999
  },
  "super chicken": {
   "name": "Super Chicken",
@@ -821,7 +953,10 @@
   "bg": 14208178,
   "ink": 1710618,
   "type": "letters",
-  "text": "sweet dreams teashop"
+  "text": "sweet dreams teashop",
+  "logo": "assets/logos/stores/sweet-dreams-teashop.png",
+  "logoAspect": 2.438,
+  "logoBoard": 16513782
  },
  "sweet loop": {
   "name": "Sweet Loop",
@@ -841,7 +976,10 @@
   "bg": 7040883,
   "ink": 16777215,
   "type": "letters",
-  "text": "TAHINI'S"
+  "text": "TAHINI'S",
+  "logo": "assets/logos/stores/tahinis.png",
+  "logoAspect": 1.043,
+  "logoBoard": 1907999
  },
  "tandoori zaoka": {
   "name": "Tandoori Zaoka",
@@ -853,7 +991,10 @@
   "name": "Thai Express",
   "plaza": "King St N & University Ave corner plazas (by Wilfrid Laurier)",
   "lat": 43.477547,
-  "lon": -80.525642
+  "lon": -80.525642,
+  "logo": "assets/logos/stores/thai-express.png",
+  "logoAspect": 0.859,
+  "logoBoard": 16513782
  },
  "the alley": {
   "name": "The Alley (bubble tea)",
@@ -863,7 +1004,10 @@
   "bg": 16777215,
   "ink": 1710618,
   "type": "box",
-  "text": "THE ALLEY"
+  "text": "THE ALLEY",
+  "logo": "assets/logos/stores/the-alley.png",
+  "logoAspect": 1.402,
+  "logoBoard": 10648272
  },
  "the bingsu cafe": {
   "name": "The Bingsu Cafe",
@@ -911,13 +1055,19 @@
   "bg": 4868942,
   "ink": 16777215,
   "type": "letters",
-  "text": "TWISTED Indian FUSION STREET FOOD"
+  "text": "TWISTED Indian FUSION STREET FOOD",
+  "logo": "assets/logos/stores/twisted-indian-fusion-street-food.png",
+  "logoAspect": 5.02,
+  "logoBoard": 16513782
  },
  "uniclaw": {
   "name": "UniClaw",
   "plaza": "Adjacent to University Shops Plaza: Campus Court plaza (140/150 University Ave W, east side of Phillip St)",
   "lat": 43.472923,
-  "lon": -80.534647
+  "lon": -80.534647,
+  "logo": "assets/logos/stores/uniclaw.png",
+  "logoAspect": 0.785,
+  "logoBoard": 16513782
  },
  "university convenience": {
   "name": "University Convenience",
@@ -959,7 +1109,10 @@
   "bg": 5983040,
   "ink": 15985362,
   "type": "letters",
-  "text": "Williams fresh cafe"
+  "text": "Williams fresh cafe",
+  "logo": "assets/logos/stores/williams-fresh-cafe.png",
+  "logoAspect": 1.98,
+  "logoBoard": 1907999
  },
  "wine rack": {
   "name": "Wine Rack",
@@ -1011,6 +1164,9 @@
   "bg": 16777215,
   "ink": 13111342,
   "type": "box",
-  "text": "云尚米线 YUNSHANG RICE NOODLE"
+  "text": "云尚米线 YUNSHANG RICE NOODLE",
+  "logo": "assets/logos/stores/yunshang-rice-noodle.png",
+  "logoAspect": 1.387,
+  "logoBoard": 1907999
  }
 }
