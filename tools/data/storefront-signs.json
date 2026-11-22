@@ -17,7 +17,7 @@
   "halfSpan": 5.5,
   "minHeight": 3.6
  },
- "proposedAt": "2026-11-21",
+ "proposedAt": "2026-11-22",
  "sources": {
   "osm": {
    "dataset": "OpenStreetMap",
@@ -33,7 +33,7 @@
  "records": [
   {
    "id": "osm:node/11301408243",
-   "face": "wl-osm-buildings-2026:14808.6:s",
+   "face": "wl-osm-buildings-2026:14774.6:s",
    "name": "Hakka Nation",
    "sourceName": "Hakka Nation",
    "category": "amenity=fast_food",
@@ -60,7 +60,7 @@
   },
   {
    "id": "osm:node/11301408245",
-   "face": "wl-osm-buildings-2026:14808.7:s",
+   "face": "wl-osm-buildings-2026:14774.7:s",
    "name": "Mengami",
    "sourceName": "Mengami",
    "category": "amenity=fast_food",
@@ -87,7 +87,7 @@
   },
   {
    "id": "osm:node/11301408246",
-   "face": "wl-osm-buildings-2026:14808.8:s",
+   "face": "wl-osm-buildings-2026:14774.8:s",
    "name": "Izna Poke Plus",
    "sourceName": "Izna Poke Plus",
    "category": "amenity=fast_food",
@@ -114,7 +114,7 @@
   },
   {
    "id": "osm:node/11928740225",
-   "face": "wl-osm-buildings-2026:11319:s",
+   "face": "wl-osm-buildings-2026:11289:s",
    "name": "Tahini’s",
    "sourceName": "Tahini’s",
    "category": "amenity=fast_food",
@@ -141,7 +141,7 @@
   },
   {
    "id": "osm:node/11928740231",
-   "face": "wl-osm-buildings-2026:11319:s",
+   "face": "wl-osm-buildings-2026:11289:s",
    "name": "Hi Yogurt",
    "sourceName": "Hi Yogurt",
    "category": "amenity=fast_food",
@@ -168,7 +168,7 @@
   },
   {
    "id": "osm:node/11928875305",
-   "face": "wl-osm-buildings-2026:1062:n",
+   "face": "wl-osm-buildings-2026:1049:n",
    "name": "Yang Yum",
    "sourceName": "Yang Yum",
    "category": "amenity=fast_food",
@@ -195,7 +195,7 @@
   },
   {
    "id": "osm:node/11928875306",
-   "face": "wl-osm-buildings-2026:1062:n",
+   "face": "wl-osm-buildings-2026:1049:n",
    "name": "Hey Chefz",
    "sourceName": "Hey Chefz",
    "category": "amenity=fast_food",
@@ -222,7 +222,7 @@
   },
   {
    "id": "osm:node/11950598308",
-   "face": "wl-osm-buildings-2026:3470:s",
+   "face": "wl-osm-buildings-2026:3453:s",
    "name": "City Style Barber Shop",
    "sourceName": "City Style Barber Shop",
    "category": "shop=hairdresser",
@@ -276,7 +276,7 @@
   },
   {
    "id": "osm:node/12209363444",
-   "face": "wl-osm-buildings-2026:272:n",
+   "face": "wl-osm-buildings-2026:271:n",
    "name": "Rosel's",
    "sourceName": "Rosel's",
    "category": "amenity=restaurant",
@@ -309,7 +309,7 @@
   },
   {
    "id": "osm:node/12209363445",
-   "face": "wl-osm-buildings-2026:272:n",
+   "face": "wl-osm-buildings-2026:271:n",
    "name": "Mr. Puffs Dessert Bar",
    "sourceName": "Mr. Puffs Dessert Bar",
    "category": "amenity=cafe",
@@ -342,7 +342,7 @@
   },
   {
    "id": "osm:node/12209363446",
-   "face": "wl-osm-buildings-2026:272:n",
+   "face": "wl-osm-buildings-2026:271:n",
    "name": "Papa John's",
    "sourceName": "Papa John's",
    "category": "amenity=fast_food",
@@ -376,7 +376,7 @@
   },
   {
    "id": "osm:node/12209363447",
-   "face": "wl-osm-buildings-2026:272:n",
+   "face": "wl-osm-buildings-2026:271:n",
    "name": "Juicy Birds",
    "sourceName": "Juicy Birds",
    "category": "amenity=restaurant",
@@ -409,7 +409,7 @@
   },
   {
    "id": "osm:node/12209363448",
-   "face": "wl-osm-buildings-2026:272:n",
+   "face": "wl-osm-buildings-2026:271:n",
    "name": "Session 7",
    "sourceName": "Session 7",
    "category": "shop=cannabis",
@@ -442,7 +442,7 @@
   },
   {
    "id": "osm:node/12331439577",
-   "face": "wl-osm-buildings-2026:7876:s",
+   "face": "wl-osm-buildings-2026:7854:s",
    "name": "Ye House",
    "sourceName": "Ye House",
    "category": "amenity=restaurant",
@@ -469,7 +469,7 @@
   },
   {
    "id": "osm:node/12993621805",
-   "face": "wl-osm-buildings-2026:404:s",
+   "face": "wl-osm-buildings-2026:403:s",
    "name": "247 King Dental",
    "sourceName": "247 King Dental",
    "category": "amenity=dentist",
@@ -496,7 +496,7 @@
   },
   {
    "id": "osm:node/12993621806",
-   "face": "wl-osm-buildings-2026:404:s",
+   "face": "wl-osm-buildings-2026:403:s",
    "name": "Twisted Indian Fusion Street Food",
    "sourceName": "Twisted Indian Fusion Street Food",
    "category": "amenity=fast_food",
@@ -523,7 +523,7 @@
   },
   {
    "id": "osm:node/1863179524",
-   "face": "wl-osm-buildings-2026:272:n",
+   "face": "wl-osm-buildings-2026:271:n",
    "name": "Mucho Burrito",
    "sourceName": "Mucho Burrito",
    "category": "amenity=fast_food",
@@ -557,7 +557,7 @@
   },
   {
    "id": "osm:node/2302080411",
-   "face": "wl-osm-buildings-2026:404:s",
+   "face": "wl-osm-buildings-2026:403:s",
    "name": "Menchie's",
    "sourceName": "Menchie's",
    "category": "amenity=ice_cream",
@@ -585,7 +585,7 @@
   },
   {
    "id": "osm:node/2302080412",
-   "face": "wl-osm-buildings-2026:404:s",
+   "face": "wl-osm-buildings-2026:403:s",
    "name": "Booster Juice",
    "sourceName": "Booster Juice",
    "category": "amenity=fast_food",
@@ -613,7 +613,7 @@
   },
   {
    "id": "osm:node/2938254245",
-   "face": "wl-osm-buildings-2026:2760:s",
+   "face": "wl-osm-buildings-2026:2745:s",
    "name": "Gyubee Japanese Grill",
    "sourceName": "Gyubee Japanese Grill",
    "category": "amenity=restaurant",
@@ -640,7 +640,7 @@
   },
   {
    "id": "osm:node/2938254268",
-   "face": "wl-osm-buildings-2026:91:n",
+   "face": "wl-osm-buildings-2026:90:n",
    "name": "William's Coffee",
    "sourceName": "William's Coffee",
    "category": "amenity=cafe",
@@ -667,7 +667,7 @@
   },
   {
    "id": "osm:node/2938254270",
-   "face": "wl-osm-buildings-2026:3514:n",
+   "face": "wl-osm-buildings-2026:3497:n",
    "name": "Starbucks",
    "sourceName": "Starbucks",
    "category": "amenity=cafe",
@@ -695,7 +695,7 @@
   },
   {
    "id": "osm:node/5037259931",
-   "face": "wl-osm-buildings-2026:2682:s",
+   "face": "wl-osm-buildings-2026:2668:s",
    "name": "Byte 75",
    "sourceName": "Byte 75",
    "category": "amenity=cafe",
@@ -722,7 +722,7 @@
   },
   {
    "id": "osm:node/5366654328",
-   "face": "wl-osm-buildings-2026:1062:n",
+   "face": "wl-osm-buildings-2026:1049:n",
    "name": "Chinese Lamian",
    "sourceName": "Chinese Lamian",
    "category": "amenity=restaurant",
@@ -749,7 +749,7 @@
   },
   {
    "id": "osm:node/5394615012",
-   "face": "wl-osm-buildings-2026:402:s",
+   "face": "wl-osm-buildings-2026:401:s",
    "name": "Wine Rack",
    "sourceName": "Wine Rack",
    "category": "shop=wine",
@@ -777,7 +777,7 @@
   },
   {
    "id": "osm:node/9061275212",
-   "face": "wl-osm-buildings-2026:404:s",
+   "face": "wl-osm-buildings-2026:403:s",
    "name": "Fresh Burrito",
    "sourceName": "Fresh Burrito",
    "category": "amenity=fast_food",
@@ -804,7 +804,7 @@
   },
   {
    "id": "osm:node/9061275213",
-   "face": "wl-osm-buildings-2026:404:s",
+   "face": "wl-osm-buildings-2026:403:s",
    "name": "Church's Chicken",
    "sourceName": "Church's Chicken",
    "category": "amenity=fast_food",
@@ -832,7 +832,7 @@
   },
   {
    "id": "osm:way/118662118",
-   "face": "wl-osm-buildings-2026:274:w",
+   "face": "wl-osm-buildings-2026:273:w",
    "name": "RBC Royal Bank",
    "sourceName": "RBC Royal Bank",
    "category": "amenity=bank",
@@ -860,7 +860,7 @@
   },
   {
    "id": "osm:way/1285259162",
-   "face": "wl-osm-buildings-2026:14794:s",
+   "face": "wl-osm-buildings-2026:14762:s",
    "name": "Yang’s Braised Chicken Rice",
    "sourceName": "Yang’s Braised Chicken Rice",
    "category": "amenity=restaurant",
@@ -887,7 +887,7 @@
   },
   {
    "id": "osm:way/1285259163",
-   "face": "wl-osm-buildings-2026:14795:s",
+   "face": "wl-osm-buildings-2026:14763:s",
    "name": "The Friendly Vapour",
    "sourceName": "The Friendly Vapour",
    "category": "shop=e-cigarette",
@@ -914,7 +914,7 @@
   },
   {
    "id": "osm:way/1286020911",
-   "face": "wl-osm-buildings-2026:14797:s",
+   "face": "wl-osm-buildings-2026:14765:s",
    "name": "bb.q Village",
    "sourceName": "bb.q Village",
    "category": "amenity=restaurant",
@@ -941,7 +941,7 @@
   },
   {
    "id": "osm:way/147349533",
-   "face": "wl-osm-buildings-2026:512:s",
+   "face": "wl-osm-buildings-2026:506:s",
    "name": "mochi mochi",
    "sourceName": "mochi mochi",
    "category": "amenity=cafe",
@@ -1104,7 +1104,7 @@
   },
   {
    "id": "osm:way/39606011",
-   "face": "wl-osm-buildings-2026:14833.0:s",
+   "face": "wl-osm-buildings-2026:14798.0:s",
    "name": "Yu Xiao Shan",
    "sourceName": "Yu Xiao Shan",
    "category": "amenity=restaurant",
@@ -1131,7 +1131,7 @@
   },
   {
    "id": "osm:way/39606014",
-   "face": "wl-osm-buildings-2026:14833.2:s",
+   "face": "wl-osm-buildings-2026:14798.2:s",
    "name": "Kismet",
    "sourceName": "Kismet",
    "category": "amenity=restaurant",
@@ -1185,7 +1185,7 @@
   },
   {
    "id": "osm:way/39606017",
-   "face": "wl-osm-buildings-2026:14833.3:s",
+   "face": "wl-osm-buildings-2026:14798.3:s",
    "name": "Morals Village",
    "sourceName": "Morals Village",
    "category": "amenity=restaurant",
@@ -1212,7 +1212,7 @@
   },
   {
    "id": "osm:way/39606018",
-   "face": "wl-osm-buildings-2026:14833.4:s",
+   "face": "wl-osm-buildings-2026:14798.4:s",
    "name": "D Spot Dessert Cafe",
    "sourceName": "D Spot Dessert Cafe",
    "category": "amenity=fast_food",
@@ -1239,7 +1239,7 @@
   },
   {
    "id": "osm:way/39606020",
-   "face": "wl-osm-buildings-2026:14833.5:s",
+   "face": "wl-osm-buildings-2026:14798.5:s",
    "name": "Akkila Dental Clinic",
    "sourceName": "Akkila Dental Clinic",
    "category": "amenity=dentist",
@@ -1266,7 +1266,7 @@
   },
   {
    "id": "osm:way/39606021",
-   "face": "wl-osm-buildings-2026:14833.6:s",
+   "face": "wl-osm-buildings-2026:14798.6:s",
    "name": "Home Garden",
    "sourceName": "Home Garden",
    "category": "amenity=restaurant",
@@ -1293,7 +1293,7 @@
   },
   {
    "id": "osm:way/39606023",
-   "face": "wl-osm-buildings-2026:14833.7:s",
+   "face": "wl-osm-buildings-2026:14798.7:s",
    "name": "Yummy Chongqin",
    "sourceName": "Yummy Chongqin",
    "category": "amenity=restaurant",
@@ -1320,7 +1320,7 @@
   },
   {
    "id": "osm:way/39606026",
-   "face": "wl-osm-buildings-2026:14833.8:s",
+   "face": "wl-osm-buildings-2026:14798.8:s",
    "name": "Nuri Village",
    "sourceName": "Nuri Village",
    "category": "amenity=restaurant",
@@ -1347,7 +1347,7 @@
   },
   {
    "id": "osm:way/39606027",
-   "face": "wl-osm-buildings-2026:14833.9:s",
+   "face": "wl-osm-buildings-2026:14798.9:s",
    "name": "Subway",
    "sourceName": "Subway",
    "category": "amenity=fast_food",
@@ -1375,7 +1375,7 @@
   },
   {
    "id": "osm:way/39606029",
-   "face": "wl-osm-buildings-2026:14833.10:s",
+   "face": "wl-osm-buildings-2026:14798.10:s",
    "name": "Shinwa Asian Cuisine",
    "sourceName": "Shinwa Asian Cuisine",
    "category": "amenity=restaurant",
@@ -1402,7 +1402,7 @@
   },
   {
    "id": "osm:way/39606032",
-   "face": "wl-osm-buildings-2026:14833.11:s",
+   "face": "wl-osm-buildings-2026:14798.11:s",
    "name": "Campus Pizza",
    "sourceName": "Campus Pizza",
    "category": "amenity=fast_food",
@@ -1429,7 +1429,7 @@
   },
   {
    "id": "osm:way/39606033",
-   "face": "wl-osm-buildings-2026:14833.12:s",
+   "face": "wl-osm-buildings-2026:14798.12:s",
    "name": "Chungchun",
    "sourceName": "Chungchun",
    "category": "amenity=fast_food",
@@ -1674,7 +1674,7 @@
   },
   {
    "id": "osm:way/39606060",
-   "face": "wl-osm-buildings-2026:14808.0:s",
+   "face": "wl-osm-buildings-2026:14774.0:s",
    "name": "Sweet Dreams Teashop",
    "sourceName": "Sweet Dreams Teashop",
    "category": "amenity=cafe",
@@ -1701,7 +1701,7 @@
   },
   {
    "id": "osm:way/39606061",
-   "face": "wl-osm-buildings-2026:14808.1:s",
+   "face": "wl-osm-buildings-2026:14774.1:s",
    "name": "Waterloo Walk-in Clinic",
    "sourceName": "Waterloo Walk-in Clinic",
    "category": "amenity=doctors",
@@ -1728,7 +1728,7 @@
   },
   {
    "id": "osm:way/39606062",
-   "face": "wl-osm-buildings-2026:14808.2:s",
+   "face": "wl-osm-buildings-2026:14774.2:s",
    "name": "Pharmasave",
    "sourceName": "Pharmasave",
    "category": "amenity=pharmacy",
@@ -1756,7 +1756,7 @@
   },
   {
    "id": "osm:way/39606063",
-   "face": "wl-osm-buildings-2026:14808.3:s",
+   "face": "wl-osm-buildings-2026:14774.3:s",
    "name": "Sowon",
    "sourceName": "Sowon",
    "category": "amenity=restaurant",
@@ -1783,7 +1783,7 @@
   },
   {
    "id": "osm:way/39606064",
-   "face": "wl-osm-buildings-2026:14808.4:s",
+   "face": "wl-osm-buildings-2026:14774.4:s",
    "name": "Harvey's",
    "sourceName": "Harvey's",
    "category": "amenity=fast_food",
@@ -1811,7 +1811,7 @@
   },
   {
    "id": "osm:way/39606068",
-   "face": "wl-osm-buildings-2026:14808.5:s",
+   "face": "wl-osm-buildings-2026:14774.5:s",
    "name": "Farah's Food Mart",
    "sourceName": "Farah's Food Mart",
    "category": "shop=convenience",
@@ -1838,7 +1838,7 @@
   },
   {
    "id": "osm:way/520926519",
-   "face": "wl-osm-buildings-2026:3330:s",
+   "face": "wl-osm-buildings-2026:3313:s",
    "name": "Shawerma Plus",
    "sourceName": "Shawerma Plus",
    "category": "amenity=fast_food",
@@ -1865,7 +1865,7 @@
   },
   {
    "id": "osm:way/553610427",
-   "face": "wl-osm-buildings-2026:3346:s",
+   "face": "wl-osm-buildings-2026:3329:s",
    "name": "Mel's Diner",
    "sourceName": "Mel's Diner",
    "category": "amenity=restaurant",
@@ -1892,7 +1892,7 @@
   },
   {
    "id": "osm:way/553610428",
-   "face": "wl-osm-buildings-2026:3347:s",
+   "face": "wl-osm-buildings-2026:3330:s",
    "name": "Onnuri",
    "sourceName": "Onnuri",
    "category": "amenity=restaurant",
@@ -1919,7 +1919,7 @@
   },
   {
    "id": "osm:way/553610429",
-   "face": "wl-osm-buildings-2026:3348:s",
+   "face": "wl-osm-buildings-2026:3331:s",
    "name": "momo",
    "sourceName": "momo",
    "category": "amenity=restaurant",
@@ -1946,7 +1946,7 @@
   },
   {
    "id": "osm:way/553610430",
-   "face": "wl-osm-buildings-2026:3349:s",
+   "face": "wl-osm-buildings-2026:3332:s",
    "name": "Pizza Nova",
    "sourceName": "Pizza Nova",
    "category": "amenity=fast_food",
@@ -1974,7 +1974,7 @@
   },
   {
    "id": "osm:way/553610432",
-   "face": "wl-osm-buildings-2026:3351:s",
+   "face": "wl-osm-buildings-2026:3334:s",
    "name": "Brown Donkatsu",
    "sourceName": "Brown Donkatsu",
    "category": "amenity=restaurant",
@@ -2001,7 +2001,7 @@
   },
   {
    "id": "osm:way/553610433",
-   "face": "wl-osm-buildings-2026:3352:s",
+   "face": "wl-osm-buildings-2026:3335:s",
    "name": "The Bingsu Cafe",
    "sourceName": "The Bingsu Cafe",
    "category": "amenity=cafe",
@@ -2028,7 +2028,7 @@
   },
   {
    "id": "osm:way/553610434",
-   "face": "wl-osm-buildings-2026:3353:s",
+   "face": "wl-osm-buildings-2026:3336:s",
    "name": "Campus Convenience",
    "sourceName": "Campus Convenience",
    "category": "shop=convenience",
@@ -2055,7 +2055,7 @@
   },
   {
    "id": "osm:way/553610435",
-   "face": "wl-osm-buildings-2026:3354:s",
+   "face": "wl-osm-buildings-2026:3337:s",
    "name": "Burger King",
    "sourceName": "Burger King",
    "category": "amenity=fast_food",
@@ -2083,7 +2083,7 @@
   },
   {
    "id": "osm:way/555850418",
-   "face": "wl-osm-buildings-2026:3418:s",
+   "face": "wl-osm-buildings-2026:3401:s",
    "name": "Kabob Shack",
    "sourceName": "Kabob Shack",
    "category": "amenity=restaurant",
@@ -2110,7 +2110,7 @@
   },
   {
    "id": "osm:way/555850419",
-   "face": "wl-osm-buildings-2026:3419:s",
+   "face": "wl-osm-buildings-2026:3402:s",
    "name": "Gol's Lanzhou Noodle",
    "sourceName": "Gol's Lanzhou Noodle",
    "category": "amenity=restaurant",
@@ -2137,7 +2137,7 @@
   },
   {
    "id": "osm:way/555850420",
-   "face": "wl-osm-buildings-2026:3420:s",
+   "face": "wl-osm-buildings-2026:3403:s",
    "name": "Mizu Restaurant",
    "sourceName": "Mizu Restaurant",
    "category": "amenity=restaurant",
@@ -2164,7 +2164,7 @@
   },
   {
    "id": "osm:way/555850421",
-   "face": "wl-osm-buildings-2026:3421:s",
+   "face": "wl-osm-buildings-2026:3404:s",
    "name": "Asakusa",
    "sourceName": "Asakusa",
    "category": "amenity=restaurant",
@@ -2191,7 +2191,7 @@
   },
   {
    "id": "osm:way/555850422",
-   "face": "wl-osm-buildings-2026:3422:s",
+   "face": "wl-osm-buildings-2026:3405:s",
    "name": "iPho",
    "sourceName": "iPho",
    "category": "amenity=restaurant",
@@ -2218,7 +2218,7 @@
   },
   {
    "id": "osm:way/555850424",
-   "face": "wl-osm-buildings-2026:3424:s",
+   "face": "wl-osm-buildings-2026:3407:s",
    "name": "Waterloo Central Supermarket",
    "sourceName": "Waterloo Central Supermarket",
    "category": "shop=supermarket",
@@ -2245,7 +2245,7 @@
   },
   {
    "id": "osm:way/626283190",
-   "face": "wl-osm-buildings-2026:14808.7:s",
+   "face": "wl-osm-buildings-2026:14774.7:s",
    "name": "Kabob Hut",
    "sourceName": "Kabob Hut",
    "category": "amenity=restaurant",
@@ -2272,7 +2272,7 @@
   },
   {
    "id": "osm:way/626283191",
-   "face": "wl-osm-buildings-2026:14808.8:s",
+   "face": "wl-osm-buildings-2026:14774.8:s",
    "name": "The Alley",
    "sourceName": "The Alley",
    "category": "amenity=cafe",
@@ -2299,7 +2299,7 @@
   },
   {
    "id": "osm:node/12899516335",
-   "face": "wl-osm-buildings-2026:473:n",
+   "face": "wl-osm-buildings-2026:471:n",
    "name": "Royal Paan",
    "sourceName": "Royal Paan",
    "category": "amenity=restaurant",
@@ -2326,7 +2326,7 @@
   },
   {
    "id": "osm:node/1863120483",
-   "face": "wl-osm-buildings-2026:759:s",
+   "face": "wl-osm-buildings-2026:750:s",
    "name": "Frank Gies Auto Sales",
    "sourceName": "Frank Gies Auto Sales",
    "category": "shop=car",
@@ -2353,7 +2353,7 @@
   },
   {
    "id": "osm:node/9061278667",
-   "face": "wl-osm-buildings-2026:473:n",
+   "face": "wl-osm-buildings-2026:471:n",
    "name": "Eggholic",
    "sourceName": "Eggholic",
    "category": "amenity=restaurant",
@@ -2380,7 +2380,7 @@
   },
   {
    "id": "osm:node/9061278668",
-   "face": "wl-osm-buildings-2026:473:n",
+   "face": "wl-osm-buildings-2026:471:n",
    "name": "Bumblebee Convenience",
    "sourceName": "Bumblebee Convenience",
    "category": "shop=convenience",
@@ -2407,7 +2407,7 @@
   },
   {
    "id": "osm:way/143670598",
-   "face": "wl-osm-buildings-2026:475:n",
+   "face": "wl-osm-buildings-2026:472:n",
    "name": "Williams Coffee Pub",
    "sourceName": "Williams Coffee Pub",
    "category": "amenity=cafe",
@@ -2441,7 +2441,7 @@
   },
   {
    "id": "osm:way/143670599",
-   "face": "wl-osm-buildings-2026:476:n",
+   "face": "wl-osm-buildings-2026:473:n",
    "name": "Buddies Cannabis",
    "sourceName": "Buddies Cannabis",
    "category": "shop=cannabis",
@@ -2468,7 +2468,7 @@
   },
   {
    "id": "osm:way/177731847",
-   "face": "wl-osm-buildings-2026:782:n",
+   "face": "wl-osm-buildings-2026:773:n",
    "name": "Canadian Istanbul",
    "sourceName": "Canadian Istanbul",
    "category": "amenity=restaurant",
@@ -2495,7 +2495,7 @@
   },
   {
    "id": "osm:way/177731848",
-   "face": "wl-osm-buildings-2026:783:n",
+   "face": "wl-osm-buildings-2026:774:n",
    "name": "Popeyes",
    "sourceName": "Popeyes",
    "category": "amenity=fast_food",
@@ -2523,7 +2523,7 @@
   },
   {
    "id": "osm:node/10120212684",
-   "face": "wl-osm-buildings-2026:11743.0:w",
+   "face": "wl-osm-buildings-2026:11713.0:w",
    "name": "Cheez-Us Pizza",
    "sourceName": "Cheez-Us Pizza",
    "category": "amenity=fast_food",
@@ -2550,7 +2550,7 @@
   },
   {
    "id": "osm:node/10120212685",
-   "face": "wl-osm-buildings-2026:11743.0:w",
+   "face": "wl-osm-buildings-2026:11713.0:w",
    "name": "Desserto",
    "sourceName": "Desserto",
    "category": "amenity=ice_cream",
@@ -2577,7 +2577,7 @@
   },
   {
    "id": "osm:node/10120212692",
-   "face": "wl-osm-buildings-2026:11743.1:w",
+   "face": "wl-osm-buildings-2026:11713.1:w",
    "name": "Sure Care Diagnostics",
    "sourceName": "Sure Care Diagnostics",
    "category": "amenity=clinic",
@@ -2604,7 +2604,7 @@
   },
   {
    "id": "osm:node/10120212693",
-   "face": "wl-osm-buildings-2026:11743.1:w",
+   "face": "wl-osm-buildings-2026:11713.1:w",
    "name": "Curex Medical Centre",
    "sourceName": "Curex Medical Centre",
    "category": "amenity=doctors",
@@ -2631,7 +2631,7 @@
   },
   {
    "id": "osm:node/10120212694",
-   "face": "wl-osm-buildings-2026:11743.1:w",
+   "face": "wl-osm-buildings-2026:11713.1:w",
    "name": "Guardian",
    "sourceName": "Guardian",
    "category": "amenity=pharmacy",
@@ -2659,7 +2659,7 @@
   },
   {
    "id": "osm:node/10795183406",
-   "face": "wl-osm-buildings-2026:11743.1:w",
+   "face": "wl-osm-buildings-2026:11713.1:w",
    "name": "Art Dental Clinic",
    "sourceName": "Art Dental Clinic",
    "category": "amenity=dentist",
@@ -2686,7 +2686,7 @@
   },
   {
    "id": "osm:node/10955169579",
-   "face": "wl-osm-buildings-2026:12621:e",
+   "face": "wl-osm-buildings-2026:12590:e",
    "name": "Poppy's Bagel and Bakery",
    "sourceName": "Poppy's Bagel and Bakery",
    "category": "amenity=fast_food",
@@ -2713,7 +2713,7 @@
   },
   {
    "id": "osm:node/10955446390",
-   "face": "wl-osm-buildings-2026:577:w",
+   "face": "wl-osm-buildings-2026:570:w",
    "name": "Kindred Spirit",
    "sourceName": "Kindred Spirit",
    "category": "shop=clothes",
@@ -2740,7 +2740,7 @@
   },
   {
    "id": "osm:node/10955446391",
-   "face": "wl-osm-buildings-2026:577:w",
+   "face": "wl-osm-buildings-2026:570:w",
    "name": "Paint by Munzy",
    "sourceName": "Paint by Munzy",
    "category": "shop=art",
@@ -2767,7 +2767,7 @@
   },
   {
    "id": "osm:node/11732258739",
-   "face": "wl-osm-buildings-2026:11352:w",
+   "face": "wl-osm-buildings-2026:11322:w",
    "name": "KWC Convenience",
    "sourceName": "KWC Convenience",
    "category": "shop=convenience",
@@ -2794,7 +2794,7 @@
   },
   {
    "id": "osm:node/12000187457",
-   "face": "wl-osm-buildings-2026:14603:e",
+   "face": "wl-osm-buildings-2026:14572:e",
    "name": "THG's Hot Chicken",
    "sourceName": "THG's Hot Chicken",
    "category": "amenity=fast_food",
@@ -2827,7 +2827,7 @@
   },
   {
    "id": "osm:node/12054081115",
-   "face": "wl-osm-buildings-2026:596:e",
+   "face": "wl-osm-buildings-2026:589:e",
    "name": "Dive Bar",
    "sourceName": "Dive Bar",
    "category": "amenity=pub",
@@ -2854,7 +2854,7 @@
   },
   {
    "id": "osm:node/12054104153",
-   "face": "wl-osm-buildings-2026:584:w",
+   "face": "wl-osm-buildings-2026:577:w",
    "name": "Elz & Greco",
    "sourceName": "Elz & Greco",
    "category": "shop=beauty",
@@ -2881,7 +2881,7 @@
   },
   {
    "id": "osm:node/12331548295",
-   "face": "wl-osm-buildings-2026:564:e",
+   "face": "wl-osm-buildings-2026:557:e",
    "name": "Barranca Beauty Salon",
    "sourceName": "Barranca Beauty Salon",
    "category": "shop=beauty",
@@ -2908,7 +2908,7 @@
   },
   {
    "id": "osm:node/12383163224",
-   "face": "wl-osm-buildings-2026:2760:e",
+   "face": "wl-osm-buildings-2026:2745:e",
    "name": "Penny's Hot Chicken",
    "sourceName": "Penny's Hot Chicken",
    "category": "amenity=fast_food",
@@ -2935,7 +2935,7 @@
   },
   {
    "id": "osm:node/12383163225",
-   "face": "wl-osm-buildings-2026:2760:e",
+   "face": "wl-osm-buildings-2026:2745:e",
    "name": "Sultans Mediterranean Grill - Waterloo",
    "sourceName": "Sultans Mediterranean Grill - Waterloo",
    "category": "amenity=fast_food",
@@ -2962,7 +2962,7 @@
   },
   {
    "id": "osm:node/12889772301",
-   "face": "wl-osm-buildings-2026:12621:e",
+   "face": "wl-osm-buildings-2026:12590:e",
    "name": "Old Firehall Dessert Café",
    "sourceName": "Old Firehall Dessert Café",
    "category": "shop=chocolate",
@@ -2995,7 +2995,7 @@
   },
   {
    "id": "osm:node/12889772302",
-   "face": "wl-osm-buildings-2026:580:e",
+   "face": "wl-osm-buildings-2026:573:e",
    "name": "Waterloo Barbershop",
    "sourceName": "Waterloo Barbershop",
    "category": "shop=hairdresser",
@@ -3022,7 +3022,7 @@
   },
   {
    "id": "osm:node/12889772303",
-   "face": "wl-osm-buildings-2026:588:e",
+   "face": "wl-osm-buildings-2026:581:e",
    "name": "White Rabbit",
    "sourceName": "White Rabbit",
    "category": "amenity=bar",
@@ -3049,7 +3049,7 @@
   },
   {
    "id": "osm:node/12889772304",
-   "face": "wl-osm-buildings-2026:588:e",
+   "face": "wl-osm-buildings-2026:581:e",
    "name": "Hop House",
    "sourceName": "Hop House",
    "category": "amenity=bar",
@@ -3076,7 +3076,7 @@
   },
   {
    "id": "osm:node/12889772305",
-   "face": "wl-osm-buildings-2026:578:e",
+   "face": "wl-osm-buildings-2026:571:e",
    "name": "Snowday Bingsu Cafe",
    "sourceName": "Snowday Bingsu Cafe",
    "category": "amenity=cafe",
@@ -3103,7 +3103,7 @@
   },
   {
    "id": "osm:node/12889846989",
-   "face": "wl-osm-buildings-2026:598:w",
+   "face": "wl-osm-buildings-2026:591:w",
    "name": "McPhail's Cycle & Sport Ltd.",
    "sourceName": "McPhail's Cycle & Sport Ltd.",
    "category": "shop=bicycle",
@@ -3130,7 +3130,7 @@
   },
   {
    "id": "osm:node/12972371233",
-   "face": "wl-osm-buildings-2026:14810:w",
+   "face": "wl-osm-buildings-2026:14776:w",
    "name": "Egg Club",
    "sourceName": "Egg Club",
    "category": "amenity=restaurant",
@@ -3157,7 +3157,7 @@
   },
   {
    "id": "osm:node/12972371234",
-   "face": "wl-osm-buildings-2026:14810:w",
+   "face": "wl-osm-buildings-2026:14776:w",
    "name": "Aisle 24",
    "sourceName": "Aisle 24",
    "category": "shop=convenience",
@@ -3184,7 +3184,7 @@
   },
   {
    "id": "osm:node/12972371235",
-   "face": "wl-osm-buildings-2026:14810:w",
+   "face": "wl-osm-buildings-2026:14776:w",
    "name": "Shelby's Legendary Shawarma",
    "sourceName": "Shelby's Legendary Shawarma",
    "category": "amenity=fast_food",
@@ -3211,7 +3211,7 @@
   },
   {
    "id": "osm:node/12972371236",
-   "face": "wl-osm-buildings-2026:14810:w",
+   "face": "wl-osm-buildings-2026:14776:w",
    "name": "GC Burger",
    "sourceName": "GC Burger",
    "category": "amenity=fast_food",
@@ -3238,7 +3238,7 @@
   },
   {
    "id": "osm:node/12972371237",
-   "face": "wl-osm-buildings-2026:14810:w",
+   "face": "wl-osm-buildings-2026:14776:w",
    "name": "Tut's Egyptian Food",
    "sourceName": "Tut's Egyptian Food",
    "category": "amenity=restaurant",
@@ -3265,7 +3265,7 @@
   },
   {
    "id": "osm:node/12993610695",
-   "face": "wl-osm-buildings-2026:14811:w",
+   "face": "wl-osm-buildings-2026:14777:w",
    "name": "City Pizza",
    "sourceName": "City Pizza",
    "category": "amenity=fast_food",
@@ -3292,7 +3292,7 @@
   },
   {
    "id": "osm:node/13191905586",
-   "face": "wl-osm-buildings-2026:11352:w",
+   "face": "wl-osm-buildings-2026:11322:w",
    "name": "Mastis Resto Bar",
    "sourceName": "Mastis Resto Bar",
    "category": "amenity=restaurant",
@@ -3319,7 +3319,7 @@
   },
   {
    "id": "osm:node/13720039092",
-   "face": "wl-osm-buildings-2026:738:w",
+   "face": "wl-osm-buildings-2026:729:w",
    "name": "Rebel Rebel",
    "sourceName": "Rebel Rebel",
    "category": "shop=music",
@@ -3346,7 +3346,7 @@
   },
   {
    "id": "osm:node/13908547488",
-   "face": "wl-osm-buildings-2026:589:w",
+   "face": "wl-osm-buildings-2026:582:w",
    "name": "Long & McQuade",
    "sourceName": "Long & McQuade",
    "category": "shop=musical_instrument",
@@ -3374,7 +3374,7 @@
   },
   {
    "id": "osm:node/14190592266",
-   "face": "wl-osm-buildings-2026:404:e",
+   "face": "wl-osm-buildings-2026:403:e",
    "name": "Jersey Mike's Subs",
    "sourceName": "Jersey Mike's Subs",
    "category": "amenity=fast_food",
@@ -3402,7 +3402,7 @@
   },
   {
    "id": "osm:node/1493872357",
-   "face": "wl-osm-buildings-2026:588:e",
+   "face": "wl-osm-buildings-2026:581:e",
    "name": "Daldongnae Korean BBQ",
    "sourceName": "Daldongnae Korean BBQ",
    "category": "amenity=restaurant",
@@ -3429,7 +3429,7 @@
   },
   {
    "id": "osm:node/1583468586",
-   "face": "wl-osm-buildings-2026:572:w",
+   "face": "wl-osm-buildings-2026:565:w",
    "name": "Pür & Simple",
    "sourceName": "Pür & Simple",
    "category": "amenity=restaurant",
@@ -3457,7 +3457,7 @@
   },
   {
    "id": "osm:node/1626379693",
-   "face": "wl-osm-buildings-2026:599:w",
+   "face": "wl-osm-buildings-2026:592:w",
    "name": "Fratello Pizza",
    "sourceName": "Fratello Pizza",
    "category": "amenity=fast_food",
@@ -3484,7 +3484,7 @@
   },
   {
    "id": "osm:node/1626379707",
-   "face": "wl-osm-buildings-2026:581:w",
+   "face": "wl-osm-buildings-2026:574:w",
    "name": "Uptown Herb",
    "sourceName": "Uptown Herb",
    "category": "shop=cannabis",
@@ -3511,7 +3511,7 @@
   },
   {
    "id": "osm:node/2120263917",
-   "face": "wl-osm-buildings-2026:599:w",
+   "face": "wl-osm-buildings-2026:592:w",
    "name": "State of the Art Supplies",
    "sourceName": "State of the Art Supplies",
    "category": "shop=art",
@@ -3538,7 +3538,7 @@
   },
   {
    "id": "osm:node/2358060989",
-   "face": "wl-osm-buildings-2026:599:w",
+   "face": "wl-osm-buildings-2026:592:w",
    "name": "Midnight Run Cafe",
    "sourceName": "Midnight Run Cafe",
    "category": "amenity=cafe",
@@ -3565,7 +3565,7 @@
   },
   {
    "id": "osm:node/2436329832",
-   "face": "wl-osm-buildings-2026:256:w",
+   "face": "wl-osm-buildings-2026:255:w",
    "name": "Burrito Boyz",
    "sourceName": "Burrito Boyz",
    "category": "amenity=fast_food",
@@ -3599,7 +3599,7 @@
   },
   {
    "id": "osm:node/2436330178",
-   "face": "wl-osm-buildings-2026:257:w",
+   "face": "wl-osm-buildings-2026:256:w",
    "name": "Bhima's Warung",
    "sourceName": "Bhima's Warung",
    "category": "amenity=restaurant",
@@ -3626,7 +3626,7 @@
   },
   {
    "id": "osm:node/2436330647",
-   "face": "wl-osm-buildings-2026:256:w",
+   "face": "wl-osm-buildings-2026:255:w",
    "name": "China Bowl",
    "sourceName": "China Bowl",
    "category": "amenity=restaurant",
@@ -3659,7 +3659,7 @@
   },
   {
    "id": "osm:node/2475475450",
-   "face": "wl-osm-buildings-2026:590:w",
+   "face": "wl-osm-buildings-2026:583:w",
    "name": "Your Highness",
    "sourceName": "Your Highness",
    "category": "shop=tobacco",
@@ -3686,7 +3686,7 @@
   },
   {
    "id": "osm:node/2938254243",
-   "face": "wl-osm-buildings-2026:256:w",
+   "face": "wl-osm-buildings-2026:255:w",
    "name": "Kim's Kitchen",
    "sourceName": "Kim's Kitchen",
    "category": "amenity=restaurant",
@@ -3713,7 +3713,7 @@
   },
   {
    "id": "osm:node/2938254244",
-   "face": "wl-osm-buildings-2026:2760:e",
+   "face": "wl-osm-buildings-2026:2745:e",
    "name": "Gino's Pizza",
    "sourceName": "Gino's Pizza",
    "category": "amenity=fast_food",
@@ -3741,7 +3741,7 @@
   },
   {
    "id": "osm:node/420326579",
-   "face": "wl-osm-buildings-2026:579:e",
+   "face": "wl-osm-buildings-2026:572:e",
    "name": "Café 1842",
    "sourceName": "Café 1842",
    "category": "amenity=cafe",
@@ -3768,7 +3768,7 @@
   },
   {
    "id": "osm:node/5648014859",
-   "face": "wl-osm-buildings-2026:344:w",
+   "face": "wl-osm-buildings-2026:343:w",
    "name": "Sleep Ezzz Mattress Express",
    "sourceName": "Sleep Ezzz Mattress Express",
    "category": "shop=bed",
@@ -3795,7 +3795,7 @@
   },
   {
    "id": "osm:node/5650497229",
-   "face": "wl-osm-buildings-2026:3317:w",
+   "face": "wl-osm-buildings-2026:3300:w",
    "name": "Sleep Country",
    "sourceName": "Sleep Country",
    "category": "shop=bed",
@@ -3823,7 +3823,7 @@
   },
   {
    "id": "osm:node/5934188968",
-   "face": "wl-osm-buildings-2026:256:w",
+   "face": "wl-osm-buildings-2026:255:w",
    "name": "241 Pizza",
    "sourceName": "241 Pizza",
    "category": "amenity=fast_food",
@@ -3851,7 +3851,7 @@
   },
   {
    "id": "osm:node/6796160271",
-   "face": "wl-osm-buildings-2026:593:e",
+   "face": "wl-osm-buildings-2026:586:e",
    "name": "Super Optical",
    "sourceName": "Super Optical",
    "category": "shop=optician",
@@ -3878,7 +3878,7 @@
   },
   {
    "id": "osm:node/6796160272",
-   "face": "wl-osm-buildings-2026:593:e",
+   "face": "wl-osm-buildings-2026:586:e",
    "name": "Headline Barber Shop",
    "sourceName": "Headline Barber Shop",
    "category": "shop=hairdresser",
@@ -3905,7 +3905,7 @@
   },
   {
    "id": "osm:node/6796160273",
-   "face": "wl-osm-buildings-2026:593:e",
+   "face": "wl-osm-buildings-2026:586:e",
    "name": "Icon",
    "sourceName": "Icon",
    "category": "shop=beauty",
@@ -3932,7 +3932,7 @@
   },
   {
    "id": "osm:node/6796160274",
-   "face": "wl-osm-buildings-2026:597:e",
+   "face": "wl-osm-buildings-2026:590:e",
    "name": "Waxonomy",
    "sourceName": "Waxonomy",
    "category": "shop=beauty",
@@ -3959,7 +3959,7 @@
   },
   {
    "id": "osm:node/6796160284",
-   "face": "wl-osm-buildings-2026:3642:e",
+   "face": "wl-osm-buildings-2026:3622:e",
    "name": "East Winds",
    "sourceName": "East Winds",
    "category": "shop=clothes",
@@ -3986,7 +3986,7 @@
   },
   {
    "id": "osm:node/6796203985",
-   "face": "wl-osm-buildings-2026:575:e",
+   "face": "wl-osm-buildings-2026:568:e",
    "name": "Champa Kitchen",
    "sourceName": "Champa Kitchen",
    "category": "amenity=restaurant",
@@ -4013,7 +4013,7 @@
   },
   {
    "id": "osm:node/6796203986",
-   "face": "wl-osm-buildings-2026:562:e",
+   "face": "wl-osm-buildings-2026:555:e",
    "name": "Katsuya - Japanese Fusion Tonkatsu",
    "sourceName": "Katsuya - Japanese Fusion Tonkatsu",
    "category": "amenity=restaurant",
@@ -4040,7 +4040,7 @@
   },
   {
    "id": "osm:node/6796203989",
-   "face": "wl-osm-buildings-2026:533:w",
+   "face": "wl-osm-buildings-2026:527:w",
    "name": "Luster & Oak",
    "sourceName": "Luster & Oak",
    "category": "shop=clothes",
@@ -4073,7 +4073,7 @@
   },
   {
    "id": "osm:node/6796203990",
-   "face": "wl-osm-buildings-2026:539:n",
+   "face": "wl-osm-buildings-2026:533:n",
    "name": "Waterloo Medical Cosmetics",
    "sourceName": "Waterloo Medical Cosmetics",
    "category": "shop=beauty",
@@ -4100,7 +4100,7 @@
   },
   {
    "id": "osm:node/6797657153",
-   "face": "wl-osm-buildings-2026:587:w",
+   "face": "wl-osm-buildings-2026:580:w",
    "name": "Princess Cafe",
    "sourceName": "Princess Cafe",
    "category": "amenity=cafe",
@@ -4127,7 +4127,7 @@
   },
   {
    "id": "osm:node/6818427757",
-   "face": "wl-osm-buildings-2026:583:w",
+   "face": "wl-osm-buildings-2026:576:w",
    "name": "Watami Sushi",
    "sourceName": "Watami Sushi",
    "category": "amenity=restaurant",
@@ -4154,7 +4154,7 @@
   },
   {
    "id": "osm:node/7797316983",
-   "face": "wl-osm-buildings-2026:1260:w",
+   "face": "wl-osm-buildings-2026:1247:w",
    "name": "Applewood Dental Centre",
    "sourceName": "Applewood Dental Centre",
    "category": "amenity=dentist",
@@ -4181,7 +4181,7 @@
   },
   {
    "id": "osm:node/836021619",
-   "face": "wl-osm-buildings-2026:577:w",
+   "face": "wl-osm-buildings-2026:570:w",
    "name": "Carry-On Comics",
    "sourceName": "Carry-On Comics",
    "category": "shop=books",
@@ -4208,7 +4208,7 @@
   },
   {
    "id": "osm:node/8740263305",
-   "face": "wl-osm-buildings-2026:591:e",
+   "face": "wl-osm-buildings-2026:584:e",
    "name": "The Cannabist Shop",
    "sourceName": "The Cannabist Shop",
    "category": "shop=cannabis",
@@ -4235,7 +4235,7 @@
   },
   {
    "id": "osm:node/9163392497",
-   "face": "wl-osm-buildings-2026:584:w",
+   "face": "wl-osm-buildings-2026:577:w",
    "name": "Grillies",
    "sourceName": "Grillies",
    "category": "amenity=fast_food",
@@ -4262,7 +4262,7 @@
   },
   {
    "id": "osm:node/9351625837",
-   "face": "wl-osm-buildings-2026:566:e",
+   "face": "wl-osm-buildings-2026:559:e",
    "name": "Ajisen Ramen",
    "sourceName": "Ajisen Ramen",
    "category": "amenity=restaurant",
@@ -4289,7 +4289,7 @@
   },
   {
    "id": "osm:node/9608101479",
-   "face": "wl-osm-buildings-2026:565:e",
+   "face": "wl-osm-buildings-2026:558:e",
    "name": "Kinton Ramen",
    "sourceName": "Kinton Ramen",
    "category": "amenity=restaurant",
@@ -4316,7 +4316,7 @@
   },
   {
    "id": "osm:way/118409041",
-   "face": "wl-osm-buildings-2026:254:w",
+   "face": "wl-osm-buildings-2026:253:w",
    "name": "7-Eleven",
    "sourceName": "7-Eleven",
    "category": "shop=convenience",
@@ -4350,7 +4350,7 @@
   },
   {
    "id": "osm:way/118409045",
-   "face": "wl-osm-buildings-2026:258:w",
+   "face": "wl-osm-buildings-2026:257:w",
    "name": "Morty's Pub",
    "sourceName": "Morty's Pub",
    "category": "amenity=pub",
@@ -4377,7 +4377,7 @@
   },
   {
    "id": "osm:way/118662119",
-   "face": "wl-osm-buildings-2026:275:w",
+   "face": "wl-osm-buildings-2026:274:w",
    "name": "Farah Foods",
    "sourceName": "Farah Foods",
    "category": "shop=convenience",
@@ -4410,7 +4410,7 @@
   },
   {
    "id": "osm:way/118662120",
-   "face": "wl-osm-buildings-2026:276:w",
+   "face": "wl-osm-buildings-2026:275:w",
    "name": "University Pharmacy",
    "sourceName": "University Pharmacy",
    "category": "amenity=pharmacy",
@@ -4437,7 +4437,7 @@
   },
   {
    "id": "osm:way/133952654",
-   "face": "wl-osm-buildings-2026:403:e",
+   "face": "wl-osm-buildings-2026:402:e",
    "name": "BMO",
    "sourceName": "BMO",
    "category": "amenity=bank",
@@ -4465,7 +4465,7 @@
   },
   {
    "id": "osm:way/145611866",
-   "face": "wl-osm-buildings-2026:497:e",
+   "face": "wl-osm-buildings-2026:492:e",
    "name": "Ascania Jewellery & Futon Delight",
    "sourceName": "Ascania Jewellery & Futon Delight",
    "category": "shop=jewelry",
@@ -4492,7 +4492,7 @@
   },
   {
    "id": "osm:way/150152313",
-   "face": "wl-osm-buildings-2026:567:e",
+   "face": "wl-osm-buildings-2026:560:e",
    "name": "CIBC",
    "sourceName": "CIBC",
    "category": "amenity=bank",
@@ -4520,7 +4520,7 @@
   },
   {
    "id": "osm:way/150154104",
-   "face": "wl-osm-buildings-2026:594:e",
+   "face": "wl-osm-buildings-2026:587:e",
    "name": "The Pub On King",
    "sourceName": "The Pub On King",
    "category": "amenity=pub",
@@ -4547,7 +4547,7 @@
   },
   {
    "id": "osm:way/150154105",
-   "face": "wl-osm-buildings-2026:595:w",
+   "face": "wl-osm-buildings-2026:588:w",
    "name": "Revive",
    "sourceName": "Revive",
    "category": "amenity=pub",
@@ -4580,7 +4580,7 @@
   },
   {
    "id": "osm:way/150154110",
-   "face": "wl-osm-buildings-2026:600:w",
+   "face": "wl-osm-buildings-2026:593:w",
    "name": "Ethel's Lounge",
    "sourceName": "Ethel's Lounge",
    "category": "amenity=bar",
@@ -4613,7 +4613,7 @@
   },
   {
    "id": "osm:way/159682087",
-   "face": "wl-osm-buildings-2026:736:w",
+   "face": "wl-osm-buildings-2026:727:w",
    "name": "Tri City Styles",
    "sourceName": "Tri City Styles",
    "category": "shop=hairdresser",
@@ -4640,7 +4640,7 @@
   },
   {
    "id": "osm:way/159682093",
-   "face": "wl-osm-buildings-2026:740:e",
+   "face": "wl-osm-buildings-2026:731:e",
    "name": "Tim Hortons",
    "sourceName": "Tim Hortons",
    "category": "amenity=cafe",
@@ -4668,7 +4668,7 @@
   },
   {
    "id": "osm:way/192027096",
-   "face": "wl-osm-buildings-2026:863:e",
+   "face": "wl-osm-buildings-2026:853:e",
    "name": "Dollar Planet Plus",
    "sourceName": "Dollar Planet Plus",
    "category": "shop=variety_store",
@@ -4695,7 +4695,7 @@
   },
   {
    "id": "osm:way/196620022",
-   "face": "wl-osm-buildings-2026:912:e",
+   "face": "wl-osm-buildings-2026:902:e",
    "name": "Wildcraft Bar and Grill",
    "sourceName": "Wildcraft Bar and Grill",
    "category": "amenity=restaurant",
@@ -4722,7 +4722,7 @@
   },
   {
    "id": "osm:way/235654808",
-   "face": "wl-osm-buildings-2026:1641:w",
+   "face": "wl-osm-buildings-2026:1627:w",
    "name": "Dentistry in Waterloo",
    "sourceName": "Dentistry in Waterloo",
    "category": "amenity=dentist",
@@ -4749,7 +4749,7 @@
   },
   {
    "id": "osm:way/309809148",
-   "face": "wl-osm-buildings-2026:2744:w",
+   "face": "wl-osm-buildings-2026:2729:w",
    "name": "Ennio's Pasta House",
    "sourceName": "Ennio's Pasta House",
    "category": "amenity=restaurant",
@@ -4776,7 +4776,7 @@
   },
   {
    "id": "osm:node/10822220357",
-   "face": "wl-osm-buildings-2026:538:w",
+   "face": "wl-osm-buildings-2026:532:w",
    "name": "Pilot Coffee Roasters",
    "sourceName": "Pilot Coffee Roasters",
    "category": "amenity=cafe",
@@ -4803,7 +4803,7 @@
   },
   {
    "id": "osm:node/12011210585",
-   "face": "wl-osm-buildings-2026:541:w",
+   "face": "wl-osm-buildings-2026:535:w",
    "name": "Joy of Flowers",
    "sourceName": "Joy of Flowers",
    "category": "shop=florist",
@@ -4830,7 +4830,7 @@
   },
   {
    "id": "osm:node/12054047122",
-   "face": "wl-osm-buildings-2026:527:e",
+   "face": "wl-osm-buildings-2026:521:e",
    "name": "Running Room",
    "sourceName": "Running Room",
    "category": "shop=sports",
@@ -4858,7 +4858,7 @@
   },
   {
    "id": "osm:node/1214996698",
-   "face": "wl-osm-buildings-2026:540:w",
+   "face": "wl-osm-buildings-2026:534:w",
    "name": "Massage Addict",
    "sourceName": "Massage Addict",
    "category": "shop=massage",
@@ -4886,7 +4886,7 @@
   },
   {
    "id": "osm:node/12247101275",
-   "face": "wl-osm-buildings-2026:1475:w",
+   "face": "wl-osm-buildings-2026:1461:w",
    "name": "Robins Goldsmith",
    "sourceName": "Robins Goldsmith",
    "category": "shop=jewelry",
@@ -4913,7 +4913,7 @@
   },
   {
    "id": "osm:node/12885316278",
-   "face": "wl-osm-buildings-2026:140:e",
+   "face": "wl-osm-buildings-2026:139:e",
    "name": "Kintec Footwear+Orthodics",
    "sourceName": "Kintec Footwear+Orthodics",
    "category": "shop=shoes",
@@ -4940,7 +4940,7 @@
   },
   {
    "id": "osm:node/12885316280",
-   "face": "wl-osm-buildings-2026:140:e",
+   "face": "wl-osm-buildings-2026:139:e",
    "name": "Luxe Nail Bar",
    "sourceName": "Luxe Nail Bar",
    "category": "shop=beauty",
@@ -4967,7 +4967,7 @@
   },
   {
    "id": "osm:node/12885316282",
-   "face": "wl-osm-buildings-2026:140:e",
+   "face": "wl-osm-buildings-2026:139:e",
    "name": "Salon Ninety5",
    "sourceName": "Salon Ninety5",
    "category": "shop=hairdresser",
@@ -4994,7 +4994,7 @@
   },
   {
    "id": "osm:node/12885564358",
-   "face": "wl-osm-buildings-2026:529:w",
+   "face": "wl-osm-buildings-2026:523:w",
    "name": "La La Bake Shop",
    "sourceName": "La La Bake Shop",
    "category": "shop=bakery",
@@ -5021,7 +5021,7 @@
   },
   {
    "id": "osm:node/12885564359",
-   "face": "wl-osm-buildings-2026:529:w",
+   "face": "wl-osm-buildings-2026:523:w",
    "name": "Cinnaholic",
    "sourceName": "Cinnaholic",
    "category": "amenity=cafe",
@@ -5055,7 +5055,7 @@
   },
   {
    "id": "osm:node/12885564361",
-   "face": "wl-osm-buildings-2026:538:w",
+   "face": "wl-osm-buildings-2026:532:w",
    "name": "Luna Aesthetics",
    "sourceName": "Luna Aesthetics",
    "category": "shop=beauty",
@@ -5082,7 +5082,7 @@
   },
   {
    "id": "osm:node/12887857455",
-   "face": "wl-osm-buildings-2026:535:w",
+   "face": "wl-osm-buildings-2026:529:w",
    "name": "Eyes On King",
    "sourceName": "Eyes On King",
    "category": "shop=optician",
@@ -5109,7 +5109,7 @@
   },
   {
    "id": "osm:node/12988709651",
-   "face": "wl-osm-buildings-2026:537:w",
+   "face": "wl-osm-buildings-2026:531:w",
    "name": "July Nailbar",
    "sourceName": "July Nailbar",
    "category": "shop=beauty",
@@ -5142,7 +5142,7 @@
   },
   {
    "id": "osm:node/14081208290",
-   "face": "wl-osm-buildings-2026:527:e",
+   "face": "wl-osm-buildings-2026:521:e",
    "name": "Kin Gyu Japanese Grill",
    "sourceName": "Kin Gyu Japanese Grill",
    "category": "amenity=restaurant",
@@ -5169,7 +5169,7 @@
   },
   {
    "id": "osm:node/14393892934",
-   "face": "wl-osm-buildings-2026:14845.0:w",
+   "face": "wl-osm-buildings-2026:14809.0:w",
    "name": "YNCU",
    "sourceName": "YNCU",
    "category": "amenity=bank",
@@ -5196,7 +5196,7 @@
   },
   {
    "id": "osm:node/1626379702",
-   "face": "wl-osm-buildings-2026:527:e",
+   "face": "wl-osm-buildings-2026:521:e",
    "name": "Carter's OshKosh",
    "sourceName": "Carter's OshKosh",
    "category": "shop=clothes",
@@ -5224,7 +5224,7 @@
   },
   {
    "id": "osm:node/1626379710",
-   "face": "wl-osm-buildings-2026:140:e",
+   "face": "wl-osm-buildings-2026:139:e",
    "name": "Macro Foods",
    "sourceName": "Macro Foods",
    "category": "shop=health_food",
@@ -5251,7 +5251,7 @@
   },
   {
    "id": "osm:node/1629123471",
-   "face": "wl-osm-buildings-2026:1012:e",
+   "face": "wl-osm-buildings-2026:1000:e",
    "name": "The Bauer Kitchen",
    "sourceName": "The Bauer Kitchen",
    "category": "amenity=restaurant",
@@ -5278,7 +5278,7 @@
   },
   {
    "id": "osm:node/2436285754",
-   "face": "wl-osm-buildings-2026:1012:e",
+   "face": "wl-osm-buildings-2026:1000:e",
    "name": "Romeo salon",
    "sourceName": "Romeo salon",
    "category": "shop=hairdresser",
@@ -5305,7 +5305,7 @@
   },
   {
    "id": "osm:node/3220465670",
-   "face": "wl-osm-buildings-2026:527:e",
+   "face": "wl-osm-buildings-2026:521:e",
    "name": "Famoso",
    "sourceName": "Famoso",
    "category": "amenity=restaurant",
@@ -5332,7 +5332,7 @@
   },
   {
    "id": "osm:node/4612317037",
-   "face": "wl-osm-buildings-2026:527:e",
+   "face": "wl-osm-buildings-2026:521:e",
    "name": "Abe Erb",
    "sourceName": "Abe Erb",
    "category": "amenity=pub",
@@ -5359,7 +5359,7 @@
   },
   {
    "id": "osm:node/503048814",
-   "face": "wl-osm-buildings-2026:142:e",
+   "face": "wl-osm-buildings-2026:141:e",
    "name": "LCBO",
    "sourceName": "LCBO",
    "category": "shop=alcohol",
@@ -5393,7 +5393,7 @@
   },
   {
    "id": "osm:node/503048817",
-   "face": "wl-osm-buildings-2026:140:e",
+   "face": "wl-osm-buildings-2026:139:e",
    "name": "Starbucks",
    "sourceName": "Starbucks",
    "category": "amenity=cafe",
@@ -5421,7 +5421,7 @@
   },
   {
    "id": "osm:node/503048818",
-   "face": "wl-osm-buildings-2026:535:w",
+   "face": "wl-osm-buildings-2026:529:w",
    "name": "The Bingsu",
    "sourceName": "The Bingsu",
    "category": "amenity=cafe",
@@ -5454,7 +5454,7 @@
   },
   {
    "id": "osm:node/503048819",
-   "face": "wl-osm-buildings-2026:142:e",
+   "face": "wl-osm-buildings-2026:141:e",
    "name": "Scotiabank",
    "sourceName": "Scotiabank",
    "category": "amenity=bank",
@@ -5482,7 +5482,7 @@
   },
   {
    "id": "osm:node/503064485",
-   "face": "wl-osm-buildings-2026:527:e",
+   "face": "wl-osm-buildings-2026:521:e",
    "name": "TD",
    "sourceName": "TD",
    "category": "amenity=bank",
@@ -5516,7 +5516,7 @@
   },
   {
    "id": "osm:node/6159574991",
-   "face": "wl-osm-buildings-2026:1475:w",
+   "face": "wl-osm-buildings-2026:1461:w",
    "name": "Waterloo Smiles",
    "sourceName": "Waterloo Smiles",
    "category": "amenity=dentist",
@@ -5543,7 +5543,7 @@
   },
   {
    "id": "osm:node/6733990695",
-   "face": "wl-osm-buildings-2026:140:e",
+   "face": "wl-osm-buildings-2026:139:e",
    "name": "Subtly You",
    "sourceName": "Subtly You",
    "category": "shop=beauty",
@@ -5570,7 +5570,7 @@
   },
   {
    "id": "osm:node/6733990697",
-   "face": "wl-osm-buildings-2026:531:w",
+   "face": "wl-osm-buildings-2026:525:w",
    "name": "The Works",
    "sourceName": "The Works",
    "category": "amenity=restaurant",
@@ -5604,7 +5604,7 @@
   },
   {
    "id": "osm:node/6733990698",
-   "face": "wl-osm-buildings-2026:542:w",
+   "face": "wl-osm-buildings-2026:536:w",
    "name": "Sweet & Savory Pie Company",
    "sourceName": "Sweet & Savory Pie Company",
    "category": "amenity=restaurant",
@@ -5631,7 +5631,7 @@
   },
   {
    "id": "osm:node/6733990700",
-   "face": "wl-osm-buildings-2026:140:e",
+   "face": "wl-osm-buildings-2026:139:e",
    "name": "IRIS",
    "sourceName": "IRIS",
    "category": "shop=optician",
@@ -5659,7 +5659,7 @@
   },
   {
    "id": "osm:node/6733990701",
-   "face": "wl-osm-buildings-2026:536:w",
+   "face": "wl-osm-buildings-2026:530:w",
    "name": "Duke of Wellington",
    "sourceName": "Duke of Wellington",
    "category": "amenity=restaurant",
@@ -5686,7 +5686,7 @@
   },
   {
    "id": "osm:node/6733990703",
-   "face": "wl-osm-buildings-2026:537:w",
+   "face": "wl-osm-buildings-2026:531:w",
    "name": "Marble Slab Creamery",
    "sourceName": "Marble Slab Creamery",
    "category": "amenity=ice_cream",
@@ -5720,7 +5720,7 @@
   },
   {
    "id": "osm:node/6733990705",
-   "face": "wl-osm-buildings-2026:529:w",
+   "face": "wl-osm-buildings-2026:523:w",
    "name": "Hanoi Viet Eatery",
    "sourceName": "Hanoi Viet Eatery",
    "category": "amenity=restaurant",
@@ -5747,7 +5747,7 @@
   },
   {
    "id": "osm:node/6796203987",
-   "face": "wl-osm-buildings-2026:572:w",
+   "face": "wl-osm-buildings-2026:565:w",
    "name": "Charmed Flowers",
    "sourceName": "Charmed Flowers",
    "category": "shop=florist",
@@ -5780,7 +5780,7 @@
   },
   {
    "id": "osm:node/6796203991",
-   "face": "wl-osm-buildings-2026:528:w",
+   "face": "wl-osm-buildings-2026:522:w",
    "name": "Frank's Jewellers",
    "sourceName": "Frank's Jewellers",
    "category": "shop=jewelry",
@@ -5813,7 +5813,7 @@
   },
   {
    "id": "osm:node/6796203992",
-   "face": "wl-osm-buildings-2026:544:w",
+   "face": "wl-osm-buildings-2026:538:w",
    "name": "Crystal Palace",
    "sourceName": "Crystal Palace",
    "category": "amenity=restaurant",
@@ -5846,7 +5846,7 @@
   },
   {
    "id": "osm:node/6818457979",
-   "face": "wl-osm-buildings-2026:541:w",
+   "face": "wl-osm-buildings-2026:535:w",
    "name": "All My Nails Salon",
    "sourceName": "All My Nails Salon",
    "category": "shop=beauty",
@@ -5879,7 +5879,7 @@
   },
   {
    "id": "osm:node/6818855900",
-   "face": "wl-osm-buildings-2026:542:w",
+   "face": "wl-osm-buildings-2026:536:w",
    "name": "Words Worth Books",
    "sourceName": "Words Worth Books",
    "category": "shop=books",
@@ -5912,7 +5912,7 @@
   },
   {
    "id": "osm:node/6818855906",
-   "face": "wl-osm-buildings-2026:535:w",
+   "face": "wl-osm-buildings-2026:529:w",
    "name": "Score Pizza",
    "sourceName": "Score Pizza",
    "category": "amenity=fast_food",
@@ -5939,7 +5939,7 @@
   },
   {
    "id": "osm:node/6818855907",
-   "face": "wl-osm-buildings-2026:535:w",
+   "face": "wl-osm-buildings-2026:529:w",
    "name": "Fuwa Fuwa Dessert Cafe",
    "sourceName": "Fuwa Fuwa Dessert Cafe",
    "category": "amenity=cafe",
@@ -5966,7 +5966,7 @@
   },
   {
    "id": "osm:node/7274840129",
-   "face": "wl-osm-buildings-2026:543:w",
+   "face": "wl-osm-buildings-2026:537:w",
    "name": "King Street Trio",
    "sourceName": "King Street Trio",
    "category": "amenity=restaurant",
@@ -5993,7 +5993,7 @@
   },
   {
    "id": "osm:node/8048414839",
-   "face": "wl-osm-buildings-2026:530:w",
+   "face": "wl-osm-buildings-2026:524:w",
    "name": "Ontario Seed Company",
    "sourceName": "Ontario Seed Company",
    "category": "shop=doityourself",
@@ -6021,7 +6021,7 @@
   },
   {
    "id": "osm:node/9163267598",
-   "face": "wl-osm-buildings-2026:532:w",
+   "face": "wl-osm-buildings-2026:526:w",
    "name": "Surmesur",
    "sourceName": "Surmesur",
    "category": "shop=clothes",
@@ -6048,7 +6048,7 @@
   },
   {
    "id": "osm:node/9163267600",
-   "face": "wl-osm-buildings-2026:537:w",
+   "face": "wl-osm-buildings-2026:531:w",
    "name": "Bardot Lash House",
    "sourceName": "Bardot Lash House",
    "category": "shop=beauty",
@@ -6081,7 +6081,7 @@
   },
   {
    "id": "osm:way/148608720",
-   "face": "wl-osm-buildings-2026:526:e",
+   "face": "wl-osm-buildings-2026:520:e",
    "name": "BMO",
    "sourceName": "BMO",
    "category": "amenity=bank",
@@ -6115,7 +6115,7 @@
   },
   {
    "id": "osm:way/149825110",
-   "face": "wl-osm-buildings-2026:534:w",
+   "face": "wl-osm-buildings-2026:528:w",
    "name": "Canna Cabana",
    "sourceName": "Canna Cabana",
    "category": "shop=cannabis",
@@ -6142,7 +6142,7 @@
   },
   {
    "id": "osm:way/149825128",
-   "face": "wl-osm-buildings-2026:545:w",
+   "face": "wl-osm-buildings-2026:539:w",
    "name": "Empress of India",
    "sourceName": "Empress of India",
    "category": "amenity=restaurant",
@@ -6169,7 +6169,7 @@
   },
   {
    "id": "osm:way/149825129",
-   "face": "wl-osm-buildings-2026:554:w",
+   "face": "wl-osm-buildings-2026:547:w",
    "name": "RBC",
    "sourceName": "RBC",
    "category": "amenity=bank",
@@ -6197,7 +6197,7 @@
   },
   {
    "id": "osm:way/149976271",
-   "face": "wl-osm-buildings-2026:558:w",
+   "face": "wl-osm-buildings-2026:551:w",
    "name": "Harmony",
    "sourceName": "Harmony",
    "category": "shop=clothes",
@@ -6224,7 +6224,7 @@
   },
   {
    "id": "osm:way/149976273",
-   "face": "wl-osm-buildings-2026:559:w",
+   "face": "wl-osm-buildings-2026:552:w",
    "name": "McCabe's Irish Pub",
    "sourceName": "McCabe's Irish Pub",
    "category": "amenity=pub",
@@ -6251,7 +6251,7 @@
   },
   {
    "id": "osm:node/11928740234",
-   "face": "wl-osm-buildings-2026:3137:w",
+   "face": "wl-osm-buildings-2026:3120:w",
    "name": "Myung-GA Korean Restaurant",
    "sourceName": "Myung-GA Korean Restaurant",
    "category": "amenity=restaurant",
@@ -6278,7 +6278,7 @@
   },
   {
    "id": "osm:node/12203248801",
-   "face": "wl-osm-buildings-2026:3343.2:w",
+   "face": "wl-osm-buildings-2026:3326.2:w",
    "name": "City Style Salon & Barber Shop",
    "sourceName": "City Style Salon & Barber Shop",
    "category": "shop=hairdresser",
@@ -6305,7 +6305,7 @@
   },
   {
    "id": "osm:node/12203266501",
-   "face": "wl-osm-buildings-2026:3343.2:w",
+   "face": "wl-osm-buildings-2026:3326.2:w",
    "name": "TSUJIRI Waterloo",
    "sourceName": "TSUJIRI Waterloo",
    "category": "amenity=cafe",
@@ -6332,7 +6332,7 @@
   },
   {
    "id": "osm:node/12331578576",
-   "face": "wl-osm-buildings-2026:3343.2:w",
+   "face": "wl-osm-buildings-2026:3326.2:w",
    "name": "Gong Cha",
    "sourceName": "Gong Cha",
    "category": "amenity=cafe",
@@ -6360,7 +6360,7 @@
   },
   {
    "id": "osm:node/2624132499",
-   "face": "wl-osm-buildings-2026:313:w",
+   "face": "wl-osm-buildings-2026:312:w",
    "name": "YouPackWeStore",
    "sourceName": "YouPackWeStore",
    "category": "shop=storage_rental",
@@ -6393,7 +6393,7 @@
   },
   {
    "id": "osm:node/3151819604",
-   "face": "wl-osm-buildings-2026:116:s",
+   "face": "wl-osm-buildings-2026:115:s",
    "name": "Ming's Chinese Restaurant",
    "sourceName": "Ming's Chinese Restaurant",
    "category": "amenity=restaurant",
@@ -6420,7 +6420,7 @@
   },
   {
    "id": "osm:node/5351696286",
-   "face": "wl-osm-buildings-2026:3137:w",
+   "face": "wl-osm-buildings-2026:3120:w",
    "name": "Ken Sushi",
    "sourceName": "Ken Sushi",
    "category": "amenity=restaurant",
@@ -6447,7 +6447,7 @@
   },
   {
    "id": "osm:node/5359865529",
-   "face": "wl-osm-buildings-2026:3137:w",
+   "face": "wl-osm-buildings-2026:3120:w",
    "name": "The UPS Store",
    "sourceName": "The UPS Store",
    "category": "shop=copyshop",
@@ -6475,7 +6475,7 @@
   },
   {
    "id": "osm:node/5700955877",
-   "face": "wl-osm-buildings-2026:116:s",
+   "face": "wl-osm-buildings-2026:115:s",
    "name": "Phillip's Shawarma",
    "sourceName": "Phillip's Shawarma",
    "category": "amenity=restaurant",
@@ -6502,7 +6502,7 @@
   },
   {
    "id": "osm:node/6775889940",
-   "face": "wl-osm-buildings-2026:116:s",
+   "face": "wl-osm-buildings-2026:115:s",
    "name": "7 Days Mini Mart",
    "sourceName": "7 Days Mini Mart",
    "category": "shop=convenience",
@@ -6529,7 +6529,7 @@
   },
   {
    "id": "osm:node/6775906413",
-   "face": "wl-osm-buildings-2026:116:s",
+   "face": "wl-osm-buildings-2026:115:s",
    "name": "The Cactus",
    "sourceName": "The Cactus",
    "category": "amenity=restaurant",
@@ -6556,7 +6556,7 @@
   },
   {
    "id": "osm:node/6775928085",
-   "face": "wl-osm-buildings-2026:116:s",
+   "face": "wl-osm-buildings-2026:115:s",
    "name": "Koh-I-Noor",
    "sourceName": "Koh-I-Noor",
    "category": "amenity=restaurant",
@@ -6583,7 +6583,7 @@
   },
   {
    "id": "osm:node/7617151823",
-   "face": "wl-osm-buildings-2026:3343.2:w",
+   "face": "wl-osm-buildings-2026:3326.2:w",
    "name": "Popular Pizza",
    "sourceName": "Popular Pizza",
    "category": "amenity=fast_food",
@@ -6610,7 +6610,7 @@
   },
   {
    "id": "osm:way/133940148",
-   "face": "wl-osm-buildings-2026:318:s",
+   "face": "wl-osm-buildings-2026:317:s",
    "name": "Tim Hortons",
    "sourceName": "Tim Hortons",
    "category": "amenity=cafe",
@@ -6638,7 +6638,7 @@
   },
   {
    "id": "osm:way/156415791",
-   "face": "wl-osm-buildings-2026:681:n",
+   "face": "wl-osm-buildings-2026:674:n",
    "name": "Parkdale Animal Hospital",
    "sourceName": "Parkdale Animal Hospital",
    "category": "amenity=veterinary",
@@ -6665,7 +6665,7 @@
   },
   {
    "id": "osm:way/157481950",
-   "face": "wl-osm-buildings-2026:694:n",
+   "face": "wl-osm-buildings-2026:687:n",
    "name": "B.J. Photo Labs",
    "sourceName": "B.J. Photo Labs",
    "category": "shop=photo",
@@ -6692,7 +6692,7 @@
   },
   {
    "id": "osm:way/39606013",
-   "face": "wl-osm-buildings-2026:14833.1:e",
+   "face": "wl-osm-buildings-2026:14798.1:e",
    "name": "Northern Chinese Restaurant",
    "sourceName": "Northern Chinese Restaurant",
    "category": "amenity=restaurant",
@@ -6719,7 +6719,7 @@
   },
   {
    "id": "osm:node/648487903",
-   "face": "wl-osm-buildings-2026:112:s",
+   "face": "wl-osm-buildings-2026:111:s",
    "name": "Mambella's Italian Kitchen",
    "sourceName": "Mambella's Italian Kitchen",
    "category": "amenity=restaurant",
@@ -6746,7 +6746,7 @@
   },
   {
    "id": "osm:node/6515563854",
-   "face": "wl-osm-buildings-2026:3581.1:s",
+   "face": "wl-osm-buildings-2026:3563.1:s",
    "name": "ZenQ",
    "sourceName": "ZenQ",
    "category": "amenity=restaurant",
@@ -6773,7 +6773,7 @@
   },
   {
    "id": "osm:node/11234680313",
-   "face": "wl-osm-buildings-2026:1546:n",
+   "face": "wl-osm-buildings-2026:1532:n",
    "name": "Waterloo West Dentistry",
    "sourceName": "Waterloo West Dentistry",
    "category": "amenity=dentist",
@@ -6800,7 +6800,7 @@
   },
   {
    "id": "osm:node/2467887734",
-   "face": "wl-osm-buildings-2026:571:s",
+   "face": "wl-osm-buildings-2026:564:s",
    "name": "Dosa Boyz",
    "sourceName": "Dosa Boyz",
    "category": "amenity=restaurant",
@@ -6827,7 +6827,7 @@
   },
   {
    "id": "osm:node/3137856424",
-   "face": "wl-osm-buildings-2026:2730:s",
+   "face": "wl-osm-buildings-2026:2715:s",
    "name": "Proof Kitchen & Lounge",
    "sourceName": "Proof Kitchen & Lounge",
    "category": "amenity=restaurant",
@@ -6854,7 +6854,7 @@
   },
   {
    "id": "osm:way/222401116",
-   "face": "wl-osm-buildings-2026:1460:n",
+   "face": "wl-osm-buildings-2026:1446:n",
    "name": "Quality Auto Repair",
    "sourceName": "Quality Auto Repair",
    "category": "shop=car_repair",
@@ -6881,7 +6881,7 @@
   },
   {
    "id": "osm:way/255578645",
-   "face": "wl-osm-buildings-2026:2491:s",
+   "face": "wl-osm-buildings-2026:2477:s",
    "name": "7 Star Convenience",
    "sourceName": "7 Star Convenience",
    "category": "shop=convenience",
@@ -6908,7 +6908,7 @@
   },
   {
    "id": "osm:node/11993065158",
-   "face": "wl-osm-buildings-2026:3974:w",
+   "face": "wl-osm-buildings-2026:3954:w",
    "name": "Hair Plus",
    "sourceName": "Hair Plus",
    "category": "shop=hairdresser",
@@ -6935,7 +6935,7 @@
   },
   {
    "id": "osm:node/13290195004",
-   "face": "wl-osm-buildings-2026:11350:e",
+   "face": "wl-osm-buildings-2026:11320:e",
    "name": "Shawarma Royale",
    "sourceName": "Shawarma Royale",
    "category": "amenity=fast_food",
@@ -6962,7 +6962,7 @@
   },
   {
    "id": "osm:node/1566613148",
-   "face": "wl-osm-buildings-2026:324:w",
+   "face": "wl-osm-buildings-2026:323:w",
    "name": "Artistic Landscaping",
    "sourceName": "Artistic Landscaping",
    "category": "shop=garden_centre",
@@ -6989,7 +6989,7 @@
   },
   {
    "id": "osm:node/3151527316",
-   "face": "wl-osm-buildings-2026:408:e",
+   "face": "wl-osm-buildings-2026:407:e",
    "name": "Mat's Auto",
    "sourceName": "Mat's Auto",
    "category": "shop=car",
@@ -7016,7 +7016,7 @@
   },
   {
    "id": "osm:node/5631278760",
-   "face": "wl-osm-buildings-2026:3112:w",
+   "face": "wl-osm-buildings-2026:3095:w",
    "name": "Gladiator Burger",
    "sourceName": "Gladiator Burger",
    "category": "amenity=restaurant",
@@ -7043,7 +7043,7 @@
   },
   {
    "id": "osm:node/648487942",
-   "face": "wl-osm-buildings-2026:2743:w",
+   "face": "wl-osm-buildings-2026:2728:w",
    "name": "Mader's Massage Therapy Clinic",
    "sourceName": "Mader's Massage Therapy Clinic",
    "category": "shop=massage",
@@ -7070,7 +7070,7 @@
   },
   {
    "id": "osm:node/7165698683",
-   "face": "wl-osm-buildings-2026:3111:w",
+   "face": "wl-osm-buildings-2026:3094:w",
    "name": "Together Boba",
    "sourceName": "Together Boba",
    "category": "amenity=cafe",
@@ -7097,7 +7097,7 @@
   },
   {
    "id": "osm:way/133940317",
-   "face": "wl-osm-buildings-2026:325:e",
+   "face": "wl-osm-buildings-2026:324:e",
    "name": "Meetz' Small Engines",
    "sourceName": "Meetz' Small Engines",
    "category": "shop=groundskeeping",
@@ -7507,7 +7507,7 @@
    "name": "Circle K",
    "address": "",
    "category": "shop=convenience",
-   "reason": "building too low for a fascia"
+   "reason": "not inside a mapped building"
   },
   {
    "id": "osm:node/6818427759",
